@@ -10,6 +10,9 @@ using System.IO;
 
 namespace WindowsFormsApplication1
 {
+    /// <summary>
+    /// Variáveis globais
+    /// </summary>
     public static class VGlobal
     {
         #region Variaveis Globais
@@ -370,7 +373,7 @@ namespace WindowsFormsApplication1
 
         #endregion
     }
-    public static struct VRelatorio
+    /*public struct VRelatorio
     {
         VGlobal.stInformacoesGerais[] rlInformacoesGerais = new VGlobal.stInformacoesGerais[VGlobal.TamTotHeader];
         VGlobal.stCreditoPrivado[] rlCreditoPrivado = new VGlobal.stCreditoPrivado[VGlobal.TamTotHeader];
@@ -380,6 +383,6 @@ namespace WindowsFormsApplication1
         VGlobal.stPorEmissor[] rlPorEmissor = new VGlobal.stPorEmissor[VGlobal.TamTotHeader];
 
     
-    }
+    }*/
 
 }

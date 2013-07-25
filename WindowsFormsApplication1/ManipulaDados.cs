@@ -21,7 +21,7 @@ namespace WindowsFormsApplication1
             int i = 0;
             string Retorno = "false";
             string stErro = null;
-
+            string carteira;
 
 
 
@@ -36,12 +36,7 @@ namespace WindowsFormsApplication1
                 foreach (FileInfo ArquivosXML in VGlobal.ListaArquivos)
                 {
                     #region Header
-                    SubManipulaDados_Header ManipHeader = new SubManipulaDados_Header();
-                    if (ManipHeader.Sub_Header(ArquivosXML,i) != "false")
-                    {
-                        DialogResult dialogResult = MessageBox.Show("Encontrado erro na manipulação do Header do XML. Favor verificar LOG!", "ERROR", MessageBoxButtons.OK);
-                        goto SaiFuncao;
-                    }
+                    carteira = ManipulaDados_Header.getCarteira(1);
                     #endregion
 
 

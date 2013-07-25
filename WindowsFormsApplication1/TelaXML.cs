@@ -13,6 +13,9 @@ using System.IO;
 
 namespace WindowsFormsApplication1
 {
+    /// <summary>
+    /// Interface gráfica com o usuário.
+    /// </summary>
     public partial class TelaXML : Form
     {
         public TelaXML()

@@ -10,11 +10,17 @@ using System.Windows.Forms;
 
 namespace WindowsFormsApplication1
 {
-    class SubManipulaDados_Header
+    /// <summary>
+    /// Retira informações do Header
+    /// </summary>
+    /// <remarks>
+    /// Função tem como entrada um arquivo XML e métodos definidos para extrair informações dos nós 'Header'.
+    /// </remarks>
+    public static class ManipulaDados_Header
     {
         
 
-        public string Sub_Header(FileInfo ArquivosXML, int i)
+        static string Sub_Header(FileInfo ArquivosXML, int i)
         {
 
             #region Variaveis
@@ -166,5 +172,18 @@ namespace WindowsFormsApplication1
 
         }
 
+        public static string getCarteira(int iFile)
+        {
+            // Retorna informações da carteira
+
+            VGlobal.stHeaderCarteira401[] HeaderCarteira401 = new VGlobal.stHeaderCarteira401[VGlobal.TamHeader[iFile]];
+            foreach (XmlNode xn in VGlobal.xmlnode)
+            {
+                HeaderCarteira401[iFile] = new VGlobal.stHeaderCarteira401();
+                HeaderCarteira401[iFile].cnpjcpf = xn["cnpjcpf"].InnerText;
+            }
+            return HeaderCarteira401[iFile].cnpjcpf;
+
+        }
     }
 }
