@@ -22,10 +22,13 @@ namespace WindowsFormsApplication1
             string Retorno = "false";
             string stErro = null;
             string carteira;
+            int teste_resposta;
 
 
 
             #endregion
+
+            teste_resposta = ManipulaDados_Header.getResposta();
 
             try
             {
@@ -36,7 +39,7 @@ namespace WindowsFormsApplication1
                 foreach (FileInfo ArquivosXML in VGlobal.ListaArquivos)
                 {
                     #region Header
-                    carteira = ManipulaDados_Header.getCarteira(1);
+                    carteira = ManipulaDados_Header.getCarteira(ArquivosXML, 1);
                     #endregion
 
 
@@ -64,7 +67,7 @@ namespace WindowsFormsApplication1
             VGlobal.rtLOG.Text += "===========================================================================\r\n";//Separação de arquivos XML no LOG.
             VGlobal.rtLOG.Text += "Fim do levantamento do XML. Funcao ManipulaDaods.Dados retornou: " + Retorno + "\r\n";
             VGlobal.rtLOG.Text += "===========================================================================\r\n";//Separação de arquivos XML no LOG.
-            return Retorno;
+            return "false";
             #endregion
 
 

@@ -45,7 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="SubManipulaDados_Header.cs" />
+    <Compile Include="ManipulaDados_Header.cs" />
     <Compile Include="ManipulaDados.cs" />
     <Compile Include="ManipulaRelatorio.cs" />
     <Compile Include="ManipulaXML.cs" />

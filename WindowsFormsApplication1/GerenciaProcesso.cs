@@ -18,7 +18,7 @@ namespace WindowsFormsApplication1
         public void GerenciaProcesso()
         {
             //Variáveis Gerais
-            string PastaXML = "c://input//";
+            string PastaXML = "c:\\Users\\MarceloP\\Documents\\Visual Studio 2012\\Projects\\XML_files";
             VGlobal.rtLOG = new RichTextBox();
 
             //Inicializa variáveis de relatorio
