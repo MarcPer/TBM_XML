@@ -173,31 +173,22 @@ namespace WindowsFormsApplication1
         //}
 
         /// <summary>
-        /// Retorna informações da carteira.
+        /// Retorna conteúdo do nó 'cnpjcpf' do arquivo 'ArquivoXML'.
         /// </summary>
         /// <param name="ArquivosXML"></param>
         /// <param name="iFile"></param>
         /// <returns></returns>
-        public static string getCarteira(FileInfo ArquivosXML, int iFile)
+        public static string[] cnpjcpf(FileInfo ArquivosXML)
         {
-            // Retorna informações da carteira
+            string[] strOut = {""};
             XmlDocument xmldoc = new XmlDocument();
-            string strOut = "abc";
             xmldoc.Load(ArquivosXML.FullName);
-            XmlNodeList nodes = xmldoc.SelectNodes("/arquivoposicao_4_01/carteira");
+            XmlNodeList nodes = xmldoc.SelectNodes("//header");
             foreach (XmlNode node in nodes)
             {
-                XmlNode ndHeader = node.SelectSingleNode("Header");
-                strOut = ndHeader["cnpjcpf"].InnerXml;
+                strOut[1] = node["cnpjcpf"].InnerText;
             }
-                
             return strOut;
-
-        }
-
-        public static int getResposta()
-        {
-            return 2;
         }
     }
 }

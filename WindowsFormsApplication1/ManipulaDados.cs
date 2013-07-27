@@ -21,14 +21,12 @@ namespace WindowsFormsApplication1
             int i = 0;
             string Retorno = "false";
             string stErro = null;
-            string carteira;
+            string[] carteira;
             int teste_resposta;
 
 
 
             #endregion
-
-            teste_resposta = ManipulaDados_Header.getResposta();
 
             try
             {
@@ -39,7 +37,7 @@ namespace WindowsFormsApplication1
                 foreach (FileInfo ArquivosXML in VGlobal.ListaArquivos)
                 {
                     #region Header
-                    carteira = ManipulaDados_Header.getCarteira(ArquivosXML, 1);
+                    carteira = ManipulaDados_Header.cnpjcpf(ArquivosXML);
                     #endregion
 
 
