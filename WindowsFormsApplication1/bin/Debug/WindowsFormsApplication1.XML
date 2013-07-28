@@ -12,6 +12,14 @@
             Função tem como entrada um arquivo XML e métodos definidos para extrair informações dos nós 'Header'.
             </remarks>
         </member>
+        <member name="M:WindowsFormsApplication1.ManipulaDados_Header.cnpjcpf(System.IO.FileInfo)">
+            <summary>
+            Retorna conteúdo do nó 'cnpjcpf' do arquivo 'ArquivoXML'.
+            </summary>
+            <param name="ArquivosXML"></param>
+            <param name="iFile"></param>
+            <returns></returns>
+        </member>
         <member name="T:WindowsFormsApplication1.TelaXML">
             <summary>
             Interface gráfica com o usuário.

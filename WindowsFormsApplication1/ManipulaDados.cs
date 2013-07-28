@@ -16,13 +16,19 @@ namespace WindowsFormsApplication1
         public string Dados()
         {
 
+            ColetaDados teste = new ColetaDados();
+            ColetaDados teste2 = new ColetaDados();
+            teste.Set(VGlobal.ListaArquivos, "cnpjcpf");
+            teste2.Set(VGlobal.ListaArquivos, "isin");
+            int a = 0;
+            
+
             #region Variaveis
             //Variaveis Gerais
             int i = 0;
             string Retorno = "false";
             string stErro = null;
             string[] carteira;
-            int teste_resposta;
 
 
 
@@ -43,6 +49,7 @@ namespace WindowsFormsApplication1
 
                     i++; //passa para proximo arquivo
                 }
+
                 #endregion
 
                 #region Processamento dos dados XML
