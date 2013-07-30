@@ -4,6 +4,11 @@
         <name>WindowsFormsApplication1</name>
     </assembly>
     <members>
+        <member name="T:WindowsFormsApplication1.ColetaDados">
+            <summary>
+            Procura e extrai conteúdo de etiquetas específicas de arquivos XML.
+            </summary>
+        </member>
         <member name="T:WindowsFormsApplication1.ManipulaDados_Header">
             <summary>
             Retira informações do Header

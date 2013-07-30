@@ -19,7 +19,7 @@ namespace WindowsFormsApplication1
             ColetaDados teste = new ColetaDados();
             ColetaDados teste2 = new ColetaDados();
             teste.Set(VGlobal.ListaArquivos, "cnpjcpf");
-            teste2.Set(VGlobal.ListaArquivos, "isin");
+            teste2.Set(VGlobal.ListaArquivos, "isin", "codativo");
             int a = 0;
             
 
