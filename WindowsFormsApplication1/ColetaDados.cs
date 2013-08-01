@@ -13,15 +13,15 @@ namespace WindowsFormsApplication1
     /// <summary>
     /// Procura e extrai conteúdo de etiquetas específicas de arquivos XML.
     /// </summary>
-    public class ColetaDados
+    public static class ColetaDados
     {
         // Variáveis
-        private string Concat = "";              // String com todas as ocorrências concatenadas e separadas por '\n'
-        string[] Resultado = {""};
-        private int iarq = 0;
-        private Dictionary<string, List<string>> dict = new Dictionary<string,List<string>>();
+        private static string Concat = "";              // String com todas as ocorrências concatenadas e separadas por '\n'
+        static string[] Resultado = {""};
+        private static int iarq = 0;
+        private static Dictionary<string, List<string>> dict = new Dictionary<string,List<string>>();
 
-        public string[] Set(FileInfo[] ListaArquivos, string nodeOut)
+        public static string[] Set(FileInfo[] ListaArquivos, string nodeOut)
         {
             // Carrega arquivos
             int nArq = ListaArquivos.Length;     // Numero de arquivos
@@ -42,10 +42,11 @@ namespace WindowsFormsApplication1
             }
             Concat = Concat.Remove(0, 1);       // Remove o primeiro '\n' da sequência
             Resultado = Concat.Split('\n');
+            iarq = 0;
             return Resultado;
         }
 
-        public Dictionary<string, List<string>> Set(FileInfo[] ListaArquivos, string nodeOut, string commonNode)
+        public static Dictionary<string, List<string>> Set(FileInfo[] ListaArquivos, string nodeOut, string commonNode)
         {
             // Carrega arquivos
             int nArq = ListaArquivos.Length;     // Numero de arquivos
@@ -56,6 +57,7 @@ namespace WindowsFormsApplication1
                 xmldoc[iarq].Load(arq.FullName);
                 iarq++;
             }
+            iarq = 0;
 
             for (int i = 0; i < nArq - 1; i++)
             {

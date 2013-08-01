@@ -16,10 +16,8 @@ namespace WindowsFormsApplication1
         public string Dados()
         {
 
-            ColetaDados teste = new ColetaDados();
-            ColetaDados teste2 = new ColetaDados();
-            teste.Set(VGlobal.ListaArquivos, "cnpjcpf");
-            teste2.Set(VGlobal.ListaArquivos, "isin", "codativo");
+            string[] teste = ColetaDados.Set(VGlobal.ListaArquivos, "cnpjcpf");
+            Dictionary<string, List<string>> teste2 = ColetaDados.Set(VGlobal.ListaArquivos, "isin", "codativo");
             int a = 0;
             
 
