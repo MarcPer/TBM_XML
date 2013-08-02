@@ -20,3 +20,13 @@ C:\Users\MarceloP\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsAppl
 C:\Users\MarceloP\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.XML
 C:\Users\MarceloP\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
 C:\Users\MarceloP\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe.config
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.XML
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.exe
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.pdb
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.exe
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication1\bin\Debug\WindowsFormsApplication1.pdb
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csprojResolveAssemblyReference.cache
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.TelaXML.resources
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.Properties.Resources.resources
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication1\obj\Debug\WindowsFormsApplication1.csproj.GenerateResource.Cache
