@@ -45,6 +45,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="CarregaChecaXML.cs" />
     <Compile Include="ColetaDados.cs" />
     <Compile Include="ManipulaDados_Header.cs" />
     <Compile Include="ManipulaDados.cs" />

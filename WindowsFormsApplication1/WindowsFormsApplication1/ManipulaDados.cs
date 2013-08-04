@@ -15,9 +15,16 @@ namespace WindowsFormsApplication1
     {
         public string Dados()
         {
+            // Localiza arquivos XML na pasta 'pastaXML'
+            //string pastaXML = @"C:\Users\MarceloP\Documents\Visual Studio 2012\Projects\XML_files";
+            string pastaXML = "..\\..\\..\\..\\XML_files";
+            string bla = Application.StartupPath;
+            DirectoryInfo DirInfo = new DirectoryInfo(pastaXML);
+            FileInfo[] ListaArquivos = DirInfo.GetFiles("*.xml");
 
-            string[] teste = ColetaDados.Set(VGlobal.ListaArquivos, "cnpjcpf");
-            Dictionary<string, List<string>> teste2 = ColetaDados.Set(VGlobal.ListaArquivos, "isin", "codativo");
+            XmlDocument[] xmldoc = CarregaChecaXML.XMLdocs(ListaArquivos);
+            List<string> teste = ColetaDados.Set(xmldoc, "cnpjcpf");
+            Dictionary<string, List<string>> teste2 = ColetaDados.Set(xmldoc, "isin", "codativo");
             int a = 0;
             
 

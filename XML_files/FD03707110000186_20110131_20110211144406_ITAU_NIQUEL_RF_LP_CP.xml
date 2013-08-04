@@ -1,0 +1,2791 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<arquivoposicao_4_01>
+<fundo>
+<header>
+ <isin>BRFNIQCTF009</isin>
+ <cnpj>03707110000186</cnpj>
+ <nome>ITAU-UNIBANCO NIQUEL FIRF LP CP</nome>
+ <dtposicao>20110131</dtposicao>
+ <nomeadm>BTG PACTUAL SERVICOS FINANCEIROS S/A DTVM</nomeadm>
+ <cnpjadm>59281253000123</cnpjadm>
+ <nomegestor>UAM - ASSESSORIA E GESTAO DE INVESTIMENTOS LTDA.</nomegestor>
+ <cnpjgestor>59608174000184</cnpjgestor>
+ <nomecustodiante>BANCO BRADESCO S/A</nomecustodiante>
+ <cnpjcustodiante>60746948000112</cnpjcustodiante>
+ <valorcota>4.0639359284</valorcota>
+ <quantidade>30771951.6383309</quantidade>
+ <patliq>125055239.85</patliq>
+ <valorativos>125087376.81</valorativos>
+ <valorreceber>4020.93</valorreceber>
+ <valorpagar>36157.89</valorpagar>
+ <vlcotasemitir>0</vlcotasemitir>
+ <vlcotasresgatar>0</vlcotasresgatar>
+ <codanbid>261149</codanbid>
+ <tipofundo>229</tipofundo>
+ <nivelrsc></nivelrsc>
+</header>
+<titpublico>
+ <isin>BRSTNCLF1QG7</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QG</cusip>
+ <dtemissao>20060707</dtemissao>
+ <dtoperacao>20101104</dtoperacao>
+ <dtvencimento>20110615</dtvencimento>
+ <qtdisponivel>1</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4426.143503</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.56197371</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>4426.14</principal>
+ <tributos>0</tributos>
+ <valorfindisp>4536.56</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2919667   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QH5</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QH</cusip>
+ <dtemissao>20060804</dtemissao>
+ <dtoperacao>20101110</dtoperacao>
+ <dtvencimento>20110921</dtvencimento>
+ <qtdisponivel>4</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4433.274538</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.5863348</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>17733.1</principal>
+ <tributos>0</tributos>
+ <valorfindisp>18146.35</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2925443   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QH5</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QH</cusip>
+ <dtemissao>20060804</dtemissao>
+ <dtoperacao>20101129</dtoperacao>
+ <dtvencimento>20110921</dtvencimento>
+ <qtdisponivel>12</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4454.709005</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.5863348</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>53456.51</principal>
+ <tributos>0</tributos>
+ <valorfindisp>54439.04</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2948046   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QH5</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QH</cusip>
+ <dtemissao>20060804</dtemissao>
+ <dtoperacao>20101019</dtoperacao>
+ <dtvencimento>20110921</dtvencimento>
+ <qtdisponivel>7</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4406.630933</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.5863348</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>30846.42</principal>
+ <tributos>0</tributos>
+ <valorfindisp>31756.1</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2899544   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QH5</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QH</cusip>
+ <dtemissao>20060804</dtemissao>
+ <dtoperacao>20101022</dtoperacao>
+ <dtvencimento>20110921</dtvencimento>
+ <qtdisponivel>13</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4411.946813</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.5863348</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>57355.31</principal>
+ <tributos>0</tributos>
+ <valorfindisp>58975.62</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2904555   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QH5</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QH</cusip>
+ <dtemissao>20060804</dtemissao>
+ <dtoperacao>20101025</dtoperacao>
+ <dtvencimento>20110921</dtvencimento>
+ <qtdisponivel>4</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4413.720198</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.5863348</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>17654.88</principal>
+ <tributos>0</tributos>
+ <valorfindisp>18146.35</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2907174   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QH5</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QH</cusip>
+ <dtemissao>20060804</dtemissao>
+ <dtoperacao>20110111</dtoperacao>
+ <dtvencimento>20110921</dtvencimento>
+ <qtdisponivel>17</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4510.571323</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.5863348</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>76679.71</principal>
+ <tributos>0</tributos>
+ <valorfindisp>77121.97</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2994019   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QH5</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QH</cusip>
+ <dtemissao>20060804</dtemissao>
+ <dtoperacao>20101020</dtoperacao>
+ <dtvencimento>20110921</dtvencimento>
+ <qtdisponivel>4</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4408.402181</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.5863348</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>17633.61</principal>
+ <tributos>0</tributos>
+ <valorfindisp>18146.35</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2901510   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QH5</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QH</cusip>
+ <dtemissao>20060804</dtemissao>
+ <dtoperacao>20110110</dtoperacao>
+ <dtvencimento>20110921</dtvencimento>
+ <qtdisponivel>86</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4508.759096</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.5863348</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>387753.28</principal>
+ <tributos>0</tributos>
+ <valorfindisp>390146.42</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2992896   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QH5</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QH</cusip>
+ <dtemissao>20060804</dtemissao>
+ <dtoperacao>20101015</dtoperacao>
+ <dtvencimento>20110921</dtvencimento>
+ <qtdisponivel>9</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4403.090572</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.5863348</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>39627.82</principal>
+ <tributos>0</tributos>
+ <valorfindisp>40829.28</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2897106   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QH5</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QH</cusip>
+ <dtemissao>20060804</dtemissao>
+ <dtoperacao>20101026</dtoperacao>
+ <dtvencimento>20110921</dtvencimento>
+ <qtdisponivel>6</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4415.494296</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.5863348</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>26492.97</principal>
+ <tributos>0</tributos>
+ <valorfindisp>27219.52</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2908507   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QH5</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QH</cusip>
+ <dtemissao>20060804</dtemissao>
+ <dtoperacao>20101228</dtoperacao>
+ <dtvencimento>20110921</dtvencimento>
+ <qtdisponivel>2</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4492.476999</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.5863348</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>8984.95</principal>
+ <tributos>0</tributos>
+ <valorfindisp>9073.17</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2980139   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QH5</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QH</cusip>
+ <dtemissao>20060804</dtemissao>
+ <dtoperacao>20101028</dtoperacao>
+ <dtvencimento>20110921</dtvencimento>
+ <qtdisponivel>8</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4419.04463</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.5863348</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>35352.36</principal>
+ <tributos>0</tributos>
+ <valorfindisp>36292.69</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2912095   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QH5</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QH</cusip>
+ <dtemissao>20060804</dtemissao>
+ <dtoperacao>20101119</dtoperacao>
+ <dtvencimento>20110921</dtvencimento>
+ <qtdisponivel>6</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4443.984509</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.5863348</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>26663.91</principal>
+ <tributos>0</tributos>
+ <valorfindisp>27219.52</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2938456   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QH5</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QH</cusip>
+ <dtemissao>20060804</dtemissao>
+ <dtoperacao>20110124</dtoperacao>
+ <dtvencimento>20110921</dtvencimento>
+ <qtdisponivel>1</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4527.076177</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.5863348</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>4527.08</principal>
+ <tributos>0</tributos>
+ <valorfindisp>4536.59</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>3006873   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QI3</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QI</cusip>
+ <dtemissao>20060906</dtemissao>
+ <dtoperacao>20101216</dtoperacao>
+ <dtvencimento>20111221</dtvencimento>
+ <qtdisponivel>10</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4478.083706</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.58905671</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>44780.84</principal>
+ <tributos>0</tributos>
+ <valorfindisp>45365.89</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2967825   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QI3</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QI</cusip>
+ <dtemissao>20060906</dtemissao>
+ <dtoperacao>20110106</dtoperacao>
+ <dtvencimento>20111221</dtvencimento>
+ <qtdisponivel>11</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4505.140354</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.58905671</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>49556.54</principal>
+ <tributos>0</tributos>
+ <valorfindisp>49902.48</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2989855   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QI3</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QI</cusip>
+ <dtemissao>20060906</dtemissao>
+ <dtoperacao>20101223</dtoperacao>
+ <dtvencimento>20111221</dtvencimento>
+ <qtdisponivel>3</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4487.069698</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.58905671</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>13461.21</principal>
+ <tributos>0</tributos>
+ <valorfindisp>13609.77</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2976614   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QI3</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QI</cusip>
+ <dtemissao>20060906</dtemissao>
+ <dtoperacao>20110114</dtoperacao>
+ <dtvencimento>20111221</dtvencimento>
+ <qtdisponivel>17</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4516.018071</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.58905671</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>76772.31</principal>
+ <tributos>0</tributos>
+ <valorfindisp>77122.01</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2998094   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QI3</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QI</cusip>
+ <dtemissao>20060906</dtemissao>
+ <dtoperacao>20101209</dtoperacao>
+ <dtvencimento>20111221</dtvencimento>
+ <qtdisponivel>7</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4469.067483</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.58905671</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>31283.47</principal>
+ <tributos>0</tributos>
+ <valorfindisp>31756.12</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2960133   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QI3</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QI</cusip>
+ <dtemissao>20060906</dtemissao>
+ <dtoperacao>20101227</dtoperacao>
+ <dtvencimento>20111221</dtvencimento>
+ <qtdisponivel>2</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4490.677584</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.58905671</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>8981.36</principal>
+ <tributos>0</tributos>
+ <valorfindisp>9073.18</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2979031   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QI3</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QI</cusip>
+ <dtemissao>20060906</dtemissao>
+ <dtoperacao>20110126</dtoperacao>
+ <dtvencimento>20111221</dtvencimento>
+ <qtdisponivel>9</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4530.880596</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.58905671</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>40777.93</principal>
+ <tributos>0</tributos>
+ <valorfindisp>40829.3</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>3009537   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QJ1</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QJ</cusip>
+ <dtemissao>20061101</dtemissao>
+ <dtoperacao>20101108</dtoperacao>
+ <dtvencimento>20120307</dtvencimento>
+ <qtdisponivel>14</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4429.723757</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.59132497</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>62016.13</principal>
+ <tributos>0</tributos>
+ <valorfindisp>63512.28</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2922493   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QJ1</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QJ</cusip>
+ <dtemissao>20061101</dtemissao>
+ <dtoperacao>20101222</dtoperacao>
+ <dtvencimento>20120307</dtvencimento>
+ <qtdisponivel>11</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4485.274887</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.59132497</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>49338.02</principal>
+ <tributos>0</tributos>
+ <valorfindisp>49902.5</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2974807   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QJ1</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QJ</cusip>
+ <dtemissao>20061101</dtemissao>
+ <dtoperacao>20110131</dtoperacao>
+ <dtvencimento>20120307</dtvencimento>
+ <qtdisponivel>128</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4536.595512</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.59132497</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>580684.23</principal>
+ <tributos>0</tributos>
+ <valorfindisp>580683.69</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>3013685   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QJ1</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QJ</cusip>
+ <dtemissao>20061101</dtemissao>
+ <dtoperacao>20101222</dtoperacao>
+ <dtvencimento>20120307</dtvencimento>
+ <qtdisponivel>4</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4485.274887</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.59132497</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>17941.1</principal>
+ <tributos>0</tributos>
+ <valorfindisp>18146.37</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2974861   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QJ1</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QJ</cusip>
+ <dtemissao>20061101</dtemissao>
+ <dtoperacao>20101117</dtoperacao>
+ <dtvencimento>20120307</dtvencimento>
+ <qtdisponivel>316</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4440.418208</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.59132497</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>1403172.15</principal>
+ <tributos>0</tributos>
+ <valorfindisp>1433562.86</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2935500   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QJ1</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QJ</cusip>
+ <dtemissao>20061101</dtemissao>
+ <dtoperacao>20101112</dtoperacao>
+ <dtvencimento>20120307</dtvencimento>
+ <qtdisponivel>8</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4436.850125</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.59132497</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>35494.8</principal>
+ <tributos>0</tributos>
+ <valorfindisp>36292.73</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2928189   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QN3</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QN</cusip>
+ <dtemissao>20070706</dtemissao>
+ <dtoperacao>20110127</dtoperacao>
+ <dtvencimento>20130307</dtvencimento>
+ <qtdisponivel>335</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>5</depgar>
+ <pucompra>4532.795551</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.60203115</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>1518486.51</principal>
+ <tributos>0</tributos>
+ <valorfindisp>1519761.68</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>3010751   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QN3</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QN</cusip>
+ <dtemissao>20070706</dtemissao>
+ <dtoperacao>20101116</dtoperacao>
+ <dtvencimento>20130307</dtvencimento>
+ <qtdisponivel>48</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>5</depgar>
+ <pucompra>4438.557037</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.60203115</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>213050.74</principal>
+ <tributos>0</tributos>
+ <valorfindisp>217756.9</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2933980   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QN3</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QN</cusip>
+ <dtemissao>20070706</dtemissao>
+ <dtoperacao>20100924</dtoperacao>
+ <dtvencimento>20130307</dtvencimento>
+ <qtdisponivel>129</qtdisponivel>
+ <qtgarantia>15</qtgarantia>
+ <depgar>5</depgar>
+ <pucompra>4378.301033</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.60203115</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>630475.35</principal>
+ <tributos>0</tributos>
+ <valorfindisp>585221.66</valorfindisp>
+ <valorfinemgar>68049.03</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2872486   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QN3</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QN</cusip>
+ <dtemissao>20070706</dtemissao>
+ <dtoperacao>20101202</dtoperacao>
+ <dtvencimento>20130307</dtvencimento>
+ <qtdisponivel>13</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>5</depgar>
+ <pucompra>4460.097856</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.60203115</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>57981.27</principal>
+ <tributos>0</tributos>
+ <valorfindisp>58975.83</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2952648   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QN3</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QN</cusip>
+ <dtemissao>20070706</dtemissao>
+ <dtoperacao>20110120</dtoperacao>
+ <dtvencimento>20130307</dtvencimento>
+ <qtdisponivel>483</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>5</depgar>
+ <pucompra>4523.291053</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.60203115</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>2184749.58</principal>
+ <tributos>0</tributos>
+ <valorfindisp>2191178.78</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>3003786   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QN3</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QN</cusip>
+ <dtemissao>20070706</dtemissao>
+ <dtoperacao>20100714</dtoperacao>
+ <dtvencimento>20130307</dtvencimento>
+ <qtdisponivel>831</qtdisponivel>
+ <qtgarantia>47</qtgarantia>
+ <depgar>5</depgar>
+ <pucompra>4290.019557</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.60203115</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>3766637.17</principal>
+ <tributos>0</tributos>
+ <valorfindisp>3769916.29</valorfindisp>
+ <valorfinemgar>213220.3</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2792152   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QQ6</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QQ</cusip>
+ <dtemissao>20080509</dtemissao>
+ <dtoperacao>20100721</dtoperacao>
+ <dtvencimento>20120907</dtvencimento>
+ <qtdisponivel>12</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4298.26067</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.59699562</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>51579.13</principal>
+ <tributos>0</tributos>
+ <valorfindisp>54439.16</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2800478   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QQ6</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QQ</cusip>
+ <dtemissao>20080509</dtemissao>
+ <dtoperacao>20110118</dtoperacao>
+ <dtvencimento>20120907</dtvencimento>
+ <qtdisponivel>375</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4519.651889</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.59699562</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>1694869.46</principal>
+ <tributos>0</tributos>
+ <valorfindisp>1701223.87</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>3001237   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QQ6</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QQ</cusip>
+ <dtemissao>20080509</dtemissao>
+ <dtoperacao>20101123</dtoperacao>
+ <dtvencimento>20120907</dtvencimento>
+ <qtdisponivel>37</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4447.564282</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.59699562</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>164559.88</principal>
+ <tributos>0</tributos>
+ <valorfindisp>167854.09</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2941602   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QQ6</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QQ</cusip>
+ <dtemissao>20080509</dtemissao>
+ <dtoperacao>20101122</dtoperacao>
+ <dtvencimento>20120907</dtvencimento>
+ <qtdisponivel>3</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4445.77714</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.59699562</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>13337.33</principal>
+ <tributos>0</tributos>
+ <valorfindisp>13609.79</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2940243   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QQ6</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QQ</cusip>
+ <dtemissao>20080509</dtemissao>
+ <dtoperacao>20101203</dtoperacao>
+ <dtvencimento>20120907</dtvencimento>
+ <qtdisponivel>14</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4461.887302</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.59699562</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>62466.42</principal>
+ <tributos>0</tributos>
+ <valorfindisp>63512.36</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2954074   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QQ6</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QQ</cusip>
+ <dtemissao>20080509</dtemissao>
+ <dtoperacao>20101221</dtoperacao>
+ <dtvencimento>20120907</dtvencimento>
+ <qtdisponivel>5</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4483.475421</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.59699562</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>22417.38</principal>
+ <tributos>0</tributos>
+ <valorfindisp>22682.98</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2973046   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QQ6</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QQ</cusip>
+ <dtemissao>20080509</dtemissao>
+ <dtoperacao>20101124</dtoperacao>
+ <dtvencimento>20120907</dtvencimento>
+ <qtdisponivel>2</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4449.352142</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.59699562</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>8898.7</principal>
+ <tributos>0</tributos>
+ <valorfindisp>9073.19</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2942960   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QS2</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QS</cusip>
+ <dtemissao>20090109</dtemissao>
+ <dtoperacao>20101126</dtoperacao>
+ <dtvencimento>20130907</dtvencimento>
+ <qtdisponivel>353</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4452.842356</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.51679</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>1571853.35</principal>
+ <tributos>0</tributos>
+ <valorfindisp>1601390.43</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2946247   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QS2</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QS</cusip>
+ <dtemissao>20090109</dtemissao>
+ <dtoperacao>20101125</dtoperacao>
+ <dtvencimento>20130907</dtvencimento>
+ <qtdisponivel>150</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4451.052899</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.51679</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>667657.93</principal>
+ <tributos>0</tributos>
+ <valorfindisp>680477.52</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2944637   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QS2</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QS</cusip>
+ <dtemissao>20090109</dtemissao>
+ <dtoperacao>20101130</dtoperacao>
+ <dtvencimento>20130907</dtvencimento>
+ <qtdisponivel>11</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4456.423428</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.51679</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>49020.66</principal>
+ <tributos>0</tributos>
+ <valorfindisp>49901.68</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2949415   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QS2</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QS</cusip>
+ <dtemissao>20090109</dtemissao>
+ <dtoperacao>20110125</dtoperacao>
+ <dtvencimento>20130907</dtvencimento>
+ <qtdisponivel>211</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4528.917474</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.51679</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>955601.59</principal>
+ <tributos>0</tributos>
+ <valorfindisp>957205.04</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>3008064   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QS2</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QS</cusip>
+ <dtemissao>20090109</dtemissao>
+ <dtoperacao>20110128</dtoperacao>
+ <dtvencimento>20130907</dtvencimento>
+ <qtdisponivel>189</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4534.615129</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.51679</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>857042.26</principal>
+ <tributos>0</tributos>
+ <valorfindisp>857401.67</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>3012153   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLF1QS2</isin>
+ <codativo>210100</codativo>
+ <cusip>STNCLF1QS</cusip>
+ <dtemissao>20090109</dtemissao>
+ <dtoperacao>20101130</dtoperacao>
+ <dtvencimento>20130907</dtvencimento>
+ <qtdisponivel>276</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>4456.423428</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>4536.51679</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>1229972.87</principal>
+ <tributos>0</tributos>
+ <valorfindisp>1252078.63</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>SEL</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2949414   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCLTN6I4</isin>
+ <codativo>100000</codativo>
+ <cusip>STNCLTN6I</cusip>
+ <dtemissao>20100108</dtemissao>
+ <dtoperacao>20100729</dtoperacao>
+ <dtvencimento>20120701</dtvencimento>
+ <qtdisponivel>50000</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>804.396453</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>843.43870056</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>40219822.65</principal>
+ <tributos>0</tributos>
+ <valorfindisp>42171935.03</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>12.8</coupom>
+ <indexador>PRE</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2810085   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCNTB2V8</isin>
+ <codativo>760199</codativo>
+ <cusip>STNCNTB2V</cusip>
+ <dtemissao>20070509</dtemissao>
+ <dtoperacao>20100811</dtoperacao>
+ <dtvencimento>20120815</dtvencimento>
+ <qtdisponivel>1119</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1974.005528</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>2042.52095661</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>2208912.19</principal>
+ <tributos>0</tributos>
+ <valorfindisp>2285580.95</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>IAP</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2823463   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCNTB2V8</isin>
+ <codativo>760199</codativo>
+ <cusip>STNCNTB2V</cusip>
+ <dtemissao>20070509</dtemissao>
+ <dtoperacao>20101117</dtoperacao>
+ <dtvencimento>20120815</dtvencimento>
+ <qtdisponivel>95</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1991.357262</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>2042.52095661</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>189178.94</principal>
+ <tributos>0</tributos>
+ <valorfindisp>194039.49</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>IAP</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2935506   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCNTB2V8</isin>
+ <codativo>760199</codativo>
+ <cusip>STNCNTB2V</cusip>
+ <dtemissao>20070509</dtemissao>
+ <dtoperacao>20100729</dtoperacao>
+ <dtvencimento>20120815</dtvencimento>
+ <qtdisponivel>346</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1968.105479</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>2042.52095661</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>680964.5</principal>
+ <tributos>0</tributos>
+ <valorfindisp>706712.25</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>IAP</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2810089   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCNTB2V8</isin>
+ <codativo>760199</codativo>
+ <cusip>STNCNTB2V</cusip>
+ <dtemissao>20070509</dtemissao>
+ <dtoperacao>20100810</dtoperacao>
+ <dtvencimento>20120815</dtvencimento>
+ <qtdisponivel>763</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1973.771675</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>2042.52095661</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>1505987.79</principal>
+ <tributos>0</tributos>
+ <valorfindisp>1558443.49</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>IAP</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2821764   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCNTB2V8</isin>
+ <codativo>760199</codativo>
+ <cusip>STNCNTB2V</cusip>
+ <dtemissao>20070509</dtemissao>
+ <dtoperacao>20100719</dtoperacao>
+ <dtvencimento>20120815</dtvencimento>
+ <qtdisponivel>1055</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1962.172625</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>2042.52095661</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>2070092.12</principal>
+ <tributos>0</tributos>
+ <valorfindisp>2154859.61</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>IAP</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2797303   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCNTB2V8</isin>
+ <codativo>760199</codativo>
+ <cusip>STNCNTB2V</cusip>
+ <dtemissao>20070509</dtemissao>
+ <dtoperacao>20100730</dtoperacao>
+ <dtvencimento>20120815</dtvencimento>
+ <qtdisponivel>391</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1969.179966</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>2042.52095661</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>769949.37</principal>
+ <tributos>0</tributos>
+ <valorfindisp>798625.69</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>IAP</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2811768   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCNTB2V8</isin>
+ <codativo>760199</codativo>
+ <cusip>STNCNTB2V</cusip>
+ <dtemissao>20070509</dtemissao>
+ <dtoperacao>20100720</dtoperacao>
+ <dtvencimento>20120815</dtvencimento>
+ <qtdisponivel>314</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1963.400784</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>2042.52095661</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>616507.85</principal>
+ <tributos>0</tributos>
+ <valorfindisp>641351.58</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>IAP</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2799212   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCNTB2V8</isin>
+ <codativo>760199</codativo>
+ <cusip>STNCNTB2V</cusip>
+ <dtemissao>20070509</dtemissao>
+ <dtoperacao>20100723</dtoperacao>
+ <dtvencimento>20120815</dtvencimento>
+ <qtdisponivel>374</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1971.643983</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>2042.52095661</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>737394.85</principal>
+ <tributos>0</tributos>
+ <valorfindisp>763902.84</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>IAP</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2804098   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCNTB2V8</isin>
+ <codativo>760199</codativo>
+ <cusip>STNCNTB2V</cusip>
+ <dtemissao>20070509</dtemissao>
+ <dtoperacao>20100802</dtoperacao>
+ <dtvencimento>20120815</dtvencimento>
+ <qtdisponivel>261</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1974.832244</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>2042.52095661</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>515431.22</principal>
+ <tributos>0</tributos>
+ <valorfindisp>533097.97</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>IAP</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2813725   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCNTB2V8</isin>
+ <codativo>760199</codativo>
+ <cusip>STNCNTB2V</cusip>
+ <dtemissao>20070509</dtemissao>
+ <dtoperacao>20100805</dtoperacao>
+ <dtvencimento>20120815</dtvencimento>
+ <qtdisponivel>284</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1972.477047</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>2042.52095661</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>560183.48</principal>
+ <tributos>0</tributos>
+ <valorfindisp>580075.95</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>IAP</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2817681   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCNTB2V8</isin>
+ <codativo>760199</codativo>
+ <cusip>STNCNTB2V</cusip>
+ <dtemissao>20070509</dtemissao>
+ <dtoperacao>20100913</dtoperacao>
+ <dtvencimento>20120815</dtvencimento>
+ <qtdisponivel>311</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1940.011356</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>2042.52095661</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>603343.53</principal>
+ <tributos>0</tributos>
+ <valorfindisp>635224.02</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>IAP</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2858488   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCNTB2X4</isin>
+ <codativo>760199</codativo>
+ <cusip>STNCNTB2X</cusip>
+ <dtemissao>20080109</dtemissao>
+ <dtoperacao>20110104</dtoperacao>
+ <dtvencimento>20130515</dtvencimento>
+ <qtdisponivel>143</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1984.856094</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>1996.75721395</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>283834.42</principal>
+ <tributos>0</tributos>
+ <valorfindisp>285536.28</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>IAP</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2987343   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCNTB2X4</isin>
+ <codativo>760199</codativo>
+ <cusip>STNCNTB2X</cusip>
+ <dtemissao>20080109</dtemissao>
+ <dtoperacao>20101117</dtoperacao>
+ <dtvencimento>20130515</dtvencimento>
+ <qtdisponivel>8</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1955.160204</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>1996.75721395</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>15641.28</principal>
+ <tributos>0</tributos>
+ <valorfindisp>15974.06</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>IAP</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2935503   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCNTB2X4</isin>
+ <codativo>760199</codativo>
+ <cusip>STNCNTB2X</cusip>
+ <dtemissao>20080109</dtemissao>
+ <dtoperacao>20101215</dtoperacao>
+ <dtvencimento>20130515</dtvencimento>
+ <qtdisponivel>365</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1970.38022</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>1996.75721395</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>719188.78</principal>
+ <tributos>0</tributos>
+ <valorfindisp>728816.38</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>IAP</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2966136   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titpublico>
+ <isin>BRSTNCNTB2X4</isin>
+ <codativo>760199</codativo>
+ <cusip>STNCNTB2X</cusip>
+ <dtemissao>20080109</dtemissao>
+ <dtoperacao>20110127</dtoperacao>
+ <dtvencimento>20130515</dtvencimento>
+ <qtdisponivel>191</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1991.143</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>1996.75721395</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>380308.31</principal>
+ <tributos>0</tributos>
+ <valorfindisp>381380.63</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>IAP</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>3010948   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titpublico>
+<titprivado>
+ <isin>BRBBASC00UR9</isin>
+ <codativo>CDB_CDI</codativo>
+ <cusip>BBASC00UR</cusip>
+ <dtemissao>20110117</dtemissao>
+ <dtoperacao>20110117</dtoperacao>
+ <dtvencimento>20111229</dtvencimento>
+ <cnpjemissor>00000000000191</cnpjemissor>
+ <qtdisponivel>4900</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1000</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>1004.208492</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>4920621.61</principal>
+ <tributos>0</tributos>
+ <valorfindisp>4920621.61</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>101.5</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>3000302   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRBBDCC02YL8</isin>
+ <codativo>CDB_CDI</codativo>
+ <cusip>BBDCC02YL</cusip>
+ <dtemissao>20100608</dtemissao>
+ <dtoperacao>20100901</dtoperacao>
+ <dtvencimento>20130523</dtvencimento>
+ <cnpjemissor>60746948000112</cnpjemissor>
+ <qtdisponivel>3208</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1024.361328</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>1068.57373</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>3427984.53</principal>
+ <tributos>0</tributos>
+ <valorfindisp>3427984.53</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>101</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2848221   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRBBDCC02YL8</isin>
+ <codativo>CDB_CDI</codativo>
+ <cusip>BBDCC02YL</cusip>
+ <dtemissao>20100608</dtemissao>
+ <dtoperacao>20100901</dtoperacao>
+ <dtvencimento>20130523</dtvencimento>
+ <cnpjemissor>60746948000112</cnpjemissor>
+ <qtdisponivel>1061</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1024.361328</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>1068.57373</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>1133756.73</principal>
+ <tributos>0</tributos>
+ <valorfindisp>1133756.73</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>101</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2848213   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRBBDCC02YL8</isin>
+ <codativo>CDB_CDI</codativo>
+ <cusip>BBDCC02YL</cusip>
+ <dtemissao>20100608</dtemissao>
+ <dtoperacao>20100901</dtoperacao>
+ <dtvencimento>20130523</dtvencimento>
+ <cnpjemissor>60746948000112</cnpjemissor>
+ <qtdisponivel>1896</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1024.361328</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>1068.57373</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>2026015.79</principal>
+ <tributos>0</tributos>
+ <valorfindisp>2026015.79</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>101</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2848216   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRBBDCC02YL8</isin>
+ <codativo>CDB_CDI</codativo>
+ <cusip>BBDCC02YL</cusip>
+ <dtemissao>20100608</dtemissao>
+ <dtoperacao>20100916</dtoperacao>
+ <dtvencimento>20130523</dtvencimento>
+ <cnpjemissor>60746948000112</cnpjemissor>
+ <qtdisponivel>6709</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1028.51351</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>1068.57373</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>7169061.15</principal>
+ <tributos>0</tributos>
+ <valorfindisp>7169061.15</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>101</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2863405   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRBBDCC02YL8</isin>
+ <codativo>CDB_CDI</codativo>
+ <cusip>BBDCC02YL</cusip>
+ <dtemissao>20100608</dtemissao>
+ <dtoperacao>20100901</dtoperacao>
+ <dtvencimento>20130523</dtvencimento>
+ <cnpjemissor>60746948000112</cnpjemissor>
+ <qtdisponivel>2563</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1024.361328</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>1068.57373</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>2738754.47</principal>
+ <tributos>0</tributos>
+ <valorfindisp>2738754.47</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>101</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2848220   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRBBDCC02YL8</isin>
+ <codativo>CDB_CDI</codativo>
+ <cusip>BBDCC02YL</cusip>
+ <dtemissao>20100608</dtemissao>
+ <dtoperacao>20100901</dtoperacao>
+ <dtvencimento>20130523</dtvencimento>
+ <cnpjemissor>60746948000112</cnpjemissor>
+ <qtdisponivel>900</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1024.361328</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>1068.57373</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>961716.36</principal>
+ <tributos>0</tributos>
+ <valorfindisp>961716.36</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>101</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2848217   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRBBDCLFI1C2</isin>
+ <codativo>LF-DI CDIE</codativo>
+ <cusip>BBDCLFI1C</cusip>
+ <dtemissao>20100608</dtemissao>
+ <dtoperacao>20100713</dtoperacao>
+ <dtvencimento>20120608</dtvencimento>
+ <cnpjemissor>60746948000112</cnpjemissor>
+ <qtdisponivel>16</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>304304.553579</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>321626.193</puposicao>
+ <puemissao>300000</puemissao>
+ <principal>5146019.09</principal>
+ <tributos>0</tributos>
+ <valorfindisp>5146019.09</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>106</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2790888   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRBITAC01DY2</isin>
+ <codativo>CDB_CDI</codativo>
+ <cusip>BITAC01DY</cusip>
+ <dtemissao>20070326</dtemissao>
+ <dtoperacao>20100719</dtoperacao>
+ <dtvencimento>20120402</dtvencimento>
+ <cnpjemissor>60701190000104</cnpjemissor>
+ <qtdisponivel>211</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1419.7722</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>1507.10122</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>317998.36</principal>
+ <tributos>0</tributos>
+ <valorfindisp>317998.36</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>103.5</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2797380   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRBITAC01DY2</isin>
+ <codativo>CDB_CDI</codativo>
+ <cusip>BITAC01DY</cusip>
+ <dtemissao>20070326</dtemissao>
+ <dtoperacao>20101027</dtoperacao>
+ <dtvencimento>20120402</dtvencimento>
+ <cnpjemissor>60701190000104</cnpjemissor>
+ <qtdisponivel>490</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1463.314323</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>1507.10122</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>738479.6</principal>
+ <tributos>0</tributos>
+ <valorfindisp>738479.6</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>103.5</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2909846   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRBITAC01DY2</isin>
+ <codativo>CDB_CDI</codativo>
+ <cusip>BITAC01DY</cusip>
+ <dtemissao>20070326</dtemissao>
+ <dtoperacao>20101101</dtoperacao>
+ <dtvencimento>20120402</dtvencimento>
+ <cnpjemissor>60701190000104</cnpjemissor>
+ <qtdisponivel>410</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1465.166919</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>1507.10122</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>617911.5</principal>
+ <tributos>0</tributos>
+ <valorfindisp>617911.5</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>103.5</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2916100   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRBITALFI086</isin>
+ <codativo>LF-DI CDIE</codativo>
+ <cusip>BITALFI08</cusip>
+ <dtemissao>20100830</dtemissao>
+ <dtoperacao>20100830</dtoperacao>
+ <dtvencimento>20160830</dtvencimento>
+ <cnpjemissor>60701190000104</cnpjemissor>
+ <qtdisponivel>3</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1000000</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>1049463.34104186</puposicao>
+ <puemissao>1000000</puemissao>
+ <principal>3148390.02</principal>
+ <tributos>0</tributos>
+ <valorfindisp>3148390.02</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>1.35</coupom>
+ <indexador>DI1</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2845318   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRBTOYLFI027</isin>
+ <codativo>LF-DI CDIE</codativo>
+ <cusip>BTOYLFI02</cusip>
+ <dtemissao>20101013</dtemissao>
+ <dtoperacao>20101013</dtoperacao>
+ <dtvencimento>20131014</dtvencimento>
+ <cnpjemissor>02977348000169</cnpjemissor>
+ <qtdisponivel>4</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>300000</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>310086.069</puposicao>
+ <puemissao>300000</puemissao>
+ <principal>1240344.28</principal>
+ <tributos>0</tributos>
+ <valorfindisp>1240344.28</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>108</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2893539   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRBTOYLFI035</isin>
+ <codativo>LF-DI CDIE</codativo>
+ <cusip>BTOYLFI03</cusip>
+ <dtemissao>20101013</dtemissao>
+ <dtoperacao>20101013</dtoperacao>
+ <dtvencimento>20121015</dtvencimento>
+ <cnpjemissor>02977348000169</cnpjemissor>
+ <qtdisponivel>4</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>300000</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>309991.161</puposicao>
+ <puemissao>300000</puemissao>
+ <principal>1239964.64</principal>
+ <tributos>0</tributos>
+ <valorfindisp>1239964.64</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>107</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2893538   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRHSBCC02JM2</isin>
+ <codativo>CDB_CDI</codativo>
+ <cusip>HSBCC02JM</cusip>
+ <dtemissao>20100405</dtemissao>
+ <dtoperacao>20100713</dtoperacao>
+ <dtvencimento>20110927</dtvencimento>
+ <cnpjemissor>01701201000189</cnpjemissor>
+ <qtdisponivel>970</qtdisponivel>
+ <qtgarantia>200</qtgarantia>
+ <depgar>5</depgar>
+ <pucompra>1026.973392</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>1089.22434</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>1274392.48</principal>
+ <tributos>0</tributos>
+ <valorfindisp>1056547.61</valorfindisp>
+ <valorfinemgar>217844.87</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>105.7</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2790877   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRSANBLFI0S1</isin>
+ <codativo>LF-DI CDIE</codativo>
+ <cusip>SANBLFI0S</cusip>
+ <dtemissao>20100415</dtemissao>
+ <dtoperacao>20100713</dtoperacao>
+ <dtvencimento>20120416</dtvencimento>
+ <cnpjemissor>90400888000142</cnpjemissor>
+ <qtdisponivel>3</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>307256.9525</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>325874.679</puposicao>
+ <puemissao>300000</puemissao>
+ <principal>977624.04</principal>
+ <tributos>0</tributos>
+ <valorfindisp>977624.04</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>105.75</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2790891   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRSANBLFI1M2</isin>
+ <codativo>LF-DI CDIE</codativo>
+ <cusip>SANBLFI1M</cusip>
+ <dtemissao>20100721</dtemissao>
+ <dtoperacao>20100721</dtoperacao>
+ <dtvencimento>20120723</dtvencimento>
+ <cnpjemissor>90400888000142</cnpjemissor>
+ <qtdisponivel>15</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>300000</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>317622.84</puposicao>
+ <puemissao>300000</puemissao>
+ <principal>4764342.6</principal>
+ <tributos>0</tributos>
+ <valorfindisp>4764342.6</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>106</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2800924   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRUBBRC0DNM8</isin>
+ <codativo>CDB_CDI</codativo>
+ <cusip>UBBRC0DNM</cusip>
+ <dtemissao>20080218</dtemissao>
+ <dtoperacao>20100917</dtoperacao>
+ <dtvencimento>20130218</dtvencimento>
+ <cnpjemissor>33700394000140</cnpjemissor>
+ <qtdisponivel>152</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1316.309803</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>1348.73292</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>205007.4</principal>
+ <tributos>0</tributos>
+ <valorfindisp>205007.4</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>100</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2864807   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRZXSZC0KDQ5</isin>
+ <codativo>CDB_CDI</codativo>
+ <cusip>ZXSZC0KDQ</cusip>
+ <dtemissao>20100426</dtemissao>
+ <dtoperacao>20100713</dtoperacao>
+ <dtvencimento>20110420</dtvencimento>
+ <cnpjemissor>59588111000103</cnpjemissor>
+ <qtdisponivel>2937</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>1022.390608</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>1084.44326</puposicao>
+ <puemissao>1000</puemissao>
+ <principal>3185009.85</principal>
+ <tributos>0</tributos>
+ <valorfindisp>3185009.85</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>106.3</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2790886   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRZXSZC0MPF8</isin>
+ <codativo>LF-DI CDIE</codativo>
+ <cusip>ZXSZC0MPF</cusip>
+ <dtemissao>20100917</dtemissao>
+ <dtoperacao>20100917</dtoperacao>
+ <dtvencimento>20120917</dtvencimento>
+ <cnpjemissor>59588111000103</cnpjemissor>
+ <qtdisponivel>10</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>300000</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>312282.846</puposicao>
+ <puemissao>300000</puemissao>
+ <principal>3122828.46</principal>
+ <tributos>0</tributos>
+ <valorfindisp>3122828.46</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>107.2</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2865611   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<titprivado>
+ <isin>BRZXSZLFI091</isin>
+ <codativo>LF-DI CDIE</codativo>
+ <cusip>ZXSZLFI09</cusip>
+ <dtemissao>20100820</dtemissao>
+ <dtoperacao>20100820</dtoperacao>
+ <dtvencimento>20120820</dtvencimento>
+ <cnpjemissor>59588111000103</cnpjemissor>
+ <qtdisponivel>9</qtdisponivel>
+ <qtgarantia>0</qtgarantia>
+ <depgar>0</depgar>
+ <pucompra>300000</pucompra>
+ <puvencimento>1</puvencimento>
+ <puposicao>314954.934</puposicao>
+ <puemissao>300000</puemissao>
+ <principal>2834594.41</principal>
+ <tributos>0</tributos>
+ <valorfindisp>2834594.41</valorfindisp>
+ <valorfinemgar>0</valorfinemgar>
+ <coupom>0</coupom>
+ <indexador>DI1</indexador>
+ <percindex>108</percindex>
+ <caracteristica>N</caracteristica>
+ <percprovcred>0</percprovcred>
+ <classeoperacao>C</classeoperacao>
+ <idinternoativo>2836454   </idinternoativo>
+ <nivelrsc>BB</nivelrsc>
+</titprivado>
+<opcoesderiv>
+ <isin>BRBMEFCIJ395</isin>
+ <mercado>2</mercado>
+ <ativo>IDI</ativo>
+ <serie>JC8D</serie>
+ <callput>C</callput>
+ <quantidade>285</quantidade>
+ <valorfinanceiro>99330.87</valorfinanceiro>
+ <tributos>0</tributos>
+ <precoexercicio>304500</precoexercicio>
+ <premio>0</premio>
+ <dtvencimento>20110401</dtvencimento>
+ <classeoperacao>V</classeoperacao>
+ <puposicao>348.52937165</puposicao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</opcoesderiv>
+<opcoesderiv>
+ <isin>BRBMEFCIJ3H7</isin>
+ <mercado>2</mercado>
+ <ativo>IDI</ativo>
+ <serie>JC8N</serie>
+ <callput>C</callput>
+ <quantidade>171</quantidade>
+ <valorfinanceiro>42803.47</valorfinanceiro>
+ <tributos>0</tributos>
+ <precoexercicio>304600</precoexercicio>
+ <premio>0</premio>
+ <dtvencimento>20110401</dtvencimento>
+ <classeoperacao>C</classeoperacao>
+ <puposicao>250.31270674</puposicao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</opcoesderiv>
+<opcoesderiv>
+ <isin>BRBMEFCIJ3I5</isin>
+ <mercado>2</mercado>
+ <ativo>IDI</ativo>
+ <serie>JC8P</serie>
+ <callput>C</callput>
+ <quantidade>265</quantidade>
+ <valorfinanceiro>40330.93</valorfinanceiro>
+ <tributos>0</tributos>
+ <precoexercicio>304700</precoexercicio>
+ <premio>0</premio>
+ <dtvencimento>20110401</dtvencimento>
+ <classeoperacao>C</classeoperacao>
+ <puposicao>152.19218104</puposicao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</opcoesderiv>
+<opcoesderiv>
+ <isin>BRBMEFCIJ3L9</isin>
+ <mercado>2</mercado>
+ <ativo>IDI</ativo>
+ <serie>JC8S</serie>
+ <callput>C</callput>
+ <quantidade>151</quantidade>
+ <valorfinanceiro>8709.58</valorfinanceiro>
+ <tributos>0</tributos>
+ <precoexercicio>304800</precoexercicio>
+ <premio>0</premio>
+ <dtvencimento>20110401</dtvencimento>
+ <classeoperacao>V</classeoperacao>
+ <puposicao>57.67931485</puposicao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</opcoesderiv>
+<opcoesderiv>
+ <isin>BRBMEFCIN6O0</isin>
+ <mercado>2</mercado>
+ <ativo>IDI</ativo>
+ <serie>NC8F</serie>
+ <callput>C</callput>
+ <quantidade>314</quantidade>
+ <valorfinanceiro>488069.11</valorfinanceiro>
+ <tributos>0</tributos>
+ <precoexercicio>312000</precoexercicio>
+ <premio>0</premio>
+ <dtvencimento>20110701</dtvencimento>
+ <classeoperacao>V</classeoperacao>
+ <puposicao>1554.36021182</puposicao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</opcoesderiv>
+<opcoesderiv>
+ <isin>BRBMEFCIN6Q5</isin>
+ <mercado>2</mercado>
+ <ativo>IDI</ativo>
+ <serie>NC8H</serie>
+ <callput>C</callput>
+ <quantidade>1526</quantidade>
+ <valorfinanceiro>4081.45</valorfinanceiro>
+ <tributos>0</tributos>
+ <precoexercicio>314000</precoexercicio>
+ <premio>0</premio>
+ <dtvencimento>20110701</dtvencimento>
+ <classeoperacao>V</classeoperacao>
+ <puposicao>2.67460435</puposicao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</opcoesderiv>
+<opcoesderiv>
+ <isin>BRBMEFCIN710</isin>
+ <mercado>2</mercado>
+ <ativo>IDI</ativo>
+ <serie>NC8Q</serie>
+ <callput>C</callput>
+ <quantidade>763</quantidade>
+ <valorfinanceiro>0.42</valorfinanceiro>
+ <tributos>0</tributos>
+ <precoexercicio>314500</precoexercicio>
+ <premio>0</premio>
+ <dtvencimento>20110701</dtvencimento>
+ <classeoperacao>C</classeoperacao>
+ <puposicao>0.0005527</puposicao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</opcoesderiv>
+<opcoesderiv>
+ <isin>BRBMEFCIN7E9</isin>
+ <mercado>2</mercado>
+ <ativo>IDI</ativo>
+ <serie>NC94</serie>
+ <callput>C</callput>
+ <quantidade>502</quantidade>
+ <valorfinanceiro>69053.19</valorfinanceiro>
+ <tributos>0</tributos>
+ <precoexercicio>313500</precoexercicio>
+ <premio>0</premio>
+ <dtvencimento>20110701</dtvencimento>
+ <classeoperacao>C</classeoperacao>
+ <puposicao>137.55616465</puposicao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</opcoesderiv>
+<opcoesderiv>
+ <isin>BRBMEFCIN7I0</isin>
+ <mercado>2</mercado>
+ <ativo>IDI</ativo>
+ <serie>NC98</serie>
+ <callput>C</callput>
+ <quantidade>192</quantidade>
+ <valorfinanceiro>43163.49</valorfinanceiro>
+ <tributos>0</tributos>
+ <precoexercicio>313400</precoexercicio>
+ <premio>0</premio>
+ <dtvencimento>20110701</dtvencimento>
+ <classeoperacao>C</classeoperacao>
+ <puposicao>224.80986871</puposicao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</opcoesderiv>
+<opcoesderiv>
+ <isin>BRBMEFCIN7J8</isin>
+ <mercado>2</mercado>
+ <ativo>IDI</ativo>
+ <serie>NC99</serie>
+ <callput>C</callput>
+ <quantidade>314</quantidade>
+ <valorfinanceiro>398136.99</valorfinanceiro>
+ <tributos>0</tributos>
+ <precoexercicio>312300</precoexercicio>
+ <premio>0</premio>
+ <dtvencimento>20110701</dtvencimento>
+ <classeoperacao>C</classeoperacao>
+ <puposicao>1267.95219279</puposicao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</opcoesderiv>
+<opcoesderiv>
+ <isin>BRBMEFCIN7V3</isin>
+ <mercado>2</mercado>
+ <ativo>IDI</ativo>
+ <serie>NC9P</serie>
+ <callput>C</callput>
+ <quantidade>314</quantidade>
+ <valorfinanceiro>518046.48</valorfinanceiro>
+ <tributos>0</tributos>
+ <precoexercicio>311900</precoexercicio>
+ <premio>0</premio>
+ <dtvencimento>20110701</dtvencimento>
+ <classeoperacao>C</classeoperacao>
+ <puposicao>1649.82955149</puposicao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</opcoesderiv>
+<opcoesderiv>
+ <isin>BRBMEFCIN7W1</isin>
+ <mercado>2</mercado>
+ <ativo>IDI</ativo>
+ <serie>NC9Q</serie>
+ <callput>C</callput>
+ <quantidade>314</quantidade>
+ <valorfinanceiro>428114.36</valorfinanceiro>
+ <tributos>0</tributos>
+ <precoexercicio>312200</precoexercicio>
+ <premio>0</premio>
+ <dtvencimento>20110701</dtvencimento>
+ <classeoperacao>V</classeoperacao>
+ <puposicao>1363.42153247</puposicao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</opcoesderiv>
+<opcoesderiv>
+ <isin>BRBMEFCIN819</isin>
+ <mercado>2</mercado>
+ <ativo>IDI</ativo>
+ <serie>NC9W</serie>
+ <callput>C</callput>
+ <quantidade>191</quantidade>
+ <valorfinanceiro>15726.58</valorfinanceiro>
+ <tributos>0</tributos>
+ <precoexercicio>313600</precoexercicio>
+ <premio>0</premio>
+ <dtvencimento>20110701</dtvencimento>
+ <classeoperacao>C</classeoperacao>
+ <puposicao>82.33812624</puposicao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</opcoesderiv>
+<opcoesderiv>
+ <isin>BRBMEFVIF732</isin>
+ <mercado>2</mercado>
+ <ativo>IDI</ativo>
+ <serie>FDF2</serie>
+ <callput>P</callput>
+ <quantidade>64</quantidade>
+ <valorfinanceiro>0</valorfinanceiro>
+ <tributos>0</tributos>
+ <precoexercicio>328000</precoexercicio>
+ <premio>0</premio>
+ <dtvencimento>20120102</dtvencimento>
+ <classeoperacao>C</classeoperacao>
+ <puposicao>0.00001572</puposicao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</opcoesderiv>
+<opcoesderiv>
+ <isin>BRBMEFVIF7Y4</isin>
+ <mercado>2</mercado>
+ <ativo>IDI</ativo>
+ <serie>FDF6</serie>
+ <callput>P</callput>
+ <quantidade>64</quantidade>
+ <valorfinanceiro>0.16</valorfinanceiro>
+ <tributos>0</tributos>
+ <precoexercicio>329000</precoexercicio>
+ <premio>0</premio>
+ <dtvencimento>20120102</dtvencimento>
+ <classeoperacao>C</classeoperacao>
+ <puposicao>0.00256897</puposicao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</opcoesderiv>
+<opcoesderiv>
+ <isin>BRBMEFVIFAS5</isin>
+ <mercado>2</mercado>
+ <ativo>IDI</ativo>
+ <serie>FDG1</serie>
+ <callput>P</callput>
+ <quantidade>128</quantidade>
+ <valorfinanceiro>0.03</valorfinanceiro>
+ <tributos>0</tributos>
+ <precoexercicio>328500</precoexercicio>
+ <premio>0</premio>
+ <dtvencimento>20120102</dtvencimento>
+ <classeoperacao>V</classeoperacao>
+ <puposicao>0.00022636</puposicao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</opcoesderiv>
+<opcoesderiv>
+ <isin>BRBMEFVIN7O5</isin>
+ <mercado>2</mercado>
+ <ativo>IDI</ativo>
+ <serie>NCFG</serie>
+ <callput>P</callput>
+ <quantidade>691</quantidade>
+ <valorfinanceiro>0</valorfinanceiro>
+ <tributos>0</tributos>
+ <precoexercicio>312100</precoexercicio>
+ <premio>0</premio>
+ <dtvencimento>20110701</dtvencimento>
+ <classeoperacao>C</classeoperacao>
+ <puposicao>0</puposicao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</opcoesderiv>
+<opcoesderiv>
+ <isin>BRBMEFVIN7V0</isin>
+ <mercado>2</mercado>
+ <ativo>IDI</ativo>
+ <serie>NCFP</serie>
+ <callput>P</callput>
+ <quantidade>691</quantidade>
+ <valorfinanceiro>0</valorfinanceiro>
+ <tributos>0</tributos>
+ <precoexercicio>311900</precoexercicio>
+ <premio>0</premio>
+ <dtvencimento>20110701</dtvencimento>
+ <classeoperacao>V</classeoperacao>
+ <puposicao>0</puposicao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</opcoesderiv>
+<futuros>
+ <isin>BRBMEFD1I0U9</isin>
+ <ativo>DI1</ativo>
+ <cnpjcorretora>61194353000164</cnpjcorretora>
+ <serie>F12 </serie>
+ <quantidade>192</quantidade>
+ <vltotalpos>17259106.19</vltotalpos>
+ <tributos>0</tributos>
+ <dtvencimento>20120102</dtvencimento>
+ <vlajuste>-3785.84</vlajuste>
+ <classeoperacao>V</classeoperacao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</futuros>
+<futuros>
+ <isin>BRBMEFD1I132</isin>
+ <ativo>DI1</ativo>
+ <cnpjcorretora>61194353000164</cnpjcorretora>
+ <serie>F13 </serie>
+ <quantidade>35</quantidade>
+ <vltotalpos>2776745.12</vltotalpos>
+ <tributos>0</tributos>
+ <dtvencimento>20130102</dtvencimento>
+ <vlajuste>1660.67</vlajuste>
+ <classeoperacao>V</classeoperacao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</futuros>
+<futuros>
+ <isin>BRBMEFD1I1E1</isin>
+ <ativo>DI1</ativo>
+ <cnpjcorretora>61194353000164</cnpjcorretora>
+ <serie>F14 </serie>
+ <quantidade>4</quantidade>
+ <vltotalpos>280827.2</vltotalpos>
+ <tributos>0</tributos>
+ <dtvencimento>20140102</dtvencimento>
+ <vlajuste>491.28</vlajuste>
+ <classeoperacao>V</classeoperacao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</futuros>
+<futuros>
+ <isin>BRBMEFD2I015</isin>
+ <ativo>DI1</ativo>
+ <cnpjcorretora>61194353000164</cnpjcorretora>
+ <serie>F17 </serie>
+ <quantidade>9</quantidade>
+ <vltotalpos>442847.6</vltotalpos>
+ <tributos>0</tributos>
+ <dtvencimento>20170102</dtvencimento>
+ <vlajuste>3706.47</vlajuste>
+ <classeoperacao>V</classeoperacao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</futuros>
+<futuros>
+ <isin>BRBMEFD1I1M4</isin>
+ <ativo>DI1</ativo>
+ <cnpjcorretora>61194353000164</cnpjcorretora>
+ <serie>J11 </serie>
+ <quantidade>58</quantidade>
+ <vltotalpos>5698962.5</vltotalpos>
+ <tributos>0</tributos>
+ <dtvencimento>20110401</dtvencimento>
+ <vlajuste>-60.9</vlajuste>
+ <classeoperacao>C</classeoperacao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</futuros>
+<futuros>
+ <isin>BRBMEFD1I1F8</isin>
+ <ativo>DI1</ativo>
+ <cnpjcorretora>61194353000164</cnpjcorretora>
+ <serie>N11 </serie>
+ <quantidade>710</quantidade>
+ <vltotalpos>67811647.26</vltotalpos>
+ <tributos>0</tributos>
+ <dtvencimento>20110701</dtvencimento>
+ <vlajuste>4338.1</vlajuste>
+ <classeoperacao>C</classeoperacao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</futuros>
+<futuros>
+ <isin>BRBMEFD1I1T9</isin>
+ <ativo>DI1</ativo>
+ <cnpjcorretora>61194353000164</cnpjcorretora>
+ <serie>N12 </serie>
+ <quantidade>500</quantidade>
+ <vltotalpos>42231441.71</vltotalpos>
+ <tributos>0</tributos>
+ <dtvencimento>20120702</dtvencimento>
+ <vlajuste>2925</vlajuste>
+ <classeoperacao>V</classeoperacao>
+ <hedge>N</hedge>
+ <tphedge>0</tphedge>
+</futuros>
+<caixa>
+ <isininstituicao>BRBPAC</isininstituicao>
+ <tpconta>D</tpconta>
+ <saldo>31496.54</saldo>
+ <nivelrsc></nivelrsc>
+</caixa>
+<despesas>
+ <txadm>19278.69</txadm>
+ <tributos>0</tributos>
+ <perctaxaadm>0.17533</perctaxaadm>
+ <txperf>S</txperf>
+ <vltxperf>4570.77</vltxperf>
+ <perctxperf>20</perctxperf>
+ <percindex>105</percindex>
+ <outtax>0</outtax>
+ <indexador>DI1</indexador>
+</despesas>
+<provisao>
+ <codprov>15</codprov>
+ <credeb>D</credeb>
+ <dt>00000000</dt>
+ <valor>1284.02</valor>
+</provisao>
+<provisao>
+ <codprov>35</codprov>
+ <credeb>D</credeb>
+ <dt>00000000</dt>
+ <valor>3984.96</valor>
+</provisao>
+<provisao>
+ <codprov>22</codprov>
+ <credeb>D</credeb>
+ <dt>00000000</dt>
+ <valor>8028.43</valor>
+</provisao>
+<provisao>
+ <codprov>2</codprov>
+ <credeb>D</credeb>
+ <dt>00000000</dt>
+ <valor>4719.81</valor>
+</provisao>
+<provisao>
+ <codprov>14</codprov>
+ <credeb>C</credeb>
+ <dt>00000000</dt>
+ <valor>3809.03</valor>
+</provisao>
+<provisao>
+ <codprov>12</codprov>
+ <credeb>C</credeb>
+ <dt>00000000</dt>
+ <valor>211.9</valor>
+</provisao>
+<provisao>
+ <codprov>34</codprov>
+ <credeb>D</credeb>
+ <dt>20110201</dt>
+ <valor>18140.67</valor>
+</provisao>
+<corretagem>
+ <cnpjcorretora>61194353000164</cnpjcorretora>
+ <tpcorretora>1</tpcorretora>
+ <numope>4</numope>
+ <vlbov>0</vlbov>
+ <vlrepassebov>0</vlrepassebov>
+ <vlbmf>27.16</vlbmf>
+ <vlrepassebmf>0</vlrepassebmf>
+ <vloutbolsas>0</vloutbolsas>
+ <vlrepasseoutbol>0</vlrepasseoutbol>
+</corretagem>
+</fundo>
+</arquivoposicao_4_01>

@@ -9,6 +9,14 @@
             Procura e extrai conteúdo de etiquetas específicas de arquivos XML.
             </summary>
         </member>
+        <member name="M:WindowsFormsApplication1.ColetaDados.Set(System.Xml.XmlDocument[],System.String)">
+            <summary>
+            Retorna lista com conteúdo de etiquetas com nome 'nodeOut'
+            </summary>
+            <param name="xmldoc"></param>
+            <param name="nodeOut"></param>
+            <returns></returns>
+        </member>
         <member name="T:WindowsFormsApplication1.ManipulaDados_Header">
             <summary>
             Retira informações do Header

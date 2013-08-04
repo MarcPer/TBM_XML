@@ -16,49 +16,30 @@ namespace WindowsFormsApplication1
     public static class ColetaDados
     {
         // Variáveis
-        private static string Concat = "";              // String com todas as ocorrências concatenadas e separadas por '\n'
-        static string[] Resultado = {""};
         private static int iarq = 0;
+        private static List<string> lista = new List<string>();
         private static Dictionary<string, List<string>> dict = new Dictionary<string,List<string>>();
 
-        public static string[] Set(FileInfo[] ListaArquivos, string nodeOut)
+        /// <summary>
+        /// Retorna lista com conteúdo de etiquetas com nome 'nodeOut'
+        /// </summary>
+        /// <param name="xmldoc"></param>
+        /// <param name="nodeOut"></param>
+        /// <returns></returns>
+        public static List<string> Set(XmlDocument[] xmldoc, string nodeOut)
         {
-            // Carrega arquivos
-            int nArq = ListaArquivos.Length;     // Numero de arquivos
-            XmlDocument[] xmldoc = new XmlDocument[nArq];
-            foreach(FileInfo arq in ListaArquivos) {
-                xmldoc[iarq] = new XmlDocument();
-                xmldoc[iarq].Load(arq.FullName);
-                iarq++;
-            }
-
+            int nArq = xmldoc.Length;
             for (int i = 0; i < nArq - 1; i++)
             {
                 XmlNode node = xmldoc[i].SelectSingleNode("//" + nodeOut);
-                if (node != null)
-                {
-                    Concat = Concat + "\n" + node.InnerText;
-                }
+                if (node != null) {lista.Add(node.InnerText);}
             }
-            Concat = Concat.Remove(0, 1);       // Remove o primeiro '\n' da sequência
-            Resultado = Concat.Split('\n');
-            iarq = 0;
-            return Resultado;
+            return lista;
         }
 
-        public static Dictionary<string, List<string>> Set(FileInfo[] ListaArquivos, string nodeOut, string commonNode)
+        public static Dictionary<string, List<string>> Set(XmlDocument[] xmldoc, string nodeOut, string commonNode)
         {
-            // Carrega arquivos
-            int nArq = ListaArquivos.Length;     // Numero de arquivos
-            XmlDocument[] xmldoc = new XmlDocument[nArq];
-            foreach (FileInfo arq in ListaArquivos)
-            {
-                xmldoc[iarq] = new XmlDocument();
-                xmldoc[iarq].Load(arq.FullName);
-                iarq++;
-            }
-            iarq = 0;
-
+            int nArq = xmldoc.Length;
             for (int i = 0; i < nArq - 1; i++)
             {
                 XmlNodeList nodes = xmldoc[i].SelectNodes("//carteira/*");
@@ -92,9 +73,6 @@ namespace WindowsFormsApplication1
                             dict[loc_key].Add(loc_value);
                         }
                     }
-                    
-
-
                 }
             }
            

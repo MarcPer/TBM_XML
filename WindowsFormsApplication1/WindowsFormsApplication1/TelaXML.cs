@@ -31,7 +31,7 @@ namespace WindowsFormsApplication1
         private void button1_Click(object sender, EventArgs e)
         {
             //Joga o Caminho da barra de endereços na variável global do Endereço
-            VGlobal.CaminhoXML = @"C:\input\";
+            VGlobal.CaminhoXML = @"C:\Users\MarceloP\Documents\Visual Studio 2012\Projects\TBM_XML\XML_files";
             //string CaminhoAux = Convert.ToString(CaminhoXML.);
             //CaminhoAux = CaminhoAux.Replace("\\", "//"); //está incompleta a tratativa
             //VGlobal.CaminhoXML = CaminhoAux;
