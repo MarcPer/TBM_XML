@@ -14,8 +14,13 @@ namespace XMLBackOffice
         #region Variaveis Constantes
         //Regiao de variaveis contantes
         public static bool RetornoFalha = false;
-        public static string ParamConexSQL = "User Id=sa;Password=senha123;Data Source=win-9obdok4fg8q\\sqlexpress;Trusted_Connection=yes;Database=BDXMLProj;connection timeout=10";
+        #endregion
+
+        #region Variaveis SQL
+        //Regiao de variaveis contantes
+        public static string ParamConexSQL = @"User Id=sa;Password=senha123;Data Source=192.168.74.133,1433;Network Library=DBMSSOCN;Trusted_Connection=yes;Initial Catalog=BDXMLProj;connection timeout=5";
         //"User Id=sa;Password=faika123;Server=WIN-VFN6FLHC64A\\SQLEXPRESS;Trusted_Connection=yes;Database=XMLProj;connection timeout=10";
+        //Data Source=190.190.200.100,1433;Network Library=DBMSSOCN; Initial Catalog=myDataBase
         #endregion
 
         #region Variaveis Tela

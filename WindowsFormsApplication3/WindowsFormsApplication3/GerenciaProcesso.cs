@@ -15,7 +15,7 @@ namespace XMLBackOffice
 {
     class ProcessoEmissor
     {
-        public static RichTextBox LogLocal= new RichTextBox();
+        public static RichTextBox LogLocal = new RichTextBox();
 
         public void GerenciaProcessoCadastroEmissor()
         {
@@ -79,42 +79,44 @@ namespace XMLBackOffice
             {
 
                 dataTable = Consulta.ConsultaEmissor(OQue, DeOnde, ConsultaCNPJ);
-                if (VGlobal.RetornoFalha == true)
-                {
-                    DialogResult dialogResult = MessageBox.Show("Falha na consulta do Emissor!", "ERROR", MessageBoxButtons.OK);
-                    LogLocal.Text += "Falha na consulta do Emissor:" + ConsultaCNPJ + "\r\n";
-                    dataTable = null;
-                }
+
             }
             catch (Exception e)
             {
                 VGlobal.rtLOG.Text += e.ToString();
                 VGlobal.RetornoFalha = true;
             }
-            finally
+
+            if (VGlobal.RetornoFalha == true)
             {
-                Emissor = new string[dataTable.Rows.Count, 4];
-
-                if (dataTable.Rows.Count != 0)
-                {
-                    LogLocal.Text += "Total de colunas pesquisadas: " + dataTable.Rows.Count + "\r\n";
-                    for (int i = 0; i < dataTable.Rows.Count; i++)
-                    {
-                        Emissor[i, 0] = dataTable.Rows[i][0].ToString();
-                        Emissor[i, 1] = dataTable.Rows[i][1].ToString();
-                        Emissor[i, 2] = dataTable.Rows[i][2].ToString();
-                        Emissor[i, 3] = dataTable.Rows[i][3].ToString();
-                    }
-                }
-                else
-                {
-                    DialogResult dialogResult = MessageBox.Show("Não foram encontrados resultados para esta busca!", "ERROR", MessageBoxButtons.OK);
-                    VGlobal.rtLOG.Text += "Não foram encontrados resultados para esta busca:" + ConsultaCNPJ + "\r\n";
-                }
-
+                DialogResult dialogResult = MessageBox.Show("Falha na consulta do Emissor!", "ERROR", MessageBoxButtons.OK);
+                LogLocal.Text += "Falha na consulta do Emissor:" + ConsultaCNPJ + "\r\n";
+                dataTable = null;
             }
+
+            Emissor = new string[dataTable.Rows.Count, 4];
+
+            if (dataTable.Rows.Count != 0)
+            {
+                LogLocal.Text += "Total de colunas pesquisadas: " + dataTable.Rows.Count + "\r\n";
+                for (int i = 0; i < dataTable.Rows.Count; i++)
+                {
+                    Emissor[i, 0] = dataTable.Rows[i][0].ToString();
+                    Emissor[i, 1] = dataTable.Rows[i][1].ToString();
+                    Emissor[i, 2] = dataTable.Rows[i][2].ToString();
+                    Emissor[i, 3] = dataTable.Rows[i][3].ToString();
+                }
+            }
+            else
+            {
+                DialogResult dialogResult2 = MessageBox.Show("Não foram encontrados resultados para esta busca!", "ERROR", MessageBoxButtons.OK);
+                VGlobal.rtLOG.Text += "Não foram encontrados resultados para esta busca:" + ConsultaCNPJ + "\r\n";
+            }
+
             GravaLog(LogLocal);
             return Emissor;
+
+
         }
 
         public void GerenciaProcessoCadastroTipoAtivo()
