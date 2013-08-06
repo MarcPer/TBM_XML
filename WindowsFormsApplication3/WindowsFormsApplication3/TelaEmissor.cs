@@ -22,7 +22,7 @@ namespace XMLBackOffice
         {
             //Inicializa variaveis com valor padrao
             EnderecoCadastro.Text = "c:\\input\\EMISSOR.txt";
-            ConsultaTipo.Text = "";
+            ConsultaCodigo.Text = "";
             ConsultaNome.Text = "";
             ConsultaCNPJ.Text = "";
             ConsultaData.Text = "";
@@ -64,7 +64,7 @@ namespace XMLBackOffice
             #endregion
 
             ProcessoEmissor obProgramaEmissor = new ProcessoEmissor();
-            VGlobal.Emissor = obProgramaEmissor.GerenciaProcessoConsultaEmissor(ConsultaCNPJ.Text);
+            VGlobal.Emissor = obProgramaEmissor.GerenciaProcessoConsultaEmissor(ConsultaCodigo.Text, ConsultaNome.Text, ConsultaCNPJ.Text, ConsultaData.Text);
 
             if (VGlobal.RetornoFalha == false)
             {
@@ -74,7 +74,7 @@ namespace XMLBackOffice
                     btDireita.Enabled = true;
 
                 }
-                ConsultaTipo.Text = VGlobal.Emissor[VGlobal.Emissor.GetLowerBound(0), 0];
+                ConsultaCodigo.Text = VGlobal.Emissor[VGlobal.Emissor.GetLowerBound(0), 0];
                 ConsultaNome.Text = VGlobal.Emissor[VGlobal.Emissor.GetLowerBound(0), 1];
                 ConsultaCNPJ.Text = VGlobal.Emissor[VGlobal.Emissor.GetLowerBound(0), 2];
                 ConsultaData.Text = VGlobal.Emissor[VGlobal.Emissor.GetLowerBound(0), 3];
@@ -88,7 +88,7 @@ namespace XMLBackOffice
         private void btLimpa_Click(object sender, EventArgs e)
         {
             EnderecoCadastro.Text = "";
-            ConsultaTipo.Text = "";
+            ConsultaCodigo.Text = "";
             ConsultaNome.Text = "";
             ConsultaCNPJ.Text = "";
             ConsultaData.Text = "";
@@ -108,7 +108,7 @@ namespace XMLBackOffice
             {
                 VGlobal.EmissorContagem--;
             }
-            ConsultaTipo.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 0];
+            ConsultaCodigo.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 0];
             ConsultaNome.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 1];
             ConsultaCNPJ.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 2];
             ConsultaData.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 3];
@@ -125,7 +125,7 @@ namespace XMLBackOffice
             {
                 VGlobal.EmissorContagem++;
             }
-            ConsultaTipo.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 0];
+            ConsultaCodigo.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 0];
             ConsultaNome.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 1];
             ConsultaCNPJ.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 2];
             ConsultaData.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 3];

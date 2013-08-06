@@ -49,7 +49,7 @@
             this.lbPrimeiro = new System.Windows.Forms.Label();
             this.btEsquerda = new System.Windows.Forms.Button();
             this.lbCodigo = new System.Windows.Forms.Label();
-            this.ConsultaTipo = new System.Windows.Forms.TextBox();
+            this.ConsultaCodigo = new System.Windows.Forms.TextBox();
             this.btDireita = new System.Windows.Forms.Button();
             this.lbConsulta = new System.Windows.Forms.Label();
             this.btConsulta = new System.Windows.Forms.Button();
@@ -247,12 +247,12 @@
             this.lbCodigo.Text = "Código";
             this.lbCodigo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // ConsultaTipo
+            // ConsultaCodigo
             // 
-            this.ConsultaTipo.Location = new System.Drawing.Point(74, 193);
-            this.ConsultaTipo.Name = "ConsultaTipo";
-            this.ConsultaTipo.Size = new System.Drawing.Size(115, 20);
-            this.ConsultaTipo.TabIndex = 30;
+            this.ConsultaCodigo.Location = new System.Drawing.Point(74, 193);
+            this.ConsultaCodigo.Name = "ConsultaCodigo";
+            this.ConsultaCodigo.Size = new System.Drawing.Size(115, 20);
+            this.ConsultaCodigo.TabIndex = 30;
             // 
             // btDireita
             // 
@@ -306,7 +306,7 @@
             this.Controls.Add(this.lbPrimeiro);
             this.Controls.Add(this.btEsquerda);
             this.Controls.Add(this.lbCodigo);
-            this.Controls.Add(this.ConsultaTipo);
+            this.Controls.Add(this.ConsultaCodigo);
             this.Controls.Add(this.btDireita);
             this.Controls.Add(this.lbConsulta);
             this.Controls.Add(this.btConsulta);
@@ -349,7 +349,7 @@
         private System.Windows.Forms.Label lbPrimeiro;
         private System.Windows.Forms.Button btEsquerda;
         private System.Windows.Forms.Label lbCodigo;
-        private System.Windows.Forms.TextBox ConsultaTipo;
+        private System.Windows.Forms.TextBox ConsultaCodigo;
         private System.Windows.Forms.Button btDireita;
         private System.Windows.Forms.Label lbConsulta;
         private System.Windows.Forms.Button btConsulta;

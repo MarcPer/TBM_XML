@@ -9,7 +9,7 @@ namespace XMLBackOffice
 {
     class SeparaDadosArquivo
     {
-        public string[,] Separa(string[] LinhasEmissor)
+        public string[,] SeparaEmissor(string[] LinhasEmissor)
         {
             #region Variaveis
             //Variaveis
@@ -41,6 +41,42 @@ namespace XMLBackOffice
             }
 
             return Emissor;
+        }
+
+        public string[,] SeparaAtivo(string[] LinhasAtivo)
+        {
+            #region Variaveis
+            //Variaveis
+            string[,] Ativo = new string[LinhasAtivo.Length, 6]; // 1 - Categoria, 2 - Sigla, 3 - Descricao, 4 -TipoAtivo, 5 - Sequencia1, 6 - Sequencia2
+            #endregion
+
+
+            try
+            {
+                #region Separacao
+                for (int i = 0; i < LinhasAtivo.Length; i++)
+                {
+                    //Limpa as aspas do arquivo.
+                    //LinhasAtivo[i] = LinhasAtivo[i].Replace("\"", String.Empty);
+                    //LinhasAtivo[i] = LinhasAtivo[i].Replace(", ", " ");
+
+                    //Pega valores cortando pela vírgula
+                    Ativo[i, 0] = LinhasAtivo[i].Split(',')[0];
+                    Ativo[i, 1] = LinhasAtivo[i].Split(',')[1];
+                    Ativo[i, 2] = LinhasAtivo[i].Split(',')[2];
+                    Ativo[i, 3] = LinhasAtivo[i].Split(',')[3];
+                    Ativo[i, 4] = LinhasAtivo[i].Split(',')[4];
+                    Ativo[i, 5] = LinhasAtivo[i].Split(',')[5];
+                }
+                #endregion
+            }
+            catch (Exception Error)
+            {
+                ProcessoEmissor.LogLocal.Text += Convert.ToString(Error);
+                VGlobal.RetornoFalha = true;
+            }
+
+            return Ativo;
         }
     }
 }

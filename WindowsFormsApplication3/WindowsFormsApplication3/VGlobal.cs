@@ -18,9 +18,12 @@ namespace XMLBackOffice
 
         #region Variaveis SQL
         //Regiao de variaveis contantes
-        public static string ParamConexSQL = @"User Id=sa;Password=senha123;Data Source=192.168.74.133,1433;Network Library=DBMSSOCN;Trusted_Connection=yes;Initial Catalog=BDXMLProj;connection timeout=5";
-        //"User Id=sa;Password=faika123;Server=WIN-VFN6FLHC64A\\SQLEXPRESS;Trusted_Connection=yes;Database=XMLProj;connection timeout=10";
+        public static string ParamConexSQL = "User Id=sa;Password=senha123;Server=WIN-9OBDOK4FG8Q\\SQLEXPRESS;Trusted_Connection=yes;Database=BDXMLProj;connection timeout=5";
+        //"User Id=sa;Password=senha123;Server=WIN-9OBDOK4FG8Q\\SQLEXPRESS;Trusted_Connection=yes;Database=BDXMLProj;connection timeout=5"; - FUNCIONA
+        //"User Id=WIN-9OBDOK4FG8Q\\XMLConsultUser;Password=XMLConsultUser;Server=192.168.74.133\\SQLEXPRESS;Trusted_Connection=yes;Database=BDXMLProj;connection timeout=5"; - ERRO  de dominio Windows
+        //@"Server=myServerName\myInstanceName;Database=myDataBase;User Id=myUsername; Password=myPassword";
         //Data Source=190.190.200.100,1433;Network Library=DBMSSOCN; Initial Catalog=myDataBase
+        //en teste: @"User Id=sa;Password=senha123;Data Source=192.168.74.133,1433\SQLEXPRESS;Network Library=DBMSSOCN;Trusted_Connection=no;Initial Catalog=BDXMLProj;connection timeout=5";
         #endregion
 
         #region Variaveis Tela
@@ -33,6 +36,8 @@ namespace XMLBackOffice
         public static int EmissorContagem;
         public static string EndEmissor;
         public static string LOGEmissor = "c:\\input\\LOG_Emissor.rtf";
+        public static string[] CamposTabelaEmissor = { "Codigo_Emissor", "Nome_Emissor", "CNPJ_Emissor", "Data_Emissor" };
+        public static string TabelaEmissor = "BDXMLProj.dbo.tbEmissor_Titulo";
         #endregion
 
         #region Variaveis do TipoAtivo.txt
