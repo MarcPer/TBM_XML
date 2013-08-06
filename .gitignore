@@ -38,6 +38,7 @@ local.properties
 
 # Custom files
 Exemplos/
+XML_files/
 
 # User-specific files
 *.suo
