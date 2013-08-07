@@ -45,6 +45,8 @@ namespace XMLBackOffice
         public static int AtivoContagem;
         public static string EndAtivo;
         public static string LOGAtivo = "c:\\input\\LOG_Ativo.rtf";
+        public static string[] CamposTabelaAtivo = { "Categoria_TipoAtivo", "Sigla_TipoAtivo", "Descricao_TipoAtivo", "Tipo_TipoAtivo", "Sequencia1", "Sequencia2" };
+        public static string TabelaAtivo = "BDXMLProj.dbo.tbTipoDeAtivo";
         #endregion
     }
 }

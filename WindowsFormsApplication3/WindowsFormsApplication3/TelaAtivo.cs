@@ -21,7 +21,7 @@ namespace XMLBackOffice
         private void TelaAtivo_Load(object sender, EventArgs e)
         {
             //Inicializa variaveis com valor padrao
-            EnderecoCadastro.Text = "c:\\input\\EMISSOR.txt";
+            EnderecoCadastro.Text = "c:\\input\\TIPOATIVO.txt";
             ConsultaCategoria.Text = "";
             ConsultaDescricao.Text = "";
             ConsultaSigla.Text = "";
@@ -43,10 +43,10 @@ namespace XMLBackOffice
             #endregion
             if (EnderecoCadastro.Text != "")
             {
-                ProcessoEmissor obProgramaEmissor = new ProcessoEmissor();
-                obProgramaEmissor.GerenciaProcessoCadastroTipoAtivo();
+                ProcessoAtivo obProgramaAtivo = new ProcessoAtivo();
+                obProgramaAtivo.GerenciaProcessoCadastroTipoAtivo();
 
-                LOGEmissor.Text += ProcessoEmissor.LogLocal.Text;
+                LOGAtivo.Text += ProcessoAtivo.LogLocal.Text;
             }
             else
             {
@@ -72,64 +72,70 @@ namespace XMLBackOffice
         private void btConsulta_Click(object sender, EventArgs e)
         {
             #region Variaveis
-            VGlobal.EmissorContagem = 0;
+            VGlobal.AtivoContagem = 0;
             VGlobal.RetornoFalha = false;
             #endregion
 
-            ProcessoEmissor obProgramaEmissor = new ProcessoEmissor();
-            VGlobal.Emissor = obProgramaEmissor.GerenciaProcessoConsultaEmissor(ConsultaCodigo.Text, ConsultaNome.Text, ConsultaCNPJ.Text, ConsultaData.Text);
+            ProcessoAtivo obProgramaAtivo = new ProcessoAtivo();
+            VGlobal.Ativo = obProgramaAtivo.GerenciaProcessoConsultaAtivo(ConsultaCategoria.Text, ConsultaSigla.Text, ConsultaDescricao.Text, ConsultaTipo.Text, ConsultaSeq1.Text, ConsultaSeq2.Text);
 
             if (VGlobal.RetornoFalha == false)
             {
-                if (VGlobal.Emissor.GetUpperBound(0) != 0)
+                if (VGlobal.Ativo.GetUpperBound(0) != 0)
                 {
                     btEsquerda.Enabled = true;
                     btDireita.Enabled = true;
-
+                    
                 }
-                ConsultaCodigo.Text = VGlobal.Emissor[VGlobal.Emissor.GetLowerBound(0), 0];
-                ConsultaNome.Text = VGlobal.Emissor[VGlobal.Emissor.GetLowerBound(0), 1];
-                ConsultaCNPJ.Text = VGlobal.Emissor[VGlobal.Emissor.GetLowerBound(0), 2];
-                ConsultaData.Text = VGlobal.Emissor[VGlobal.Emissor.GetLowerBound(0), 3];
-                lbPrimeiro.Text = Convert.ToString(VGlobal.Emissor.GetLowerBound(0) + 1);
-                lbUltimo.Text = Convert.ToString(VGlobal.Emissor.GetUpperBound(0) + 1);
+                ConsultaCategoria.Text = VGlobal.Ativo[VGlobal.Ativo.GetLowerBound(0), 0];
+                ConsultaSigla.Text = VGlobal.Ativo[VGlobal.Ativo.GetLowerBound(0), 1];
+                ConsultaDescricao.Text = VGlobal.Ativo[VGlobal.Ativo.GetLowerBound(0), 2];
+                ConsultaTipo.Text = VGlobal.Ativo[VGlobal.Ativo.GetLowerBound(0), 3];
+                ConsultaSeq1.Text = VGlobal.Ativo[VGlobal.Ativo.GetLowerBound(0), 4];
+                ConsultaSeq2.Text = VGlobal.Ativo[VGlobal.Ativo.GetLowerBound(0), 5];
+                lbPrimeiro.Text = Convert.ToString(VGlobal.Ativo.GetLowerBound(0) + 1);
+                lbUltimo.Text = Convert.ToString(VGlobal.Ativo.GetUpperBound(0) + 1);
             }
 
-            LOGEmissor.Text += ProcessoEmissor.LogLocal.Text;
+            LOGAtivo.Text += ProcessoAtivo.LogLocal.Text;
         }
 
         private void btEsquerda_Click(object sender, EventArgs e)
         {
-            if (VGlobal.EmissorContagem == 0)
+            if (VGlobal.AtivoContagem == 0)
             {
-                VGlobal.EmissorContagem = VGlobal.Emissor.GetUpperBound(0);
+                VGlobal.AtivoContagem = VGlobal.Ativo.GetUpperBound(0);
             }
             else
             {
-                VGlobal.EmissorContagem--;
+                VGlobal.AtivoContagem--;
             }
-            ConsultaCodigo.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 0];
-            ConsultaNome.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 1];
-            ConsultaCNPJ.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 2];
-            ConsultaData.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 3];
-            lbPrimeiro.Text = Convert.ToString(VGlobal.EmissorContagem + 1);
+            ConsultaCategoria.Text = VGlobal.Ativo[VGlobal.AtivoContagem, 0];
+            ConsultaSigla.Text = VGlobal.Ativo[VGlobal.AtivoContagem, 1];
+            ConsultaDescricao.Text = VGlobal.Ativo[VGlobal.AtivoContagem, 2];
+            ConsultaTipo.Text = VGlobal.Ativo[VGlobal.AtivoContagem, 3];
+            ConsultaSeq1.Text = VGlobal.Ativo[VGlobal.AtivoContagem, 4];
+            ConsultaSeq2.Text = VGlobal.Ativo[VGlobal.AtivoContagem, 5];
+            lbPrimeiro.Text = Convert.ToString(VGlobal.AtivoContagem + 1);
         }
 
         private void btDireita_Click(object sender, EventArgs e)
         {
-            if (VGlobal.EmissorContagem == VGlobal.Emissor.GetUpperBound(0))
+            if (VGlobal.AtivoContagem == VGlobal.Ativo.GetUpperBound(0))
             {
-                VGlobal.EmissorContagem = 0;
+                VGlobal.AtivoContagem = 0;
             }
             else
             {
-                VGlobal.EmissorContagem++;
+                VGlobal.AtivoContagem++;
             }
-            ConsultaCodigo.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 0];
-            ConsultaNome.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 1];
-            ConsultaCNPJ.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 2];
-            ConsultaData.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 3];
-            lbPrimeiro.Text = Convert.ToString(VGlobal.EmissorContagem + 1);
+            ConsultaCategoria.Text = VGlobal.Ativo[VGlobal.AtivoContagem, 0];
+            ConsultaSigla.Text = VGlobal.Ativo[VGlobal.AtivoContagem, 1];
+            ConsultaDescricao.Text = VGlobal.Ativo[VGlobal.AtivoContagem, 2];
+            ConsultaTipo.Text = VGlobal.Ativo[VGlobal.AtivoContagem, 3];
+            ConsultaSeq1.Text = VGlobal.Ativo[VGlobal.AtivoContagem, 4];
+            ConsultaSeq2.Text = VGlobal.Ativo[VGlobal.AtivoContagem, 5];
+            lbPrimeiro.Text = Convert.ToString(VGlobal.AtivoContagem + 1);
         }
 
     }

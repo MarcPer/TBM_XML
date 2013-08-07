@@ -50,7 +50,7 @@
             this.LabelArquivo = new System.Windows.Forms.Label();
             this.EnderecoCadastro = new System.Windows.Forms.TextBox();
             this.LabelLog = new System.Windows.Forms.Label();
-            this.LOGEmissor = new System.Windows.Forms.RichTextBox();
+            this.LOGAtivo = new System.Windows.Forms.RichTextBox();
             this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
@@ -152,6 +152,7 @@
             this.btEsquerda.TabIndex = 60;
             this.btEsquerda.Text = "<";
             this.btEsquerda.UseVisualStyleBackColor = true;
+            this.btEsquerda.Click += new System.EventHandler(this.btEsquerda_Click);
             // 
             // lbTipo
             // 
@@ -178,6 +179,7 @@
             this.btDireita.TabIndex = 61;
             this.btDireita.Text = ">";
             this.btDireita.UseVisualStyleBackColor = true;
+            this.btDireita.Click += new System.EventHandler(this.btDireita_Click);
             // 
             // LabelConsulta
             // 
@@ -196,6 +198,7 @@
             this.btConsulta.TabIndex = 55;
             this.btConsulta.Text = "Consulta";
             this.btConsulta.UseVisualStyleBackColor = true;
+            this.btConsulta.Click += new System.EventHandler(this.btConsulta_Click);
             // 
             // ConsultaSigla
             // 
@@ -258,14 +261,14 @@
             this.LabelLog.Text = "LOG";
             this.LabelLog.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // LOGEmissor
+            // LOGAtivo
             // 
-            this.LOGEmissor.Location = new System.Drawing.Point(12, 264);
-            this.LOGEmissor.Name = "LOGEmissor";
-            this.LOGEmissor.ReadOnly = true;
-            this.LOGEmissor.Size = new System.Drawing.Size(538, 131);
-            this.LOGEmissor.TabIndex = 41;
-            this.LOGEmissor.Text = "";
+            this.LOGAtivo.Location = new System.Drawing.Point(12, 264);
+            this.LOGAtivo.Name = "LOGAtivo";
+            this.LOGAtivo.ReadOnly = true;
+            this.LOGAtivo.Size = new System.Drawing.Size(538, 131);
+            this.LOGAtivo.TabIndex = 41;
+            this.LOGAtivo.Text = "";
             // 
             // rectangleShape2
             // 
@@ -356,10 +359,11 @@
             this.Controls.Add(this.LabelArquivo);
             this.Controls.Add(this.EnderecoCadastro);
             this.Controls.Add(this.LabelLog);
-            this.Controls.Add(this.LOGEmissor);
+            this.Controls.Add(this.LOGAtivo);
             this.Controls.Add(this.shapeContainer1);
             this.Name = "TelaAtivo";
             this.Text = "TelaAtivo";
+            this.Load += new System.EventHandler(this.TelaAtivo_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -389,7 +393,7 @@
         private System.Windows.Forms.Label LabelArquivo;
         private System.Windows.Forms.TextBox EnderecoCadastro;
         private System.Windows.Forms.Label LabelLog;
-        public System.Windows.Forms.RichTextBox LOGEmissor;
+        public System.Windows.Forms.RichTextBox LOGAtivo;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape2;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;

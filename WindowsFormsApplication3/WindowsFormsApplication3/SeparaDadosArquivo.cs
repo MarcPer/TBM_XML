@@ -25,6 +25,7 @@ namespace XMLBackOffice
                     //Limpa as aspas do arquivo.
                     LinhasEmissor[i] = LinhasEmissor[i].Replace("\"", String.Empty);
                     LinhasEmissor[i] = LinhasEmissor[i].Replace(", ", " ");
+                    LinhasEmissor[i] = LinhasEmissor[i].Replace("'", "");
 
                     //Pega valores cortando pela vírgula
                     Emissor[i, 0] = LinhasEmissor[i].Split(',')[0];

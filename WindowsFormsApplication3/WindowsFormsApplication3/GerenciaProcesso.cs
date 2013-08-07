@@ -29,7 +29,7 @@ namespace XMLBackOffice
 
             #region AbreArquivo - Emissor.txt
             AbreArquivo obAbreArquivo = new AbreArquivo();
-            LinhasEmissor = obAbreArquivo.Emissor(VGlobal.EndEmissor);
+            LinhasEmissor = obAbreArquivo.AbreTXT(VGlobal.EndEmissor);
             if (VGlobal.RetornoFalha != false)
             {
                 DialogResult dialogResult = MessageBox.Show("Encontrado erro na estrutura do EMISSOR.txt. Favor verificar LOG!", "ERROR", MessageBoxButtons.OK);
@@ -53,7 +53,7 @@ namespace XMLBackOffice
             if (VGlobal.RetornoFalha == true)
             {
                 DialogResult dialogResult = MessageBox.Show("Encontrado erro no SQL. Favor verificar LOG!", "ERROR", MessageBoxButtons.OK);
-                goto PulaGravaLOG;
+                goto PulaGravaLOGEmissor;
             }
             #endregion
         PulaGravaLOGEmissor:
@@ -121,50 +121,6 @@ namespace XMLBackOffice
 
         }
 
-        public void GerenciaProcessoCadastroTipoAtivo()
-        {
-            #region Variaveis
-            string[] LinhasAtivo;
-            string[,] Ativo;
-            VGlobal.RetornoFalha = false;
-            LogLocal.Text = "";
-
-            #endregion
-
-            #region AbreArquivo - TipoAtivo.txt
-            AbreArquivo obAbreArquivo = new AbreArquivo();
-            LinhasAtivo = obAbreArquivo.Emissor(VGlobal.EndAtivo);
-            if (VGlobal.RetornoFalha != false)
-            {
-                DialogResult dialogResult = MessageBox.Show("Encontrado erro na estrutura do TipoAtivo.txt. Favor verificar LOG!", "ERROR", MessageBoxButtons.OK);
-                goto PulaGravaLOG;
-            }
-            #endregion
-
-            #region SeparaDadosArquivo - Emissor.txt
-            SeparaDadosArquivo obSeparaDadosArquivo = new SeparaDadosArquivo();
-            Ativo = obSeparaDadosArquivo.Separa(LinhasAtivo);
-            if (VGlobal.RetornoFalha != false)
-            {
-                DialogResult dialogResult = MessageBox.Show("Encontrado erro na estrutura de separação dos dados do Arquivo. Favor verificar LOG!", "ERROR", MessageBoxButtons.OK);
-                goto PulaGravaLOG;
-            }
-            #endregion
-
-            #region SQL - Emissor.txt
-            SQLXML obSQLXML = new SQLXML();
-            obSQLXML.CadastraEmissor(Ativo);
-            if (VGlobal.RetornoFalha == true)
-            {
-                DialogResult dialogResult = MessageBox.Show("Encontrado erro no SQL. Favor verificar LOG!", "ERROR", MessageBoxButtons.OK);
-                goto PulaGravaLOG;
-            }
-            #endregion
-        PulaGravaLOG:
-
-            GravaLog(LogLocal);
-        }
-
         public static void GravaLog(RichTextBox Log)
         {
             #region GravaLOG
@@ -173,6 +129,81 @@ namespace XMLBackOffice
             #endregion
         }
 
+    }
+
+    class ProcessoAtivo
+    {
+        public static RichTextBox LogLocal = new RichTextBox();
+
+        public string[,] GerenciaProcessoConsultaAtivo(string ConsultaCategoria, string ConsultaSigla, string ConsultaDescricao, string ConsultaTipo, string ConsultaSeq1, string ConsultaSeq2)
+        {
+            #region Variáveis
+            //variaveis
+            VGlobal.RetornoFalha = false;
+            string[,] Ativo;
+            DataTable dataTable = new DataTable();
+            SQLXML Consulta = new SQLXML();
+            LogLocal.Text = "";
+            #endregion
+
+            try
+            {
+
+                dataTable = Consulta.ConsultaAtivo(VGlobal.TabelaAtivo, VGlobal.CamposTabelaAtivo[0], ConsultaCategoria, VGlobal.CamposTabelaAtivo[1], ConsultaSigla, VGlobal.CamposTabelaAtivo[2], ConsultaDescricao, VGlobal.CamposTabelaAtivo[3], ConsultaTipo, VGlobal.CamposTabelaAtivo[4], ConsultaSeq1, VGlobal.CamposTabelaAtivo[5], ConsultaSeq2);
+                
+            }
+            catch (Exception e)
+            {
+                VGlobal.rtLOG.Text += e.ToString();
+                VGlobal.RetornoFalha = true;
+            }
+
+            if (VGlobal.RetornoFalha == true)
+            {
+                DialogResult dialogResult = MessageBox.Show("Falha na consulta do Emissor!", "ERROR", MessageBoxButtons.OK);
+                LogLocal.Text += "Falha na consulta do Emissor: \r\nCategoria:" + ConsultaCategoria + "\r\nSigla:" + ConsultaSigla + "\r\nDescricao:" + ConsultaDescricao + "\r\nTipo:" + ConsultaTipo + "\r\n";
+                Ativo = null;
+                dataTable = null;
+            }
+            else
+            {
+                Ativo = new string[dataTable.Rows.Count, 6];
+
+                if (dataTable.Rows.Count != 0)
+                {
+                    LogLocal.Text += "Total de colunas pesquisadas: " + dataTable.Rows.Count + "\r\n";
+                    for (int i = 0; i < dataTable.Rows.Count; i++)
+                    {
+                        Ativo[i, 0] = dataTable.Rows[i][0].ToString();
+                        Ativo[i, 1] = dataTable.Rows[i][1].ToString();
+                        Ativo[i, 2] = dataTable.Rows[i][2].ToString();
+                        Ativo[i, 3] = dataTable.Rows[i][3].ToString();
+                        Ativo[i, 4] = dataTable.Rows[i][4].ToString();
+                        Ativo[i, 5] = dataTable.Rows[i][5].ToString();
+                    }
+                }
+                else
+                {
+                    DialogResult dialogResult2 = MessageBox.Show("Não foram encontrados resultados para esta busca!", "ERROR", MessageBoxButtons.OK);
+                    VGlobal.rtLOG.Text += "Não foram encontrados resultados para esta busca:\r\nCategoria:" + ConsultaCategoria + "\r\nSigla:" + ConsultaSigla + "\r\nDescricao:" + ConsultaDescricao + "\r\nTipo:" + ConsultaTipo + "\r\n";
+                    VGlobal.RetornoFalha = true;
+                }
+            }
+
+            GravaLog(LogLocal);
+            return Ativo;
+
+
+        }
+
+        public static void GravaLog(RichTextBox Log)
+        {
+            #region GravaLOG
+            ////Grava no LOG textBox
+            File.AppendAllText(VGlobal.LOGAtivo, Log.Text);
+            #endregion
+        }
+
         public void GerenciaProcessoCadastroTipoAtivo()
         {
             #region Variaveis
@@ -183,17 +214,17 @@ namespace XMLBackOffice
 
             #endregion
 
-            #region AbreArquivo - Emissor.txt
+            #region AbreArquivo - Ativo.txt
             AbreArquivo obAbreArquivo = new AbreArquivo();
-            LinhasAtivo = obAbreArquivo.Emissor(VGlobal.EndEmissor);
+            LinhasAtivo = obAbreArquivo.AbreTXT(VGlobal.EndAtivo);
             if (VGlobal.RetornoFalha != false)
             {
-                DialogResult dialogResult = MessageBox.Show("Encontrado erro na estrutura do EMISSOR.txt. Favor verificar LOG!", "ERROR", MessageBoxButtons.OK);
+                DialogResult dialogResult = MessageBox.Show("Encontrado erro na estrutura do TIPOATIVO.txt. Favor verificar LOG!", "ERROR", MessageBoxButtons.OK);
                 goto PulaGravaLOGAtivo;
             }
             #endregion
 
-            #region SeparaDadosArquivo - Emissor.txt
+            #region SeparaDadosArquivo - Ativo.txt
             SeparaDadosArquivo obSeparaDadosArquivo = new SeparaDadosArquivo();
             Ativo = obSeparaDadosArquivo.SeparaAtivo(LinhasAtivo);
             if (VGlobal.RetornoFalha != false)
