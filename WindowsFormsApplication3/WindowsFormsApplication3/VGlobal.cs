@@ -14,6 +14,7 @@ namespace XMLBackOffice
         #region Variaveis Constantes
         //Regiao de variaveis contantes
         public static bool RetornoFalha = false;
+        public static RichTextBox LogLocal = new RichTextBox(); 
         #endregion
 
         #region Variaveis SQL
@@ -26,7 +27,7 @@ namespace XMLBackOffice
         //en teste: @"User Id=sa;Password=senha123;Data Source=192.168.74.133,1433\SQLEXPRESS;Network Library=DBMSSOCN;Trusted_Connection=no;Initial Catalog=BDXMLProj;connection timeout=5";
         #endregion
 
-        #region Variaveis Tela
+        #region Variaveis Tela Inicial
         //Regiao de variaveis provenientes das telas
         public static RichTextBox rtLOG;
         #endregion
@@ -47,6 +48,15 @@ namespace XMLBackOffice
         public static string LOGAtivo = "c:\\input\\LOG_Ativo.rtf";
         public static string[] CamposTabelaAtivo = { "Categoria_TipoAtivo", "Sigla_TipoAtivo", "Descricao_TipoAtivo", "Tipo_TipoAtivo", "Sequencia1", "Sequencia2" };
         public static string TabelaAtivo = "BDXMLProj.dbo.tbTipoDeAtivo";
+        #endregion
+
+        #region Variaveis do Especie.txt
+        public static string[,] Especie;
+        public static int EspecieContagem;
+        public static string EndEspecie;
+        public static string LOGEspecie = "c:\\input\\LOG_Especie.rtf";
+        public static string[] CamposTabelaEspecie = { "Descricao_Especie", "Codigo_Especie" };
+        public static string TabelaEspecie = "BDXMLProj.dbo.tbEspecie";
         #endregion
     }
 }

@@ -54,6 +54,7 @@
             this.lbConsulta = new System.Windows.Forms.Label();
             this.btConsulta = new System.Windows.Forms.Button();
             this.ConsultaData = new System.Windows.Forms.TextBox();
+            this.btHelp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
             // LOGEmissor
@@ -106,7 +107,7 @@
             // lbArquivo
             // 
             this.lbArquivo.AutoSize = true;
-            this.lbArquivo.Location = new System.Drawing.Point(11, 29);
+            this.lbArquivo.Location = new System.Drawing.Point(25, 29);
             this.lbArquivo.Name = "lbArquivo";
             this.lbArquivo.Size = new System.Drawing.Size(43, 13);
             this.lbArquivo.TabIndex = 22;
@@ -290,11 +291,22 @@
             this.ConsultaData.Size = new System.Drawing.Size(115, 20);
             this.ConsultaData.TabIndex = 26;
             // 
+            // btHelp
+            // 
+            this.btHelp.Location = new System.Drawing.Point(18, 52);
+            this.btHelp.Name = "btHelp";
+            this.btHelp.Size = new System.Drawing.Size(17, 23);
+            this.btHelp.TabIndex = 70;
+            this.btHelp.Text = "?";
+            this.btHelp.UseVisualStyleBackColor = true;
+            this.btHelp.Click += new System.EventHandler(this.btHelp_Click);
+            // 
             // TelaEmissor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(560, 407);
+            this.Controls.Add(this.btHelp);
             this.Controls.Add(this.lbCNPJ);
             this.Controls.Add(this.lbUltimo);
             this.Controls.Add(this.lbDe);
@@ -355,5 +367,6 @@
         private System.Windows.Forms.Button btConsulta;
         private System.Windows.Forms.TextBox ConsultaData;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape2;
+        private System.Windows.Forms.Button btHelp;
     }
 }

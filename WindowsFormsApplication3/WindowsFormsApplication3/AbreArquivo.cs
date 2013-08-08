@@ -10,6 +10,7 @@ namespace XMLBackOffice
 {
     class AbreArquivo
     {
+       
         public string[] AbreTXT(string EnderecoArquivo)
         {
 
@@ -28,29 +29,25 @@ namespace XMLBackOffice
                 }
                 catch (Exception Error)
                 {
-                    ProcessoEmissor.LogLocal.Text += Convert.ToString(Error);
+                    VGlobal.LogLocal.Text += "Abre arquivo Texto: FALHA!\r\n";
+                    VGlobal.LogLocal.Text += Convert.ToString(Error);
                     DialogResult dialogResult = MessageBox.Show("Encontrado erro na estrutura do texto. Favor verificar LOG!", "ERROR", MessageBoxButtons.OK);
                 }
                 finally
                 {
-                    //Retorno = "false";
-                    ProcessoEmissor.LogLocal.Text += "Abre arquivo Texto: OK\r\n";
-                    ProcessoEmissor.LogLocal.Text += "Quantidade de linhas detectadas: " + LinhasArquivo.Length + "\r\n";
-                    //ProcessoEmissor.LogLocal.Text += Retorno;
+                    VGlobal.LogLocal.Text += "Abre arquivo Texto: OK\r\n";
+                    VGlobal.LogLocal.Text += "Quantidade de linhas detectadas: " + LinhasArquivo.Length + "\r\n";
                 }
-
             }
             else
             {
-                ProcessoEmissor.LogLocal.Text += "Arquivo texto nao existe!";
+                VGlobal.LogLocal.Text += "Arquivo texto nao existe!\r\n";
                 VGlobal.RetornoFalha = true;
             }
             return LinhasArquivo;
             #endregion
 
         }
-
-
 
     }
 }

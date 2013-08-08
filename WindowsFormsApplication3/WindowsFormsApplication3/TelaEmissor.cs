@@ -47,7 +47,7 @@ namespace XMLBackOffice
                 ProcessoEmissor obProgramaEmissor = new ProcessoEmissor();
                 obProgramaEmissor.GerenciaProcessoCadastroEmissor();
 
-                LOGEmissor.Text += ProcessoEmissor.LogLocal.Text;
+                LOGEmissor.Text += VGlobal.LogLocal.Text;
             }
             else
             {
@@ -82,7 +82,7 @@ namespace XMLBackOffice
                 lbUltimo.Text = Convert.ToString(VGlobal.Emissor.GetUpperBound(0) + 1);
             }
 
-            LOGEmissor.Text += ProcessoEmissor.LogLocal.Text;
+            LOGEmissor.Text += VGlobal.LogLocal.Text;
         }
 
         private void btLimpa_Click(object sender, EventArgs e)
@@ -130,6 +130,16 @@ namespace XMLBackOffice
             ConsultaCNPJ.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 2];
             ConsultaData.Text = VGlobal.Emissor[VGlobal.EmissorContagem, 3];
             lbPrimeiro.Text = Convert.ToString(VGlobal.EmissorContagem + 1);
+        }
+
+        private void btHelp_Click(object sender, EventArgs e)
+        {
+            LOGEmissor.Text += "===========================HELP===========================\r\n";
+            LOGEmissor.Text += "Para o cadastramento do Emissor deverá haver um arquivo tipo .TXT contendo as informações descritas, separadas por virgula e cada informacao devera estar entre aspas \"\",sendo que cada linha e um item novo.\r\n";
+            LOGEmissor.Text += "Para os ativos sao 4 itens no total.\r\n";
+            LOGEmissor.Text += "1 - Codigo, 2 - Nome, 3 -CNPJ, 4 - Data\r\nEx.:\r\n";
+            LOGEmissor.Text += "\"1236\",\"DELTA FUNDO INVEST RENDA FIXA CREDITO PRIVADO\",\"13412156000121\",\"20110526\"\r\n";
+            LOGEmissor.Text += "===========================HELP===========================\r\n";
         }
 
 

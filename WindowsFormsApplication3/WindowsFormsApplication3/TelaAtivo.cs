@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using System.IO;
 
 namespace XMLBackOffice
 {
@@ -33,6 +34,9 @@ namespace XMLBackOffice
             btEsquerda.Enabled = false;
             btDireita.Enabled = false;
             VGlobal.rtLOG = new RichTextBox();
+
+            //Apaga LOG antigo.
+            File.Delete(VGlobal.LOGAtivo);
         }
 
         private void btCadastra_Click(object sender, EventArgs e)
@@ -46,7 +50,7 @@ namespace XMLBackOffice
                 ProcessoAtivo obProgramaAtivo = new ProcessoAtivo();
                 obProgramaAtivo.GerenciaProcessoCadastroTipoAtivo();
 
-                LOGAtivo.Text += ProcessoAtivo.LogLocal.Text;
+                LOGAtivo.Text += VGlobal.LogLocal.Text;
             }
             else
             {
@@ -97,7 +101,7 @@ namespace XMLBackOffice
                 lbUltimo.Text = Convert.ToString(VGlobal.Ativo.GetUpperBound(0) + 1);
             }
 
-            LOGAtivo.Text += ProcessoAtivo.LogLocal.Text;
+            LOGAtivo.Text += VGlobal.LogLocal.Text;
         }
 
         private void btEsquerda_Click(object sender, EventArgs e)
@@ -136,6 +140,17 @@ namespace XMLBackOffice
             ConsultaSeq1.Text = VGlobal.Ativo[VGlobal.AtivoContagem, 4];
             ConsultaSeq2.Text = VGlobal.Ativo[VGlobal.AtivoContagem, 5];
             lbPrimeiro.Text = Convert.ToString(VGlobal.AtivoContagem + 1);
+        }
+
+        private void btHelp_Click(object sender, EventArgs e)
+        {
+            LOGAtivo.Text += "===========================HELP===========================\r\n";
+            LOGAtivo.Text += "Para o cadastramento do Tipo de Ativo deverá haver um arquivo tipo .TXT contendo as informações descritas, separadas por virgula e sem espacos,sendo que cada linha e um item novo.\r\n";
+            LOGAtivo.Text += "Para os ativos sao 6 itens no total.\r\n";
+            LOGAtivo.Text += "1 - Categoria, 2 - Sigla, 3 -Descricao, 4 - Tipo, 5 - Sequencia 1, 6 - Seguencia 2\r\nEx.:\r\n";
+            LOGAtivo.Text += "Renda Fixa,ADA,ALONGAMENTO DA DIVIDA AGRICOLA,ADA,0a0,0a0\r\n";
+            LOGAtivo.Text += "===========================HELP===========================\r\n";
+
         }
 
     }
