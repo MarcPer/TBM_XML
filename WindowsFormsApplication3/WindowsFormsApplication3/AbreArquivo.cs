@@ -10,82 +10,41 @@ namespace XMLBackOffice
 {
     class AbreArquivo
     {
-        public string[] Emissor(string EnderecoEmissor)
+       
+        public string[] AbreTXT(string EnderecoArquivo)
         {
 
             #region Variaveis Locais
             //Variaveis
-            string[] LinhasEmissor= null;
+            string[] LinhasArquivo = null;
             #endregion
 
             #region Carrega Arquivo
             //Carrega Arquivo
-            if (File.Exists(EnderecoEmissor))
+            if (File.Exists(EnderecoArquivo))
             {
                 try
                 {
-                    LinhasEmissor = File.ReadAllLines(VGlobal.EndEmissor);
+                    LinhasArquivo = File.ReadAllLines(EnderecoArquivo);
                 }
                 catch (Exception Error)
                 {
-                    ProcessoEmissor.LogLocal.Text += Convert.ToString(Error);
-                    DialogResult dialogResult = MessageBox.Show("Encontrado erro na estrutura do EMISSOR.txt. Favor verificar LOG!", "ERROR", MessageBoxButtons.OK);
+                    VGlobal.LogLocal.Text += "Abre arquivo Texto: FALHA!\r\n";
+                    VGlobal.LogLocal.Text += Convert.ToString(Error);
+                    DialogResult dialogResult = MessageBox.Show("Encontrado erro na estrutura do texto. Favor verificar LOG!", "ERROR", MessageBoxButtons.OK);
                 }
                 finally
                 {
-                    //Retorno = "false";
-                    ProcessoEmissor.LogLocal.Text += "Abre arquivo Emissor.txt: OK\r\n";
-                    ProcessoEmissor.LogLocal.Text += "Quantidade de linhas detectadas: " + LinhasEmissor.Length + "\r\n";
-                    //ProcessoEmissor.LogLocal.Text += Retorno;
+                    VGlobal.LogLocal.Text += "Abre arquivo Texto: OK\r\n";
+                    VGlobal.LogLocal.Text += "Quantidade de linhas detectadas: " + LinhasArquivo.Length + "\r\n";
                 }
-
             }
             else
             {
-                ProcessoEmissor.LogLocal.Text += "Arquivo EMISSOR.txt nao existe!";
+                VGlobal.LogLocal.Text += "Arquivo texto nao existe!\r\n";
                 VGlobal.RetornoFalha = true;
             }
-            return LinhasEmissor;
-            #endregion
-
-        }
-
-        public string[] Ativo(string EnderecoAtivo)
-        {
-
-            #region Variaveis Locais
-            //Variaveis
-            string[] LinhasAtivo = null;
-            #endregion
-
-            #region Carrega Arquivo
-            //Carrega Arquivo
-            if (File.Exists(EnderecoAtivo))
-            {
-                try
-                {
-                    LinhasAtivo = File.ReadAllLines(VGlobal.EndEmissor);
-                }
-                catch (Exception Error)
-                {
-                    ProcessoEmissor.LogLocal.Text += Convert.ToString(Error);
-                    DialogResult dialogResult = MessageBox.Show("Encontrado erro na estrutura do EMISSOR.txt. Favor verificar LOG!", "ERROR", MessageBoxButtons.OK);
-                }
-                finally
-                {
-                    //Retorno = "false";
-                    ProcessoEmissor.LogLocal.Text += "Abre arquivo Emissor.txt: OK\r\n";
-                    ProcessoEmissor.LogLocal.Text += "Quantidade de linhas detectadas: " + LinhasAtivo.Length + "\r\n";
-                    //ProcessoEmissor.LogLocal.Text += Retorno;
-                }
-
-            }
-            else
-            {
-                ProcessoEmissor.LogLocal.Text += "Arquivo EMISSOR.txt nao existe!";
-                VGlobal.RetornoFalha = true;
-            }
-            return LinhasAtivo;
+            return LinhasArquivo;
             #endregion
 
         }
