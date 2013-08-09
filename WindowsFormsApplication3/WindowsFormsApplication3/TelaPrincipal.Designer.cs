@@ -104,6 +104,7 @@
             this.btEspecie.TabIndex = 6;
             this.btEspecie.Text = "Espécie";
             this.btEspecie.UseVisualStyleBackColor = true;
+            this.btEspecie.Click += new System.EventHandler(this.btEspecie_Click);
             // 
             // shapeContainer1
             // 

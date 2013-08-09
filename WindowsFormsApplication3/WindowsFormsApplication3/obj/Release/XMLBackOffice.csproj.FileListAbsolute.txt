@@ -9,3 +9,15 @@ C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\WindowsFormsApplicatio
 C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Release\XMLBackOffice.TelaEmissor.resources
 C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Release\XMLBackOffice.TelaPrincipal.resources
 C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\WindowsFormsApplication3\WindowsFormsApplication3\obj\Release\XMLBackOffice.TelaAtivo.resources
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication3\WindowsFormsApplication3\bin\Release\WindowsFormsApplication3.exe.config
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication3\WindowsFormsApplication3\obj\Release\WindowsFormsApplication3.exe
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication3\WindowsFormsApplication3\obj\Release\WindowsFormsApplication3.pdb
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication3\WindowsFormsApplication3\bin\Release\WindowsFormsApplication3.exe
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication3\WindowsFormsApplication3\bin\Release\WindowsFormsApplication3.pdb
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication3\WindowsFormsApplication3\obj\Release\XMLBackOffice.csprojResolveAssemblyReference.cache
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication3\WindowsFormsApplication3\obj\Release\XMLBackOffice.TelaAtivo.resources
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication3\WindowsFormsApplication3\obj\Release\XMLBackOffice.TelaPrincipal.resources
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication3\WindowsFormsApplication3\obj\Release\WindowsFormsApplication3.Properties.Resources.resources
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication3\WindowsFormsApplication3\obj\Release\XMLBackOffice.TelaEmissor.resources
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication3\WindowsFormsApplication3\obj\Release\XMLBackOffice.csproj.GenerateResource.Cache
+C:\Users\FullDanger\Documents\Visual Studio 2012\Projects\TBM_XML\WindowsFormsApplication3\WindowsFormsApplication3\obj\Release\XMLBackOffice.TelaEspecie.resources

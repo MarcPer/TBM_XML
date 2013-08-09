@@ -41,8 +41,6 @@ namespace XMLBackOffice
             }
         }
 
-
-
         private void btTipoAtivo_Click(object sender, EventArgs e)
         {
             try
@@ -75,7 +73,29 @@ namespace XMLBackOffice
 
         }
 
+        public static void ThreadProcEspecie()
+        {
+
+            Application.Run(new TelaEspecie());
+
+        }
+
         #endregion
+
+        private void btEspecie_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //Precisa criar uma nova thread para abrir uma nova tela
+                System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProcEspecie));
+                t.Start();
+                rtLOG.Text += "Janela de Especie aberta.\r\n";
+            }
+            catch (Exception E)
+            {
+                rtLOG.Text += E.ToString();
+            }
+        }
     }
 
 }

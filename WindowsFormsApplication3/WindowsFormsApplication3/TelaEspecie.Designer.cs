@@ -1,6 +1,6 @@
 ﻿namespace XMLBackOffice
 {
-    partial class TelaAtivo
+    partial class TelaEspecie
     {
         /// <summary>
         /// Required designer variable.
@@ -28,48 +28,40 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.lbCategoria = new System.Windows.Forms.Label();
+            this.lbCodigoEspecie = new System.Windows.Forms.Label();
             this.lbUltimo = new System.Windows.Forms.Label();
             this.lbDe = new System.Windows.Forms.Label();
             this.lbDescricao = new System.Windows.Forms.Label();
-            this.ConsultaCategoria = new System.Windows.Forms.TextBox();
+            this.ConsultaCodigo = new System.Windows.Forms.TextBox();
             this.btLimpa = new System.Windows.Forms.Button();
             this.ConsultaDescricao = new System.Windows.Forms.TextBox();
-            this.lbSigla = new System.Windows.Forms.Label();
             this.lbPrimeiro = new System.Windows.Forms.Label();
             this.btEsquerda = new System.Windows.Forms.Button();
-            this.lbTipo = new System.Windows.Forms.Label();
-            this.ConsultaTipo = new System.Windows.Forms.TextBox();
             this.btDireita = new System.Windows.Forms.Button();
-            this.LabelConsulta = new System.Windows.Forms.Label();
+            this.lbConsulta = new System.Windows.Forms.Label();
             this.btConsulta = new System.Windows.Forms.Button();
-            this.ConsultaSigla = new System.Windows.Forms.TextBox();
-            this.LabelCadastra = new System.Windows.Forms.Label();
+            this.lbCadastra = new System.Windows.Forms.Label();
             this.btAbrir = new System.Windows.Forms.Button();
             this.btCadastra = new System.Windows.Forms.Button();
-            this.LabelArquivo = new System.Windows.Forms.Label();
+            this.lbArquivo = new System.Windows.Forms.Label();
             this.EnderecoCadastro = new System.Windows.Forms.TextBox();
-            this.LabelLog = new System.Windows.Forms.Label();
-            this.LOGAtivo = new System.Windows.Forms.RichTextBox();
-            this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
+            this.lbLOG = new System.Windows.Forms.Label();
+            this.LOGEspecie = new System.Windows.Forms.RichTextBox();
             this.rectangleShape1 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
-            this.lbSeq1 = new System.Windows.Forms.Label();
-            this.ConsultaSeq1 = new System.Windows.Forms.TextBox();
-            this.lbSeq2 = new System.Windows.Forms.Label();
-            this.ConsultaSeq2 = new System.Windows.Forms.TextBox();
+            this.rectangleShape2 = new Microsoft.VisualBasic.PowerPacks.RectangleShape();
             this.btHelp = new System.Windows.Forms.Button();
             this.SuspendLayout();
             // 
-            // lbCategoria
+            // lbCodigoEspecie
             // 
-            this.lbCategoria.AutoSize = true;
-            this.lbCategoria.Location = new System.Drawing.Point(16, 118);
-            this.lbCategoria.Name = "lbCategoria";
-            this.lbCategoria.Size = new System.Drawing.Size(52, 13);
-            this.lbCategoria.TabIndex = 51;
-            this.lbCategoria.Text = "Categoria";
-            this.lbCategoria.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbCodigoEspecie.AutoSize = true;
+            this.lbCodigoEspecie.Location = new System.Drawing.Point(28, 118);
+            this.lbCodigoEspecie.Name = "lbCodigoEspecie";
+            this.lbCodigoEspecie.Size = new System.Drawing.Size(40, 13);
+            this.lbCodigoEspecie.TabIndex = 51;
+            this.lbCodigoEspecie.Text = "Código";
+            this.lbCodigoEspecie.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lbUltimo
             // 
@@ -94,19 +86,19 @@
             // lbDescricao
             // 
             this.lbDescricao.AutoSize = true;
-            this.lbDescricao.Location = new System.Drawing.Point(15, 144);
+            this.lbDescricao.Location = new System.Drawing.Point(13, 141);
             this.lbDescricao.Name = "lbDescricao";
             this.lbDescricao.Size = new System.Drawing.Size(55, 13);
             this.lbDescricao.TabIndex = 50;
             this.lbDescricao.Text = "Descrição";
             this.lbDescricao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // ConsultaCategoria
+            // ConsultaCodigo
             // 
-            this.ConsultaCategoria.Location = new System.Drawing.Point(74, 115);
-            this.ConsultaCategoria.Name = "ConsultaCategoria";
-            this.ConsultaCategoria.Size = new System.Drawing.Size(225, 20);
-            this.ConsultaCategoria.TabIndex = 48;
+            this.ConsultaCodigo.Location = new System.Drawing.Point(74, 115);
+            this.ConsultaCodigo.Name = "ConsultaCodigo";
+            this.ConsultaCodigo.Size = new System.Drawing.Size(115, 20);
+            this.ConsultaCodigo.TabIndex = 48;
             // 
             // btLimpa
             // 
@@ -124,16 +116,6 @@
             this.ConsultaDescricao.Name = "ConsultaDescricao";
             this.ConsultaDescricao.Size = new System.Drawing.Size(460, 20);
             this.ConsultaDescricao.TabIndex = 59;
-            // 
-            // lbSigla
-            // 
-            this.lbSigla.AutoSize = true;
-            this.lbSigla.Location = new System.Drawing.Point(38, 169);
-            this.lbSigla.Name = "lbSigla";
-            this.lbSigla.Size = new System.Drawing.Size(30, 13);
-            this.lbSigla.TabIndex = 52;
-            this.lbSigla.Text = "Sigla";
-            this.lbSigla.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
             // lbPrimeiro
             // 
@@ -155,23 +137,6 @@
             this.btEsquerda.UseVisualStyleBackColor = true;
             this.btEsquerda.Click += new System.EventHandler(this.btEsquerda_Click);
             // 
-            // lbTipo
-            // 
-            this.lbTipo.AutoSize = true;
-            this.lbTipo.Location = new System.Drawing.Point(40, 195);
-            this.lbTipo.Name = "lbTipo";
-            this.lbTipo.Size = new System.Drawing.Size(28, 13);
-            this.lbTipo.TabIndex = 54;
-            this.lbTipo.Text = "Tipo";
-            this.lbTipo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // ConsultaTipo
-            // 
-            this.ConsultaTipo.Location = new System.Drawing.Point(74, 193);
-            this.ConsultaTipo.Name = "ConsultaTipo";
-            this.ConsultaTipo.Size = new System.Drawing.Size(57, 20);
-            this.ConsultaTipo.TabIndex = 53;
-            // 
             // btDireita
             // 
             this.btDireita.Location = new System.Drawing.Point(498, 190);
@@ -182,14 +147,14 @@
             this.btDireita.UseVisualStyleBackColor = true;
             this.btDireita.Click += new System.EventHandler(this.btDireita_Click);
             // 
-            // LabelConsulta
+            // lbConsulta
             // 
-            this.LabelConsulta.AutoSize = true;
-            this.LabelConsulta.Location = new System.Drawing.Point(30, 96);
-            this.LabelConsulta.Name = "LabelConsulta";
-            this.LabelConsulta.Size = new System.Drawing.Size(48, 13);
-            this.LabelConsulta.TabIndex = 56;
-            this.LabelConsulta.Text = "Consulta";
+            this.lbConsulta.AutoSize = true;
+            this.lbConsulta.Location = new System.Drawing.Point(30, 96);
+            this.lbConsulta.Name = "lbConsulta";
+            this.lbConsulta.Size = new System.Drawing.Size(48, 13);
+            this.lbConsulta.TabIndex = 56;
+            this.lbConsulta.Text = "Consulta";
             // 
             // btConsulta
             // 
@@ -201,21 +166,14 @@
             this.btConsulta.UseVisualStyleBackColor = true;
             this.btConsulta.Click += new System.EventHandler(this.btConsulta_Click);
             // 
-            // ConsultaSigla
+            // lbCadastra
             // 
-            this.ConsultaSigla.Location = new System.Drawing.Point(74, 167);
-            this.ConsultaSigla.Name = "ConsultaSigla";
-            this.ConsultaSigla.Size = new System.Drawing.Size(112, 20);
-            this.ConsultaSigla.TabIndex = 49;
-            // 
-            // LabelCadastra
-            // 
-            this.LabelCadastra.AutoSize = true;
-            this.LabelCadastra.Location = new System.Drawing.Point(30, 11);
-            this.LabelCadastra.Name = "LabelCadastra";
-            this.LabelCadastra.Size = new System.Drawing.Size(49, 13);
-            this.LabelCadastra.TabIndex = 44;
-            this.LabelCadastra.Text = "Cadastra";
+            this.lbCadastra.AutoSize = true;
+            this.lbCadastra.Location = new System.Drawing.Point(30, 11);
+            this.lbCadastra.Name = "lbCadastra";
+            this.lbCadastra.Size = new System.Drawing.Size(49, 13);
+            this.lbCadastra.TabIndex = 44;
+            this.lbCadastra.Text = "Cadastra";
             // 
             // btAbrir
             // 
@@ -225,6 +183,7 @@
             this.btAbrir.TabIndex = 47;
             this.btAbrir.Text = "Abrir";
             this.btAbrir.UseVisualStyleBackColor = true;
+            this.btAbrir.Click += new System.EventHandler(this.btAbrir_Click);
             // 
             // btCadastra
             // 
@@ -236,14 +195,14 @@
             this.btCadastra.UseVisualStyleBackColor = true;
             this.btCadastra.Click += new System.EventHandler(this.btCadastra_Click);
             // 
-            // LabelArquivo
+            // lbArquivo
             // 
-            this.LabelArquivo.AutoSize = true;
-            this.LabelArquivo.Location = new System.Drawing.Point(25, 29);
-            this.LabelArquivo.Name = "LabelArquivo";
-            this.LabelArquivo.Size = new System.Drawing.Size(43, 13);
-            this.LabelArquivo.TabIndex = 46;
-            this.LabelArquivo.Text = "Arquivo";
+            this.lbArquivo.AutoSize = true;
+            this.lbArquivo.Location = new System.Drawing.Point(25, 29);
+            this.lbArquivo.Name = "lbArquivo";
+            this.lbArquivo.Size = new System.Drawing.Size(43, 13);
+            this.lbArquivo.TabIndex = 46;
+            this.lbArquivo.Text = "Arquivo";
             // 
             // EnderecoCadastro
             // 
@@ -252,34 +211,28 @@
             this.EnderecoCadastro.Size = new System.Drawing.Size(383, 20);
             this.EnderecoCadastro.TabIndex = 43;
             // 
-            // LabelLog
+            // lbLOG
             // 
-            this.LabelLog.AutoSize = true;
-            this.LabelLog.Location = new System.Drawing.Point(15, 248);
-            this.LabelLog.Name = "LabelLog";
-            this.LabelLog.Size = new System.Drawing.Size(29, 13);
-            this.LabelLog.TabIndex = 42;
-            this.LabelLog.Text = "LOG";
-            this.LabelLog.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+            this.lbLOG.AutoSize = true;
+            this.lbLOG.Location = new System.Drawing.Point(15, 248);
+            this.lbLOG.Name = "lbLOG";
+            this.lbLOG.Size = new System.Drawing.Size(29, 13);
+            this.lbLOG.TabIndex = 42;
+            this.lbLOG.Text = "LOG";
+            this.lbLOG.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // LOGAtivo
+            // LOGEspecie
             // 
-            this.LOGAtivo.Location = new System.Drawing.Point(12, 264);
-            this.LOGAtivo.Name = "LOGAtivo";
-            this.LOGAtivo.ReadOnly = true;
-            this.LOGAtivo.Size = new System.Drawing.Size(538, 131);
-            this.LOGAtivo.TabIndex = 41;
-            this.LOGAtivo.Text = "";
-            // 
-            // rectangleShape2
-            // 
-            this.rectangleShape2.Location = new System.Drawing.Point(11, 103);
-            this.rectangleShape2.Name = "rectangleShape2";
-            this.rectangleShape2.Size = new System.Drawing.Size(540, 132);
+            this.LOGEspecie.Location = new System.Drawing.Point(12, 264);
+            this.LOGEspecie.Name = "LOGEspecie";
+            this.LOGEspecie.ReadOnly = true;
+            this.LOGEspecie.Size = new System.Drawing.Size(538, 131);
+            this.LOGEspecie.TabIndex = 41;
+            this.LOGEspecie.Text = "";
             // 
             // rectangleShape1
             // 
-            this.rectangleShape1.Location = new System.Drawing.Point(9, 17);
+            this.rectangleShape1.Location = new System.Drawing.Point(10, 18);
             this.rectangleShape1.Name = "rectangleShape1";
             this.rectangleShape1.Size = new System.Drawing.Size(540, 64);
             // 
@@ -289,93 +242,57 @@
             this.shapeContainer1.Margin = new System.Windows.Forms.Padding(0);
             this.shapeContainer1.Name = "shapeContainer1";
             this.shapeContainer1.Shapes.AddRange(new Microsoft.VisualBasic.PowerPacks.Shape[] {
-            this.rectangleShape1,
-            this.rectangleShape2});
+            this.rectangleShape2,
+            this.rectangleShape1});
             this.shapeContainer1.Size = new System.Drawing.Size(560, 407);
             this.shapeContainer1.TabIndex = 64;
             this.shapeContainer1.TabStop = false;
             // 
-            // lbSeq1
+            // rectangleShape2
             // 
-            this.lbSeq1.AutoSize = true;
-            this.lbSeq1.Location = new System.Drawing.Point(151, 195);
-            this.lbSeq1.Name = "lbSeq1";
-            this.lbSeq1.Size = new System.Drawing.Size(35, 13);
-            this.lbSeq1.TabIndex = 66;
-            this.lbSeq1.Text = "Seq 1";
-            this.lbSeq1.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // ConsultaSeq1
-            // 
-            this.ConsultaSeq1.Location = new System.Drawing.Point(188, 193);
-            this.ConsultaSeq1.Name = "ConsultaSeq1";
-            this.ConsultaSeq1.Size = new System.Drawing.Size(57, 20);
-            this.ConsultaSeq1.TabIndex = 65;
-            // 
-            // lbSeq2
-            // 
-            this.lbSeq2.AutoSize = true;
-            this.lbSeq2.Location = new System.Drawing.Point(262, 194);
-            this.lbSeq2.Name = "lbSeq2";
-            this.lbSeq2.Size = new System.Drawing.Size(35, 13);
-            this.lbSeq2.TabIndex = 68;
-            this.lbSeq2.Text = "Seq 2";
-            this.lbSeq2.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-            // 
-            // ConsultaSeq2
-            // 
-            this.ConsultaSeq2.Location = new System.Drawing.Point(299, 192);
-            this.ConsultaSeq2.Name = "ConsultaSeq2";
-            this.ConsultaSeq2.Size = new System.Drawing.Size(57, 20);
-            this.ConsultaSeq2.TabIndex = 67;
+            this.rectangleShape2.Location = new System.Drawing.Point(10, 103);
+            this.rectangleShape2.Name = "rectangleShape2";
+            this.rectangleShape2.Size = new System.Drawing.Size(540, 132);
             // 
             // btHelp
             // 
             this.btHelp.Location = new System.Drawing.Point(18, 52);
             this.btHelp.Name = "btHelp";
             this.btHelp.Size = new System.Drawing.Size(17, 23);
-            this.btHelp.TabIndex = 69;
+            this.btHelp.TabIndex = 70;
             this.btHelp.Text = "?";
             this.btHelp.UseVisualStyleBackColor = true;
             this.btHelp.Click += new System.EventHandler(this.btHelp_Click);
             // 
-            // TelaAtivo
+            // TelaEspecie
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(560, 407);
             this.Controls.Add(this.btHelp);
-            this.Controls.Add(this.lbSeq2);
-            this.Controls.Add(this.ConsultaSeq2);
-            this.Controls.Add(this.lbSeq1);
-            this.Controls.Add(this.ConsultaSeq1);
-            this.Controls.Add(this.lbCategoria);
+            this.Controls.Add(this.lbCodigoEspecie);
             this.Controls.Add(this.lbUltimo);
             this.Controls.Add(this.lbDe);
             this.Controls.Add(this.lbDescricao);
-            this.Controls.Add(this.ConsultaCategoria);
+            this.Controls.Add(this.ConsultaCodigo);
             this.Controls.Add(this.btLimpa);
             this.Controls.Add(this.ConsultaDescricao);
-            this.Controls.Add(this.lbSigla);
             this.Controls.Add(this.lbPrimeiro);
             this.Controls.Add(this.btEsquerda);
-            this.Controls.Add(this.lbTipo);
-            this.Controls.Add(this.ConsultaTipo);
             this.Controls.Add(this.btDireita);
-            this.Controls.Add(this.LabelConsulta);
+            this.Controls.Add(this.lbConsulta);
             this.Controls.Add(this.btConsulta);
-            this.Controls.Add(this.ConsultaSigla);
-            this.Controls.Add(this.LabelCadastra);
+            this.Controls.Add(this.lbCadastra);
             this.Controls.Add(this.btAbrir);
             this.Controls.Add(this.btCadastra);
-            this.Controls.Add(this.LabelArquivo);
+            this.Controls.Add(this.lbArquivo);
             this.Controls.Add(this.EnderecoCadastro);
-            this.Controls.Add(this.LabelLog);
-            this.Controls.Add(this.LOGAtivo);
+            this.Controls.Add(this.lbLOG);
+            this.Controls.Add(this.LOGEspecie);
             this.Controls.Add(this.shapeContainer1);
-            this.Name = "TelaAtivo";
-            this.Text = "TelaAtivo";
-            this.Load += new System.EventHandler(this.TelaAtivo_Load);
+            this.Name = "TelaEspecie";
+            this.Text = "TelaEspecie";
+            this.Load += new System.EventHandler(this.TelaEspecie_Load);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -383,36 +300,28 @@
 
         #endregion
 
-        private System.Windows.Forms.Label lbCategoria;
+        private System.Windows.Forms.Label lbCodigoEspecie;
         private System.Windows.Forms.Label lbUltimo;
         private System.Windows.Forms.Label lbDe;
         private System.Windows.Forms.Label lbDescricao;
-        private System.Windows.Forms.TextBox ConsultaCategoria;
+        private System.Windows.Forms.TextBox ConsultaCodigo;
         private System.Windows.Forms.Button btLimpa;
         private System.Windows.Forms.TextBox ConsultaDescricao;
-        private System.Windows.Forms.Label lbSigla;
         private System.Windows.Forms.Label lbPrimeiro;
         private System.Windows.Forms.Button btEsquerda;
-        private System.Windows.Forms.Label lbTipo;
-        private System.Windows.Forms.TextBox ConsultaTipo;
         private System.Windows.Forms.Button btDireita;
-        private System.Windows.Forms.Label LabelConsulta;
+        private System.Windows.Forms.Label lbConsulta;
         private System.Windows.Forms.Button btConsulta;
-        private System.Windows.Forms.TextBox ConsultaSigla;
-        private System.Windows.Forms.Label LabelCadastra;
+        private System.Windows.Forms.Label lbCadastra;
         private System.Windows.Forms.Button btAbrir;
         private System.Windows.Forms.Button btCadastra;
-        private System.Windows.Forms.Label LabelArquivo;
+        private System.Windows.Forms.Label lbArquivo;
         private System.Windows.Forms.TextBox EnderecoCadastro;
-        private System.Windows.Forms.Label LabelLog;
-        public System.Windows.Forms.RichTextBox LOGAtivo;
-        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape2;
+        private System.Windows.Forms.Label lbLOG;
+        public System.Windows.Forms.RichTextBox LOGEspecie;
         private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape1;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;
-        private System.Windows.Forms.Label lbSeq1;
-        private System.Windows.Forms.TextBox ConsultaSeq1;
-        private System.Windows.Forms.Label lbSeq2;
-        private System.Windows.Forms.TextBox ConsultaSeq2;
+        private Microsoft.VisualBasic.PowerPacks.RectangleShape rectangleShape2;
         private System.Windows.Forms.Button btHelp;
     }
 }
