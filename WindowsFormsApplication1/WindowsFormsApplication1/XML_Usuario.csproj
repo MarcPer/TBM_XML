@@ -45,6 +45,10 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="..\Ativos\Acoes.cs">
+      <Link>Ativos\Acoes.cs</Link>
+    </Compile>
+    <Compile Include="..\Ativos\CreditoPrivado.cs" />
     <Compile Include="..\Ativos\TitPublico.cs">
       <Link>Ativos\TitPublico.cs</Link>
     </Compile>

@@ -4,6 +4,16 @@
         <name>WindowsFormsApplication1</name>
     </assembly>
     <members>
+        <member name="T:Ativos.Acoes">
+            <summary>
+            Classe Títulos Públicos
+            </summary>
+        </member>
+        <member name="T:Ativos.CreditoPrivado">
+            <summary>
+            Classe Crédito Privado
+            </summary>
+        </member>
         <member name="T:Ativos.TitPublico">
             <summary>
             Classe Títulos Públicos
@@ -13,6 +23,13 @@
             <summary>
             Procura e extrai conteúdo de etiquetas específicas de arquivos XML.
             </summary>
+        </member>
+        <member name="M:WindowsFormsApplication1.ColetaDados.TitulosPublicos(System.Xml.Linq.XDocument[])">
+            <summary>
+            Titulos Publicos
+            </summary>
+            <param name="xmldoc"></param>
+            <returns></returns>
         </member>
         <member name="T:WindowsFormsApplication1.ManipulaDados_Header">
             <summary>

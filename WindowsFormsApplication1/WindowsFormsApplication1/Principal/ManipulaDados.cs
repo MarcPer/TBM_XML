@@ -25,6 +25,8 @@ namespace WindowsFormsApplication1
 
             XDocument[] xmldoc = CarregaChecaXML.XMLdocs(ListaArquivos);
             List<Ativos.TitPublico> titPublicos = ColetaDados.TitulosPublicos(xmldoc);
+            List<Ativos.CreditoPrivado> credPrivado = ColetaDados.CreditoPrivado(xmldoc);
+            List<Ativos.Acoes> acoes = ColetaDados.Acoes(xmldoc);
 
 
             #region Variaveis

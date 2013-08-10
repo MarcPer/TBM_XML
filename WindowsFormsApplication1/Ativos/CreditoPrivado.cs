@@ -3,12 +3,13 @@
 namespace Ativos
 {
     /// <summary>
-    /// Classe Títulos Públicos
+    /// Classe Crédito Privado
     /// </summary>
-    public class TitPublico
+    public class CreditoPrivado
     {
         public string CodAtivo { get; set; }
         public string ISIN { get; set; }
+        public string Emissor { get; set; }
         public string Indexador { get; set; }
         public string Cupom { get; set; }
         public string DataEmissao { get; set; }
