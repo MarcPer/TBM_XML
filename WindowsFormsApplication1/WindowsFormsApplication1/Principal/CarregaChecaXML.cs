@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 //meus
 using System.Xml;
+using System.Xml.Linq;
 using System.IO;
 using System.Windows.Forms;
 
@@ -15,14 +16,13 @@ namespace WindowsFormsApplication1
         // Variáveis
         private static int iarq = 0;
 
-        public static XmlDocument[] XMLdocs(FileInfo[] ListaArquivos)
+        public static XDocument[] XMLdocs(FileInfo[] ListaArquivos)
         {
             int nArq = ListaArquivos.Length;
-            XmlDocument[] XMLdocs = new XmlDocument[nArq];
+            XDocument[] XMLdocs = new XDocument[nArq];
             foreach (FileInfo arq in ListaArquivos)
             {
-                XMLdocs[iarq] = new XmlDocument();
-                XMLdocs[iarq].Load(arq.FullName);
+                XMLdocs[iarq] = XDocument.Load(arq.FullName);
                 iarq++;
             }
             iarq = 0;

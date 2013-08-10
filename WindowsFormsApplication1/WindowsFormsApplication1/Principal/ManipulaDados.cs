@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 //meus
 using System.Xml;
+using System.Xml.Linq;
 using System.IO;
 using System.Windows.Forms;
 
@@ -22,11 +23,9 @@ namespace WindowsFormsApplication1
             DirectoryInfo DirInfo = new DirectoryInfo(pastaXML);
             FileInfo[] ListaArquivos = DirInfo.GetFiles("*.xml");
 
-            XmlDocument[] xmldoc = CarregaChecaXML.XMLdocs(ListaArquivos);
-            List<string> teste = ColetaDados.Set(xmldoc, "cnpjcpf");
-            Dictionary<string, List<string>> teste2 = ColetaDados.Set(xmldoc, "isin", "codativo");
-            int a = 0;
-            
+            XDocument[] xmldoc = CarregaChecaXML.XMLdocs(ListaArquivos);
+            List<Ativos.TitPublico> titPublicos = ColetaDados.TitulosPublicos(xmldoc);
+
 
             #region Variaveis
             //Variaveis Gerais
