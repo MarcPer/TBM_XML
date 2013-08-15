@@ -8,7 +8,7 @@ namespace Ativos
     public class Acoes
     {
         public string CodAtivo { get; set; }
-        public string Indexador { get; set; }
+        public string ClasseOperacao { get; set; }
         public string DataEmissao { get; set; }
         public string Disponivel { get; set; }
         public string Garantia { get; set; }

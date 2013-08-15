@@ -23,6 +23,7 @@ namespace WindowsFormsApplication1
             FileInfo[] ListaArquivos = DirInfo.GetFiles("*.xml");
 
             XDocument[] xmldoc = CarregaChecaXML.XMLdocs(ListaArquivos);
+            List<Header.Header> headers = ColetaDados.ListaHeaders(xmldoc);
             List<Ativos.TitPublico> titPublicos = ColetaDados.TitulosPublicos(xmldoc);
             List<Ativos.CreditoPrivado> credPrivado = ColetaDados.CreditoPrivado(xmldoc);
             List<Ativos.Acoes> acoes = ColetaDados.Acoes(xmldoc);
