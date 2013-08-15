@@ -19,6 +19,11 @@
             Classe Títulos Públicos
             </summary>
         </member>
+        <member name="T:Cotas.Cotas">
+            <summary>
+            Classe Cotas
+            </summary>
+        </member>
         <member name="T:WindowsFormsApplication1.ColetaDados">
             <summary>
             Procura e extrai conteúdo de etiquetas específicas de arquivos XML.
@@ -26,7 +31,28 @@
         </member>
         <member name="M:WindowsFormsApplication1.ColetaDados.TitulosPublicos(System.Xml.Linq.XDocument[])">
             <summary>
-            Titulos Publicos
+            Retorna lista de titulos Publicos
+            </summary>
+            <param name="xmldoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WindowsFormsApplication1.ColetaDados.CreditoPrivado(System.Xml.Linq.XDocument[])">
+            <summary>
+            Retorna lista de ativos privados
+            </summary>
+            <param name="xmldoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WindowsFormsApplication1.ColetaDados.Acoes(System.Xml.Linq.XDocument[])">
+            <summary>
+            Retorna lista de ações
+            </summary>
+            <param name="xmldoc"></param>
+            <returns></returns>
+        </member>
+        <member name="M:WindowsFormsApplication1.ColetaDados.ListaCotas(System.Xml.Linq.XDocument[])">
+            <summary>
+            Retorna lista de cotas consolidadas por ISIN
             </summary>
             <param name="xmldoc"></param>
             <returns></returns>

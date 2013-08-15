@@ -19,7 +19,6 @@ namespace WindowsFormsApplication1
             // Localiza arquivos XML na pasta 'pastaXML'
             //string pastaXML = @"C:\Users\MarceloP\Documents\Visual Studio 2012\Projects\XML_files";
             string pastaXML = "..\\..\\..\\..\\XML_files";
-            string bla = Application.StartupPath;
             DirectoryInfo DirInfo = new DirectoryInfo(pastaXML);
             FileInfo[] ListaArquivos = DirInfo.GetFiles("*.xml");
 
@@ -27,6 +26,7 @@ namespace WindowsFormsApplication1
             List<Ativos.TitPublico> titPublicos = ColetaDados.TitulosPublicos(xmldoc);
             List<Ativos.CreditoPrivado> credPrivado = ColetaDados.CreditoPrivado(xmldoc);
             List<Ativos.Acoes> acoes = ColetaDados.Acoes(xmldoc);
+            List<Cotas.Cotas> cotas = ColetaDados.ListaCotas(xmldoc);
 
 
             #region Variaveis
