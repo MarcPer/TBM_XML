@@ -32,7 +32,6 @@
             this.btEmissor = new System.Windows.Forms.Button();
             this.rtLOG = new System.Windows.Forms.RichTextBox();
             this.btIndexador = new System.Windows.Forms.Button();
-            this.button1 = new System.Windows.Forms.Button();
             this.btTipoAtivo = new System.Windows.Forms.Button();
             this.btEspecie = new System.Windows.Forms.Button();
             this.shapeContainer1 = new Microsoft.VisualBasic.PowerPacks.ShapeContainer();
@@ -76,15 +75,7 @@
             this.btIndexador.TabIndex = 3;
             this.btIndexador.Text = "Indexador";
             this.btIndexador.UseVisualStyleBackColor = true;
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(417, 35);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(75, 23);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Cliente";
-            this.button1.UseVisualStyleBackColor = true;
+            this.btIndexador.Click += new System.EventHandler(this.btIndexador_Click);
             // 
             // btTipoAtivo
             // 
@@ -140,7 +131,6 @@
             this.Controls.Add(this.lbISIN);
             this.Controls.Add(this.btEspecie);
             this.Controls.Add(this.btTipoAtivo);
-            this.Controls.Add(this.button1);
             this.Controls.Add(this.btIndexador);
             this.Controls.Add(this.rtLOG);
             this.Controls.Add(this.btEmissor);
@@ -159,7 +149,6 @@
         private System.Windows.Forms.Button btEmissor;
         private System.Windows.Forms.RichTextBox rtLOG;
         private System.Windows.Forms.Button btIndexador;
-        private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btTipoAtivo;
         private System.Windows.Forms.Button btEspecie;
         private Microsoft.VisualBasic.PowerPacks.ShapeContainer shapeContainer1;

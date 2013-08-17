@@ -8,6 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
+
 namespace XMLBackOffice
 {
     public partial class TelaPrincipal : Form
@@ -19,10 +20,6 @@ namespace XMLBackOffice
 
         private void button1_Click(object sender, EventArgs e)
         {
-            ProcessoEmissor obPrograma = new ProcessoEmissor();
-            obPrograma.GerenciaProcessoCadastroEmissor();
-
-            rtLOG.Text = VGlobal.rtLOG.Text;
         }
 
         private void btEmissor_Click(object sender, EventArgs e)
@@ -80,6 +77,13 @@ namespace XMLBackOffice
 
         }
 
+        public static void ThreadProcIndexador()
+        {
+
+            Application.Run(new TelaIndexador());
+
+        }
+
         #endregion
 
         private void btEspecie_Click(object sender, EventArgs e)
@@ -90,6 +94,21 @@ namespace XMLBackOffice
                 System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProcEspecie));
                 t.Start();
                 rtLOG.Text += "Janela de Especie aberta.\r\n";
+            }
+            catch (Exception E)
+            {
+                rtLOG.Text += E.ToString();
+            }
+        }
+
+        private void btIndexador_Click(object sender, EventArgs e)
+        {
+            try
+            {
+                //Precisa criar uma nova thread para abrir uma nova tela
+                System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProcIndexador));
+                t.Start();
+                rtLOG.Text += "Janela de Indexador aberta.\r\n";
             }
             catch (Exception E)
             {

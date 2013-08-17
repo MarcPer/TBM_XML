@@ -57,7 +57,7 @@ namespace XMLBackOffice
                 #endregion
             PulaGravaLOGEmissor:
 
-                GravaLog(VGlobal.LogLocal);
+                Generico.GravarLOG(VGlobal.LOGEmissor, VGlobal.LogLocal);
 
             }
 
@@ -70,12 +70,13 @@ namespace XMLBackOffice
                 DataTable dataTable = new DataTable();
                 SQLXML Consulta = new SQLXML();
                 VGlobal.LogLocal.Text = "";
+                string LinhaComandoSQL;
                 #endregion
 
                 try
                 {
-
-                    dataTable = Consulta.ConsultaEmissor(VGlobal.TabelaEmissor, VGlobal.CamposTabelaEmissor[0], CodigoEmissor, VGlobal.CamposTabelaEmissor[1], NomeEmissor, VGlobal.CamposTabelaEmissor[2], CNPJEmissor, VGlobal.CamposTabelaEmissor[3], DataEmissor);
+                    LinhaComandoSQL = "SELECT * FROM " + VGlobal.TabelaEmissor + " where " + VGlobal.CamposTabelaEmissor[0] + " LIKE \'%" + CodigoEmissor + "%\' and " + VGlobal.CamposTabelaEmissor[1] + " LIKE \'%" + NomeEmissor + "%\' and " + VGlobal.CamposTabelaEmissor[2] + " LIKE \'%" + CNPJEmissor + "%\' and " + VGlobal.CamposTabelaEmissor[3] + " LIKE \'%" + DataEmissor + "%\' ;";
+                    dataTable = Consulta.ConsultaGenerica(LinhaComandoSQL);
 
                 }
                 catch (Exception e)
@@ -114,20 +115,9 @@ namespace XMLBackOffice
                     }
                 }
 
-                GravaLog(VGlobal.LogLocal);
+                Generico.GravarLOG(VGlobal.LOGEmissor, VGlobal.LogLocal);
                 return Emissor;
-
-
             }
-
-            public static void GravaLog(RichTextBox Log)
-            {
-                #region GravaLOG
-                ////Grava no LOG textBox
-                File.AppendAllText(VGlobal.LOGEmissor, Log.Text);
-                #endregion
-            }
-
         }
 
         class ProcessoAtivo
@@ -141,12 +131,14 @@ namespace XMLBackOffice
                 DataTable dataTable = new DataTable();
                 SQLXML Consulta = new SQLXML();
                 VGlobal.LogLocal.Text = "";
+                string LinhaComandoSQL;
                 #endregion
 
                 try
                 {
-
-                    dataTable = Consulta.ConsultaAtivo(VGlobal.TabelaAtivo, VGlobal.CamposTabelaAtivo[0], ConsultaCategoria, VGlobal.CamposTabelaAtivo[1], ConsultaSigla, VGlobal.CamposTabelaAtivo[2], ConsultaDescricao, VGlobal.CamposTabelaAtivo[3], ConsultaTipo, VGlobal.CamposTabelaAtivo[4], ConsultaSeq1, VGlobal.CamposTabelaAtivo[5], ConsultaSeq2);
+                    LinhaComandoSQL = "SELECT * FROM " + VGlobal.TabelaAtivo + " where " + VGlobal.CamposTabelaAtivo[0] + " LIKE \'%" + ConsultaCategoria + "%\' and " + VGlobal.CamposTabelaAtivo[1] + " LIKE \'%" + ConsultaSigla + "%\' and " + VGlobal.CamposTabelaAtivo[2] + " LIKE \'%" + ConsultaDescricao + "%\' and " + VGlobal.CamposTabelaAtivo[3] + " LIKE \'%" + ConsultaTipo + "%\' and " + VGlobal.CamposTabelaAtivo[4] + " LIKE \'%" + ConsultaSeq1 + "%\' and " + VGlobal.CamposTabelaAtivo[5] + " LIKE \'%" + ConsultaSeq2 + "%\';";
+                    //"SELECT * FROM " + TabelaAtivo + " where " + ConsultaCategoriaTabelaAtivo + " LIKE \'%" + ConsultaCategoria + "%\' and " + ConsultaSiglaTabelaAtivo + " LIKE \'%" + ConsultaSigla + "%\' and " + ConsultaDescricaoTabelaAtivo + " LIKE \'%" + ConsultaDescricao + "%\' and " + ConsultaTipoTabelaAtivo + " LIKE \'%" + ConsultaTipo + "%\' and " + ConsultaSeq1TabelaAtivo + " LIKE \'%" + ConsultaSeq1 + "%\' and " + ConsultaSeq2TabelaAtivo + " LIKE \'%" + ConsultaSeq2 + "%\';"
+                    dataTable = Consulta.ConsultaGenerica(LinhaComandoSQL);
 
                 }
                 catch (Exception e)
@@ -187,18 +179,10 @@ namespace XMLBackOffice
                     }
                 }
 
-                GravaLog(VGlobal.LogLocal);
+                Generico.GravarLOG(VGlobal.LOGAtivo, VGlobal.LogLocal);
                 return Ativo;
 
 
-            }
-
-            public static void GravaLog(RichTextBox Log)
-            {
-                #region GravaLOG
-                ////Grava no LOG textBox
-                File.AppendAllText(VGlobal.LOGAtivo, Log.Text);
-                #endregion
             }
 
             public void GerenciaProcessoCadastroTipoAtivo()
@@ -242,7 +226,7 @@ namespace XMLBackOffice
                 #endregion
             PulaGravaLOGAtivo:
 
-                GravaLog(VGlobal.LogLocal);
+                Generico.GravarLOG(VGlobal.LOGAtivo, VGlobal.LogLocal);
 
             }
         }
@@ -258,13 +242,14 @@ namespace XMLBackOffice
                 DataTable dataTable = new DataTable();
                 SQLXML Consulta = new SQLXML();
                 VGlobal.LogLocal.Text = "";
+                string LinhaComandoSQL;
                 #endregion
 
                 try
                 {
-
-                    dataTable = Consulta.ConsultaEspecie(VGlobal.TabelaEspecie, VGlobal.CamposTabelaEspecie[0], ConsultaDescricao, VGlobal.CamposTabelaEspecie[1], ConsultaCodigo);
-
+                    LinhaComandoSQL = "SELECT * FROM " + VGlobal.TabelaEspecie + " where " + VGlobal.CamposTabelaEspecie[0] + " LIKE \'%" + ConsultaDescricao + "%\' and " + VGlobal.CamposTabelaEspecie[1] + " LIKE \'%" + ConsultaCodigo + "%\';";
+                    dataTable = Consulta.ConsultaGenerica(LinhaComandoSQL);
+                    
                 }
                 catch (Exception e)
                 {
@@ -300,18 +285,10 @@ namespace XMLBackOffice
                     }
                 }
 
-                GravaLog(VGlobal.LogLocal);
+                Generico.GravarLOG(VGlobal.LOGEspecie, VGlobal.LogLocal);
                 return Especie;
 
 
-            }
-
-            public static void GravaLog(RichTextBox Log)
-            {
-                #region GravaLOG
-                ////Grava no LOG textBox
-                File.AppendAllText(VGlobal.LOGEspecie, Log.Text);
-                #endregion
             }
 
             public void GerenciaProcessoCadastroEspecie()
@@ -355,10 +332,126 @@ namespace XMLBackOffice
                 #endregion
             PulaGravaLOGEspecie:
 
-                GravaLog(VGlobal.LogLocal);
+                Generico.GravarLOG(VGlobal.LOGEspecie, VGlobal.LogLocal);
 
             }
         }
 
+        class ProcessoIndexador
+        {
+            public string[,] GerenciaProcessoConsultaIndexador(string XML_Indexador, string Relatorio_Indexador, string Descricao_Indexador)
+            {
+                #region Variáveis
+                //variaveis
+                VGlobal.RetornoFalha = false;
+                string[,] Indexador;
+                DataTable dataTable = new DataTable();
+                SQLXML Consulta = new SQLXML();
+                VGlobal.LogLocal.Text = "";
+                string LinhaComandoSQL;
+                #endregion
+
+                try
+                {
+                    LinhaComandoSQL = "SELECT * FROM " + VGlobal.TabelaIndexador + " where " + VGlobal.CamposTabelaIndexador[0] + " LIKE \'%" + XML_Indexador + "%\' and " + VGlobal.CamposTabelaIndexador[1] + " LIKE \'%" + Relatorio_Indexador + "%\' and " + VGlobal.CamposTabelaIndexador[2] + " LIKE \'%" + Descricao_Indexador + "%\' ;";
+                    dataTable = Consulta.ConsultaGenerica(LinhaComandoSQL);
+                }
+                catch (Exception e)
+                {
+                    VGlobal.rtLOG.Text += e.ToString();
+                    VGlobal.RetornoFalha = true;
+                }
+
+                if (VGlobal.RetornoFalha == true)
+                {
+                    DialogResult dialogResult = MessageBox.Show("Falha na consulta do Indexador!", "ERROR", MessageBoxButtons.OK);
+                    VGlobal.LogLocal.Text += "Falha na consulta do Emissor: \r\nXML:" + XML_Indexador + "\r\nRelatorio:" + Relatorio_Indexador + "\r\nDescricao:" + Descricao_Indexador + "\r\n";
+                    Indexador = null;
+                    dataTable = null;
+                }
+                else
+                {
+                    Indexador = new string[dataTable.Rows.Count, 3];
+
+                    if (dataTable.Rows.Count != 0)
+                    {
+                        VGlobal.LogLocal.Text += "Total de colunas pesquisadas: " + dataTable.Rows.Count + "\r\n";
+                        for (int i = 0; i < dataTable.Rows.Count; i++)
+                        {
+                            Indexador[i, 0] = dataTable.Rows[i][0].ToString();
+                            Indexador[i, 1] = dataTable.Rows[i][1].ToString();
+                            Indexador[i, 2] = dataTable.Rows[i][2].ToString();
+                        }
+                    }
+                    else
+                    {
+                        DialogResult dialogResult2 = MessageBox.Show("Não foram encontrados resultados para esta busca!", "ERROR", MessageBoxButtons.OK);
+                        VGlobal.rtLOG.Text += "Não foram encontrados resultados para esta busca:\r\nXML:" + XML_Indexador + "\r\nRelatorio:" + Relatorio_Indexador + "\r\nDescricao:" + Descricao_Indexador + "\r\n";
+                        VGlobal.RetornoFalha = true;
+                    }
+                }
+
+                Generico.GravarLOG(VGlobal.LOGIndexador, VGlobal.LogLocal);
+                return Indexador;
+
+
+            }
+
+            public void GerenciaProcessoCadastroIndexador()
+            {
+                #region Variaveis
+                string[] LinhasIndexador;
+                string[,] Indexador;
+                VGlobal.RetornoFalha = false;
+                VGlobal.LogLocal.Text = "";
+
+                #endregion
+
+                #region AbreArquivo - Indexador.txt
+                AbreArquivo obAbreArquivo = new AbreArquivo();
+                LinhasIndexador = obAbreArquivo.AbreTXT(VGlobal.EndIndexador);
+                if (VGlobal.RetornoFalha != false)
+                {
+                    DialogResult dialogResult = MessageBox.Show("Encontrado erro na estrutura do Indexador.txt. Favor verificar LOG!", "ERROR", MessageBoxButtons.OK);
+                    goto PulaGravaLOGIndexador;
+                }
+                #endregion
+
+                #region SeparaDadosArquivo - Indexador.txt
+                SeparaDadosArquivo obSeparaDadosArquivo = new SeparaDadosArquivo();
+                Indexador = obSeparaDadosArquivo.SeparaIndexador(LinhasIndexador);
+                if (VGlobal.RetornoFalha != false)
+                {
+                    DialogResult dialogResult = MessageBox.Show("Encontrado erro na estrutura de separação dos dados do Arquivo. Favor verificar LOG!", "ERROR", MessageBoxButtons.OK);
+                    goto PulaGravaLOGIndexador;
+                }
+                #endregion
+
+                #region SQL - Especie.txt
+                SQLXML obSQLXML = new SQLXML();
+                obSQLXML.CadastraIndexador(Indexador);
+                if (VGlobal.RetornoFalha == true)
+                {
+                    DialogResult dialogResult = MessageBox.Show("Encontrado erro no SQL. Favor verificar LOG!", "ERROR", MessageBoxButtons.OK);
+                    goto PulaGravaLOGIndexador;
+                }
+                #endregion
+            PulaGravaLOGIndexador:
+
+                Generico.GravarLOG(VGlobal.LOGIndexador, VGlobal.LogLocal);
+            }
+        }
+
+        public static class Generico
+        {//Colocar funcoes genericas aqui que precisam estar dentro de uma classe
+
+            public static void GravarLOG(string NomeArquivo, RichTextBox Conteudo)
+            {//Funcao para gravar log no arquivo
+                #region GravaLOG
+                ////Grava no LOG textBox
+                File.AppendAllText(NomeArquivo, Conteudo.Text);
+                #endregion
+            }
+        }
 }
 

@@ -120,7 +120,7 @@ namespace XMLBackOffice
         {
             #region Variaveis
             //Variaveis
-            string[,] Especie = new string[LinhasEspecie.Length, 2]; // 1 - Categoria, 2 - Sigla, 3 - Descricao, 4 -TipoAtivo, 5 - Sequencia1, 6 - Sequencia2
+            string[,] Especie = new string[LinhasEspecie.Length, 2]; // 1 - Descricao_Especie, 2 - Codigo_Especie
             #endregion
 
 
@@ -146,6 +146,39 @@ namespace XMLBackOffice
             }
 
             return Especie;
+        }
+
+        public string[,] SeparaIndexador(string[] LinhasIndexador)
+        {
+            #region Variaveis
+            //Variaveis
+            string[,] Indexador = new string[LinhasIndexador.Length, 3]; // 1 - XML_Indexador, 2 - Relatorio_Indexador, 3 - Descricao_Indexador
+            #endregion
+
+
+            try
+            {
+                #region Separacao
+                for (int i = 0; i < LinhasIndexador.Length; i++)
+                {
+                    //Limpa as aspas do arquivo.
+                    //LinhasAtivo[i] = LinhasAtivo[i].Replace("\"", String.Empty);
+                    //LinhasAtivo[i] = LinhasAtivo[i].Replace(", ", " ");
+
+                    //Pega valores cortando pela vírgula
+                    Indexador[i, 0] = LinhasIndexador[i].Split(',')[0];
+                    Indexador[i, 1] = LinhasIndexador[i].Split(',')[1];
+                    Indexador[i, 2] = LinhasIndexador[i].Split(',')[2];
+                }
+                #endregion
+            }
+            catch (Exception Error)
+            {
+                VGlobal.LogLocal.Text += Convert.ToString(Error);
+                VGlobal.RetornoFalha = true;
+            }
+
+            return Indexador;
         }
     }
 }

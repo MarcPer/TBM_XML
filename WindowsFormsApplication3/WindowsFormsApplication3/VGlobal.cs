@@ -22,9 +22,13 @@ namespace XMLBackOffice
         public static string ParamConexSQL = "User Id=sa;Password=senha123;Server=WIN-9OBDOK4FG8Q\\SQLEXPRESS;Trusted_Connection=yes;Database=BDXMLProj;connection timeout=5";
         //"User Id=sa;Password=senha123;Server=WIN-9OBDOK4FG8Q\\SQLEXPRESS;Trusted_Connection=yes;Database=BDXMLProj;connection timeout=5"; - FUNCIONA
         //"User Id=WIN-9OBDOK4FG8Q\\XMLConsultUser;Password=XMLConsultUser;Server=192.168.74.133\\SQLEXPRESS;Trusted_Connection=yes;Database=BDXMLProj;connection timeout=5"; - ERRO  de dominio Windows
+        //"User Id=WIN-9OBDOK4FG8Q\\XMLConsultUser;Password=XMLConsultUser;Server=192.168.74.133\\SQLEXPRESS;Network Library=DBMSSOCN;Initial Catalog=BDXMLProj;Integrated Security=SSPI;connection timeout=5"; - ERRO de dominio Windows
+        //"User Id=sa;Password=senha123;Server=192.168.74.133,1433;Data Source=.\\SQLEXPRESS;Trusted_Connection=yes;Database=BDXMLProj;User Instance=True;connection timeout=5"; - ERRO, nao foi possivel conectar ao BDXMLProj - Falha de logon de usuario do windows
         //@"Server=myServerName\myInstanceName;Database=myDataBase;User Id=myUsername; Password=myPassword";
         //Data Source=190.190.200.100,1433;Network Library=DBMSSOCN; Initial Catalog=myDataBase
         //en teste: @"User Id=sa;Password=senha123;Data Source=192.168.74.133,1433\SQLEXPRESS;Network Library=DBMSSOCN;Trusted_Connection=no;Initial Catalog=BDXMLProj;connection timeout=5";
+        //CE device: Data Source=myServerAddress;Initial Catalog=myDataBase;Integrated Security=SSPI; User ID=myDomain\myUsername;Password=myPassword;
+        //TCP: Data Source=190.190.200.100,1433;Network Library=DBMSSOCN; Initial Catalog=myDataBase;User ID=myUsername;Password=myPassword;
         #endregion
 
         #region Variaveis Tela Inicial
@@ -57,6 +61,15 @@ namespace XMLBackOffice
         public static string LOGEspecie = "c:\\input\\LOG_Especie.rtf";
         public static string[] CamposTabelaEspecie = { "Descricao_Especie", "Codigo_Especie" };
         public static string TabelaEspecie = "BDXMLProj.dbo.tbEspecie";
+        #endregion
+
+        #region Variaveis do Indexador.txt
+        public static string[,] Indexador;
+        public static int IndexadorContagem;
+        public static string EndIndexador;
+        public static string LOGIndexador = "c:\\input\\LOG_Indexador.rtf";
+        public static string[] CamposTabelaIndexador = { "XML_Indexador", "Relatorio_Indexador", "Descricao_Indexador" };
+        public static string TabelaIndexador = "BDXMLProj.dbo.tbIndexador";
         #endregion
     }
 }
