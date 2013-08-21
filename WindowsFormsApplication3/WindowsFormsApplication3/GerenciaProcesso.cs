@@ -436,11 +436,13 @@ namespace XMLBackOffice
                     goto PulaGravaLOGIndexador;
                 }
                 #endregion
+
             PulaGravaLOGIndexador:
 
                 Generico.GravarLOG(VGlobal.LOGIndexador, VGlobal.LogLocal);
             }
         }
+
 
         public static class Generico
         {//Colocar funcoes genericas aqui que precisam estar dentro de uma classe
@@ -453,5 +455,7 @@ namespace XMLBackOffice
                 #endregion
             }
         }
+
+
 }
 

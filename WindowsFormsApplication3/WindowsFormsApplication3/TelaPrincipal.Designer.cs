@@ -76,6 +76,7 @@
             this.btIndexador.Text = "Indexador";
             this.btIndexador.UseVisualStyleBackColor = true;
             this.btIndexador.Click += new System.EventHandler(this.btIndexador_Click);
+
             // 
             // btTipoAtivo
             // 

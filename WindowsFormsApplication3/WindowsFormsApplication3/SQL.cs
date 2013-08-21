@@ -43,6 +43,9 @@ namespace XMLBackOffice
                         #region INSERT
 
                         SqlCommand myCommand = new SqlCommand("INSERT INTO " + VGlobal.TabelaEmissor + " (" + VGlobal.CamposTabelaEmissor[0] + "," + VGlobal.CamposTabelaEmissor[1] + "," + VGlobal.CamposTabelaEmissor[2] + "," + VGlobal.CamposTabelaEmissor[3] + ") values ('" + Emissor[i, 0] + "','" + Emissor[i, 1] + "','" + Emissor[i, 2] + "','" + Emissor[i, 3] + "')", mySQLConnection);
+
+                       // SqlCommand myCommand = new SqlCommand("INSERT INTO " + VGlobal.TabelaEmissor + " ("+VGlobal.CamposTabelaEmissor[0]+","+VGlobal.CamposTabelaEmissor[1]+"," +VGlobal.CamposTabelaEmissor[2]+","+VGlobal.CamposTabelaEmissor[3]+") values ('" + Emissor[i, 0] + "','" + Emissor[i, 1] + "','" + Emissor[i, 2] + "','" + Emissor[i, 3] + "')", mySQLConnection);
+
                         myCommand.ExecuteNonQuery();
                         ContadorEmissorCadastrado++;
 
@@ -107,7 +110,11 @@ namespace XMLBackOffice
                                 while (AuxContagem != ElementoFinal + 1)
                                 {
                                     AuxiliarTipoAtivo = Ativo[i, 3] + Convert.ToString(AuxContagem);
+
                                     SqlCommand myCommand = new SqlCommand("INSERT INTO " + VGlobal.TabelaAtivo + " (" + VGlobal.CamposTabelaAtivo[0] + "," + VGlobal.CamposTabelaAtivo[1] + "," + VGlobal.CamposTabelaAtivo[2] + "," + VGlobal.CamposTabelaAtivo[3] + "," + VGlobal.CamposTabelaAtivo[4] + "," + VGlobal.CamposTabelaAtivo[5] + ") values ('" + Ativo[i, 0] + "','" + Ativo[i, 1] + "','" + Ativo[i, 2] + "','" + AuxiliarTipoAtivo + "','" + Ativo[i, 4] + "','" + Ativo[i, 5] + "')", mySQLConnection);
+
+                                    //SqlCommand myCommand = new SqlCommand("INSERT INTO " + VGlobal.TabelaAtivo + " ("+VGlobal.CamposTabelaAtivo[0]+","+VGlobal.CamposTabelaAtivo[1]+","+VGlobal.CamposTabelaAtivo[2]+","+VGlobal.CamposTabelaAtivo[3]+","+VGlobal.CamposTabelaAtivo[4]+","+VGlobal.CamposTabelaAtivo[5]+") values ('" + Ativo[i, 0] + "','" + Ativo[i, 1] + "','" + Ativo[i, 2] + "','" + AuxiliarTipoAtivo + "','" + Ativo[i, 4] + "','" + Ativo[i, 5] + "')", mySQLConnection);
+
                                     myCommand.ExecuteNonQuery();
                                     AuxContagem++;
                                     ContadorAtivoCadastrado++;
@@ -249,7 +256,11 @@ namespace XMLBackOffice
 
                         #region INSERT
 
+
                         SqlCommand myCommand = new SqlCommand("INSERT INTO " + VGlobal.TabelaIndexador + " (" + VGlobal.CamposTabelaIndexador[0] + "," + VGlobal.CamposTabelaIndexador[1] + "," + VGlobal.CamposTabelaIndexador[2] + ") values ('" + Indexador[i, 0] + "','" + Indexador[i, 1] + "','" + Indexador[i, 2] + "')", mySQLConnection);
+
+                        //SqlCommand myCommand = new SqlCommand("INSERT INTO " + VGlobal.TabelaEspecie + " ("+VGlobal.CamposTabelaEspecie[0]+","+ VGlobal.CamposTabelaEspecie[1]+") values ('" + Especie[i, 0] + "','" + Especie[i, 1] + "')", mySQLConnection);
+
                         myCommand.ExecuteNonQuery();
                         ContadorIndexadorCadastrado++;
 
@@ -310,6 +321,8 @@ namespace XMLBackOffice
         }
 
         #endregion
+
+
     }
 
 }
