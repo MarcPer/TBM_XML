@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Data;
-using System.Data.SqlClient;
 using System.IO;
 using System.Windows.Forms;
+using MySql.Data.MySqlClient;
 
 
 namespace XMLBackOffice
@@ -15,20 +15,21 @@ namespace XMLBackOffice
     {
         #region Cadastros
         //Região reservada para codigo de cadastros no Banco de Dados
+
         #region EMISSOR
         //EMISSOR
         public void CadastraEmissor(string[,] Emissor)
         {
             #region Variáveis
             //variaveis
-            SqlConnection mySQLConnection = new SqlConnection(VGlobal.ParamConexSQL);
+            MySqlConnection mySQLConnection = new MySqlConnection(VGlobal.ParamConexMySQL);
             int ContadorEmissorCadastrado = 0;
             #endregion
 
             mySQLConnection.Open();//Abre coonexao com o banco
 
             //limpa base de dados de Emissor - retirar tudo e acrescenta denovo os novos valores - evita lixo na BD
-            SqlCommand myCommandDelete = new SqlCommand("DELETE FROM " + VGlobal.TabelaEmissor, mySQLConnection); //define a linha de comando
+            MySqlCommand myCommandDelete = new MySqlCommand("DELETE FROM " + VGlobal.TabelaEmissor, mySQLConnection); //define a linha de comando
             myCommandDelete.ExecuteNonQuery();//executa a linha de comando que não possui retorno
 
 
@@ -42,9 +43,9 @@ namespace XMLBackOffice
 
                         #region INSERT
 
-                        SqlCommand myCommand = new SqlCommand("INSERT INTO " + VGlobal.TabelaEmissor + " (" + VGlobal.CamposTabelaEmissor[0] + "," + VGlobal.CamposTabelaEmissor[1] + "," + VGlobal.CamposTabelaEmissor[2] + "," + VGlobal.CamposTabelaEmissor[3] + ") values ('" + Emissor[i, 0] + "','" + Emissor[i, 1] + "','" + Emissor[i, 2] + "','" + Emissor[i, 3] + "')", mySQLConnection);
+                        MySqlCommand myCommand = new MySqlCommand("INSERT INTO " + VGlobal.TabelaEmissor + " (" + VGlobal.CamposTabelaEmissor[0] + "," + VGlobal.CamposTabelaEmissor[1] + "," + VGlobal.CamposTabelaEmissor[2] + "," + VGlobal.CamposTabelaEmissor[3] + ") values (\"" + Emissor[i, 0] + "\",\"" + Emissor[i, 1] + "\",\"" + Emissor[i, 2] + "\",\"" + Emissor[i, 3] + "\")", mySQLConnection);
 
-                       // SqlCommand myCommand = new SqlCommand("INSERT INTO " + VGlobal.TabelaEmissor + " ("+VGlobal.CamposTabelaEmissor[0]+","+VGlobal.CamposTabelaEmissor[1]+"," +VGlobal.CamposTabelaEmissor[2]+","+VGlobal.CamposTabelaEmissor[3]+") values ('" + Emissor[i, 0] + "','" + Emissor[i, 1] + "','" + Emissor[i, 2] + "','" + Emissor[i, 3] + "')", mySQLConnection);
+                        // SqlCommand myCommand = new SqlCommand("INSERT INTO " + VGlobal.TabelaEmissor + " ("+VGlobal.CamposTabelaEmissor[0]+","+VGlobal.CamposTabelaEmissor[1]+"," +VGlobal.CamposTabelaEmissor[2]+","+VGlobal.CamposTabelaEmissor[3]+") values ('" + Emissor[i, 0] + "','" + Emissor[i, 1] + "','" + Emissor[i, 2] + "','" + Emissor[i, 3] + "')", mySQLConnection);
 
                         myCommand.ExecuteNonQuery();
                         ContadorEmissorCadastrado++;
@@ -79,14 +80,14 @@ namespace XMLBackOffice
         {
             #region Variáveis
             //variaveis
-            SqlConnection mySQLConnection = new SqlConnection(VGlobal.ParamConexSQL);
+            MySqlConnection mySQLConnection = new MySqlConnection(VGlobal.ParamConexMySQL);
             int ContadorAtivoCadastrado = 0;
             #endregion
 
             mySQLConnection.Open();//Abre coonexao com o banco
 
             //limpa base de dados de Emissor - retirar tudo e acrescenta denovo os novos valores - evita lixo na BD
-            SqlCommand myCommandDelete = new SqlCommand("DELETE FROM " + VGlobal.TabelaAtivo, mySQLConnection); //define a linha de comando
+            MySqlCommand myCommandDelete = new MySqlCommand("DELETE FROM " + VGlobal.TabelaAtivo, mySQLConnection); //define a linha de comando
             myCommandDelete.ExecuteNonQuery();//executa a linha de comando que não possui retorno
 
             for (int i = 0; i < Ativo.GetUpperBound(0) + 1; i++)
@@ -111,7 +112,7 @@ namespace XMLBackOffice
                                 {
                                     AuxiliarTipoAtivo = Ativo[i, 3] + Convert.ToString(AuxContagem);
 
-                                    SqlCommand myCommand = new SqlCommand("INSERT INTO " + VGlobal.TabelaAtivo + " (" + VGlobal.CamposTabelaAtivo[0] + "," + VGlobal.CamposTabelaAtivo[1] + "," + VGlobal.CamposTabelaAtivo[2] + "," + VGlobal.CamposTabelaAtivo[3] + "," + VGlobal.CamposTabelaAtivo[4] + "," + VGlobal.CamposTabelaAtivo[5] + ") values ('" + Ativo[i, 0] + "','" + Ativo[i, 1] + "','" + Ativo[i, 2] + "','" + AuxiliarTipoAtivo + "','" + Ativo[i, 4] + "','" + Ativo[i, 5] + "')", mySQLConnection);
+                                    MySqlCommand myCommand = new MySqlCommand("INSERT INTO " + VGlobal.TabelaAtivo + " (" + VGlobal.CamposTabelaAtivo[0] + "," + VGlobal.CamposTabelaAtivo[1] + "," + VGlobal.CamposTabelaAtivo[2] + "," + VGlobal.CamposTabelaAtivo[3] + "," + VGlobal.CamposTabelaAtivo[4] + "," + VGlobal.CamposTabelaAtivo[5] + ") values (\"" + Ativo[i, 0] + "\",\"" + Ativo[i, 1] + "\",\"" + Ativo[i, 2] + "\",\"" + AuxiliarTipoAtivo + "\",\"" + Ativo[i, 4] + "\",\"" + Ativo[i, 5] + "\")", mySQLConnection);
 
                                     //SqlCommand myCommand = new SqlCommand("INSERT INTO " + VGlobal.TabelaAtivo + " ("+VGlobal.CamposTabelaAtivo[0]+","+VGlobal.CamposTabelaAtivo[1]+","+VGlobal.CamposTabelaAtivo[2]+","+VGlobal.CamposTabelaAtivo[3]+","+VGlobal.CamposTabelaAtivo[4]+","+VGlobal.CamposTabelaAtivo[5]+") values ('" + Ativo[i, 0] + "','" + Ativo[i, 1] + "','" + Ativo[i, 2] + "','" + AuxiliarTipoAtivo + "','" + Ativo[i, 4] + "','" + Ativo[i, 5] + "')", mySQLConnection);
 
@@ -134,7 +135,7 @@ namespace XMLBackOffice
                                     while (AuxContagem3 != ElementoFinal3 + 1)
                                     {
                                         AuxiliarTipoAtivo = Ativo[i, 3] + Convert.ToString(AuxContagem2) + Convert.ToString(AuxContagem3);
-                                        SqlCommand myCommand = new SqlCommand("INSERT INTO " + VGlobal.TabelaAtivo + " (Categoria_TipoAtivo, Sigla_TipoAtivo, Descricao_TipoAtivo, Tipo_TipoAtivo, Sequencia1, Sequencia2) values ('" + Ativo[i, 0] + "','" + Ativo[i, 1] + "','" + Ativo[i, 2] + "','" + AuxiliarTipoAtivo + "','" + Ativo[i, 4] + "','" + Ativo[i, 5] + "')", mySQLConnection);
+                                        MySqlCommand myCommand = new MySqlCommand("INSERT INTO " + VGlobal.TabelaAtivo + " (Categoria_TipoAtivo, Sigla_TipoAtivo, Descricao_TipoAtivo, Tipo_TipoAtivo, Sequencia1, Sequencia2) values (\"" + Ativo[i, 0] + "\",\"" + Ativo[i, 1] + "\",\"" + Ativo[i, 2] + "\",\"" + AuxiliarTipoAtivo + "\",\"" + Ativo[i, 4] + "\",\"" + Ativo[i, 5] + "\")", mySQLConnection);
                                         myCommand.ExecuteNonQuery();
                                         AuxContagem3++;
                                         ContadorAtivoCadastrado++;
@@ -152,7 +153,7 @@ namespace XMLBackOffice
                         else //se nao for menor do 3 caracteres e porque ja esta completo
                         {
 
-                            SqlCommand myCommand = new SqlCommand("INSERT INTO " + VGlobal.TabelaAtivo + " (Categoria_TipoAtivo, Sigla_TipoAtivo, Descricao_TipoAtivo, Tipo_TipoAtivo, Sequencia1, Sequencia2) values ('" + Ativo[i, 0] + "','" + Ativo[i, 1] + "','" + Ativo[i, 2] + "','" + Ativo[i, 3] + "','" + Ativo[i, 4] + "','" + Ativo[i, 5] + "')", mySQLConnection);
+                            MySqlCommand myCommand = new MySqlCommand("INSERT INTO " + VGlobal.TabelaAtivo + " (Categoria_TipoAtivo, Sigla_TipoAtivo, Descricao_TipoAtivo, Tipo_TipoAtivo, Sequencia1, Sequencia2) values (\"" + Ativo[i, 0] + "\",\"" + Ativo[i, 1] + "\",\"" + Ativo[i, 2] + "\",\"" + Ativo[i, 3] + "\",\"" + Ativo[i, 4] + "\",\"" + Ativo[i, 5] + "\")", mySQLConnection);
                             myCommand.ExecuteNonQuery();
                             ContadorAtivoCadastrado++;
                         }
@@ -184,14 +185,14 @@ namespace XMLBackOffice
         {
             #region Variáveis
             //variaveis
-            SqlConnection mySQLConnection = new SqlConnection(VGlobal.ParamConexSQL);
+            MySqlConnection mySQLConnection = new MySqlConnection(VGlobal.ParamConexMySQL);
             int ContadorEspecieCadastrado = 0;
             #endregion
 
             mySQLConnection.Open();//Abre coonexao com o banco
 
             //limpa base de dados de Emissor - retirar tudo e acrescenta denovo os novos valores - evita lixo na BD
-            SqlCommand myCommandDelete = new SqlCommand("DELETE FROM " + VGlobal.TabelaEspecie, mySQLConnection); //define a linha de comando
+            MySqlCommand myCommandDelete = new MySqlCommand("DELETE FROM " + VGlobal.TabelaEspecie, mySQLConnection); //define a linha de comando
             myCommandDelete.ExecuteNonQuery();//executa a linha de comando que não possui retorno
 
             for (int i = 0; i < Especie.GetUpperBound(0) + 1; i++)
@@ -204,7 +205,7 @@ namespace XMLBackOffice
 
                         #region INSERT
 
-                        SqlCommand myCommand = new SqlCommand("INSERT INTO " + VGlobal.TabelaEspecie + " (" + VGlobal.CamposTabelaEspecie[0] + "," + VGlobal.CamposTabelaEspecie[1] + ") values ('" + Especie[i, 0] + "','" + Especie[i, 1] + "')", mySQLConnection);
+                        MySqlCommand myCommand = new MySqlCommand("INSERT INTO " + VGlobal.TabelaEspecie + " (" + VGlobal.CamposTabelaEspecie[0] + "," + VGlobal.CamposTabelaEspecie[1] + ") values (\"" + Especie[i, 0] + "\",\"" + Especie[i, 1] + "\")", mySQLConnection);
                         myCommand.ExecuteNonQuery();
                         ContadorEspecieCadastrado++;
 
@@ -236,14 +237,14 @@ namespace XMLBackOffice
         {
             #region Variáveis
             //variaveis
-            SqlConnection mySQLConnection = new SqlConnection(VGlobal.ParamConexSQL);
+            MySqlConnection mySQLConnection = new MySqlConnection(VGlobal.ParamConexMySQL);
             int ContadorIndexadorCadastrado = 0;
             #endregion
 
             mySQLConnection.Open();//Abre coonexao com o banco
 
             //limpa base de dados de Emissor - retirar tudo e acrescenta denovo os novos valores - evita lixo na BD
-            SqlCommand myCommandDelete = new SqlCommand("DELETE FROM " + VGlobal.TabelaIndexador, mySQLConnection); //define a linha de comando
+            MySqlCommand myCommandDelete = new MySqlCommand("DELETE FROM " + VGlobal.TabelaIndexador, mySQLConnection); //define a linha de comando
             myCommandDelete.ExecuteNonQuery();//executa a linha de comando que não possui retorno
 
             for (int i = 0; i < Indexador.GetUpperBound(0) + 1; i++)
@@ -256,15 +257,12 @@ namespace XMLBackOffice
 
                         #region INSERT
 
-
-                        SqlCommand myCommand = new SqlCommand("INSERT INTO " + VGlobal.TabelaIndexador + " (" + VGlobal.CamposTabelaIndexador[0] + "," + VGlobal.CamposTabelaIndexador[1] + "," + VGlobal.CamposTabelaIndexador[2] + ") values ('" + Indexador[i, 0] + "','" + Indexador[i, 1] + "','" + Indexador[i, 2] + "')", mySQLConnection);
-
-                        //SqlCommand myCommand = new SqlCommand("INSERT INTO " + VGlobal.TabelaEspecie + " ("+VGlobal.CamposTabelaEspecie[0]+","+ VGlobal.CamposTabelaEspecie[1]+") values ('" + Especie[i, 0] + "','" + Especie[i, 1] + "')", mySQLConnection);
-
+                        MySqlCommand myCommand = new MySqlCommand("INSERT INTO " + VGlobal.TabelaIndexador + " (" + VGlobal.CamposTabelaIndexador[0] + "," + VGlobal.CamposTabelaIndexador[1] + "," + VGlobal.CamposTabelaIndexador[2] + ") VALUES (\"" + Indexador[i, 0] + "\",\"" + Indexador[i, 1] + "\",\"" + Indexador[i, 2] + "\")", mySQLConnection);
+                                                
+                        //INSERT INTO bdxmlproj.tbindexador (Relatorio_Indexador,Descricao_Indexador,XML_Indexador)VALUES ("A","B","C")
                         myCommand.ExecuteNonQuery();
                         ContadorIndexadorCadastrado++;
-
-                        //"INSERT INTO Pessoa (nome, dataNascimento, sexo, email) values ( '" + newPessoa.Nome + "', '" + newPessoa.DataNascimento + "', '" + newPessoa.Sexo + "', '" + newPessoa.Sexo + "')";
+                                                
                         #endregion
 
                     }
@@ -285,6 +283,7 @@ namespace XMLBackOffice
         }
 
         #endregion
+
         #endregion
 
         #region Consultas
@@ -295,9 +294,9 @@ namespace XMLBackOffice
             #region Variáveis
             //variaveis
             DataTable dataTable = new DataTable();
-            SqlConnection mySQLConnection = new SqlConnection(VGlobal.ParamConexSQL);
-            SqlCommand myCommand = new SqlCommand(LinhaComando, mySQLConnection);
-            SqlDataAdapter da = new SqlDataAdapter(myCommand);
+            MySqlConnection mySQLConnection = new MySqlConnection(VGlobal.ParamConexMySQL);
+            MySqlCommand myCommand = new MySqlCommand(LinhaComando, mySQLConnection);
+            MySqlDataAdapter da = new MySqlDataAdapter(myCommand);
             #endregion
 
             try

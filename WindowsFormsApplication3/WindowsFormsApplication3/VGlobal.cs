@@ -19,7 +19,7 @@ namespace XMLBackOffice
 
         #region Variaveis SQL
         //Regiao de variaveis contantes
-        public static string ParamConexSQL = "User Id=WIN-9OBDOK4FG8Q\\XMLConsultUser;Password=XMLConsultUser;Server=192.168.74.133\\SQLEXPRESS;Trusted_Connection=yes;Integrated Security=SSPI;Database=BDXMLProj;connection timeout=5";
+        //public static string ParamConexSQL = "User Id=WIN-9OBDOK4FG8Q\\XMLConsultUser;Password=XMLConsultUser;Server=192.168.74.133\\SQLEXPRESS;Trusted_Connection=yes;Integrated Security=SSPI;Database=BDXMLProj;connection timeout=5";
         //"User Id=sa;Password=senha123;Server=WIN-9OBDOK4FG8Q\\SQLEXPRESS;Trusted_Connection=yes;Database=BDXMLProj;connection timeout=5"; - FUNCIONA
 
         //"User Id=WIN-9OBDOK4FG8Q\\XMLConsultUser;Password=XMLConsultUser;Server=192.168.74.133\\SQLEXPRESS;Trusted_Connection=yes;Database=BDXMLProj;connection timeout=5"; - ERRO  de dominio Windows
@@ -39,9 +39,7 @@ namespace XMLBackOffice
 
         #region Variaveis MySQL
         //Regiao de variaveis contantes
-        public static string ParamConexMySQL = "Server=192.168.74.133;Database=world;Uid=admin;Pwd=senha123;";
-        public static int MySQLContagem;
-        public static List<string>[] MyList;
+        public static string ParamConexMySQL = "Server=localhost;Database=bdxmlproj;Uid=admin;Pwd=senha123;";
         //"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;";
         
 
@@ -58,7 +56,7 @@ namespace XMLBackOffice
         public static string EndEmissor;
         public static string LOGEmissor = "c:\\input\\LOG_Emissor.rtf";
         public static string[] CamposTabelaEmissor = { "Codigo_Emissor", "Nome_Emissor", "CNPJ_Emissor", "Data_Emissor" };
-        public static string TabelaEmissor = "BDXMLProj.dbo.tbEmissor_Titulo";
+        public static string TabelaEmissor = "bdxmlproj.tbemissor_titulo";
         #endregion
 
         #region Variaveis do TipoAtivo.txt
@@ -67,7 +65,7 @@ namespace XMLBackOffice
         public static string EndAtivo;
         public static string LOGAtivo = "c:\\input\\LOG_Ativo.rtf";
         public static string[] CamposTabelaAtivo = { "Categoria_TipoAtivo", "Sigla_TipoAtivo", "Descricao_TipoAtivo", "Tipo_TipoAtivo", "Sequencia1", "Sequencia2" };
-        public static string TabelaAtivo = "BDXMLProj.dbo.tbTipoDeAtivo";
+        public static string TabelaAtivo = "bdxmlproj.tbtipodeativo";
         #endregion
 
         #region Variaveis do Especie.txt
@@ -76,16 +74,17 @@ namespace XMLBackOffice
         public static string EndEspecie;
         public static string LOGEspecie = "c:\\input\\LOG_Especie.rtf";
         public static string[] CamposTabelaEspecie = { "Descricao_Especie", "Codigo_Especie" };
-        public static string TabelaEspecie = "BDXMLProj.dbo.tbEspecie";
+        public static string TabelaEspecie = "bdxmlproj.tbespecie";
         #endregion
 
         #region Variaveis do Indexador.txt
-        public static string[,] Indexador;
+        //public static string[,] Indexador;
         public static int IndexadorContagem;
         public static string EndIndexador;
         public static string LOGIndexador = "c:\\input\\LOG_Indexador.rtf";
         public static string[] CamposTabelaIndexador = { "XML_Indexador", "Relatorio_Indexador", "Descricao_Indexador" };
-        public static string TabelaIndexador = "BDXMLProj.dbo.tbIndexador";
+        public static string TabelaIndexador = "bdxmlproj.tbindexador";//"BDXMLProj.dbo.tbIndexador";
+        public static string[,] Indexador;
         #endregion
     }
 }

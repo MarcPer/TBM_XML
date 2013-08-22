@@ -71,7 +71,6 @@ namespace XMLBackOffice
                 lbPrimeiro.Text = Convert.ToString(VGlobal.Indexador.GetLowerBound(0) + 1);
                 lbUltimo.Text = Convert.ToString(VGlobal.Indexador.GetUpperBound(0) + 1);
             }
-
             LOGIndexador.Text += VGlobal.LogLocal.Text;
         }
 

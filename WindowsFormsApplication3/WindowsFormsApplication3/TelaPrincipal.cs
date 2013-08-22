@@ -21,18 +21,6 @@ namespace XMLBackOffice
         private void button1_Click(object sender, EventArgs e)
         {
 
-            try
-            {
-                //Precisa criar uma nova thread para abrir uma nova tela
-                System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProcMySQL));
-                t.Start();
-                rtLOG.Text += "Janela de MySQL aberta.\r\n";
-            }
-            catch (Exception E)
-            {
-                rtLOG.Text += E.ToString();
-            }
-
         }
 
         private void btEmissor_Click(object sender, EventArgs e)
@@ -73,13 +61,6 @@ namespace XMLBackOffice
         {
 
             Application.Run(new TelaEmissor());
-
-        }
-
-        public static void ThreadProcMySQL()
-        {
-
-            Application.Run(new TesteMySQL());
 
         }
 

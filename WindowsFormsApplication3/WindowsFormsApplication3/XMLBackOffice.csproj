@@ -98,12 +98,6 @@
     <Compile Include="TelaIndexador.Designer.cs">
       <DependentUpon>TelaIndexador.cs</DependentUpon>
     </Compile>
-    <Compile Include="TesteMySQL.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TesteMySQL.Designer.cs">
-      <DependentUpon>TesteMySQL.cs</DependentUpon>
-    </Compile>
     <Compile Include="VGlobal.cs" />
     <Compile Include="TelaPrincipal.cs">
       <SubType>Form</SubType>
@@ -138,9 +132,6 @@
     </Compile>
     <EmbeddedResource Include="TelaEmissor.resx">
       <DependentUpon>TelaEmissor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TesteMySQL.resx">
-      <DependentUpon>TesteMySQL.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
