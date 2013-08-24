@@ -39,8 +39,9 @@ namespace XMLBackOffice
 
         #region Variaveis MySQL
         //Regiao de variaveis contantes
-        public static string ParamConexMySQL = "Server=localhost;Database=bdxmlproj;Uid=admin;Pwd=senha123;";
+        public static string ParamConexMySQL = "Server=xmlproject.no-ip.org;Port=3306;Database=bdxmlproj;Uid=admin;Pwd=senha123;Connection Timeout=5;";
         //"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;";
+        //xmlproject.no-ip.org
         
 
         #endregion
