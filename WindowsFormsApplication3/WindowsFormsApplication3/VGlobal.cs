@@ -55,7 +55,7 @@ namespace XMLBackOffice
         public static string[,] Emissor;
         public static int EmissorContagem;
         public static string EndEmissor;
-        public static string LOGEmissor = "c:\\input\\LOG_Emissor.rtf";
+        public static string LOGEmissor = "LOG_Emissor.rtf";
         public static string[] CamposTabelaEmissor = { "Codigo_Emissor", "Nome_Emissor", "CNPJ_Emissor", "Data_Emissor" };
         public static string TabelaEmissor = "bdxmlproj.tbemissor_titulo";
         #endregion
@@ -64,7 +64,7 @@ namespace XMLBackOffice
         public static string[,] Ativo;
         public static int AtivoContagem;
         public static string EndAtivo;
-        public static string LOGAtivo = "c:\\input\\LOG_Ativo.rtf";
+        public static string LOGAtivo = "LOG_Ativo.rtf";
         public static string[] CamposTabelaAtivo = { "Categoria_TipoAtivo", "Sigla_TipoAtivo", "Descricao_TipoAtivo", "Tipo_TipoAtivo", "Sequencia1", "Sequencia2" };
         public static string TabelaAtivo = "bdxmlproj.tbtipodeativo";
         #endregion
@@ -73,7 +73,7 @@ namespace XMLBackOffice
         public static string[,] Especie;
         public static int EspecieContagem;
         public static string EndEspecie;
-        public static string LOGEspecie = "c:\\input\\LOG_Especie.rtf";
+        public static string LOGEspecie = "LOG_Especie.rtf";
         public static string[] CamposTabelaEspecie = { "Descricao_Especie", "Codigo_Especie" };
         public static string TabelaEspecie = "bdxmlproj.tbespecie";
         #endregion
@@ -82,7 +82,7 @@ namespace XMLBackOffice
         //public static string[,] Indexador;
         public static int IndexadorContagem;
         public static string EndIndexador;
-        public static string LOGIndexador = "c:\\input\\LOG_Indexador.rtf";
+        public static string LOGIndexador = "LOG_Indexador.rtf"; //c:\\input\\LOG_Indexador.rtf
         public static string[] CamposTabelaIndexador = { "XML_Indexador", "Relatorio_Indexador", "Descricao_Indexador" };
         public static string TabelaIndexador = "bdxmlproj.tbindexador";//"BDXMLProj.dbo.tbIndexador";
         public static string[,] Indexador;
