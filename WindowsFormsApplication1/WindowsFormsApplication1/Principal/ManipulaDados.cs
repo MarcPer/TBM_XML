@@ -28,14 +28,13 @@ namespace WindowsFormsApplication1
             FileInfo[] ListaArquivos = DirInfo.GetFiles("*.xml");
 
             XDocument[] xmldoc = CarregaChecaXML.XMLdocs(ListaArquivos);
-            List<Header.Header> headers = ColetaDados.ListaHeaders(xmldoc);
+            List<TabelaElementos.Header> headers = ColetaDados.ListaHeaders(xmldoc);
             List<TabelaElementos.TitPublico> titPublicos = ColetaDados.TitulosPublicos(xmldoc);
             List<TabelaElementos.CreditoPrivado> credPrivado = ColetaDados.CreditoPrivado(xmldoc);
             List<TabelaElementos.Acoes> acoes = ColetaDados.Acoes(xmldoc);
             List<TabelaElementos.Cotas> cotas = ColetaDados.ListaCotas(xmldoc);
 
-            RelatorioPDF.LayoutPDF relatorio = new RelatorioPDF.LayoutPDF();
-            relatorio.GerarRelatorio();
+            RelatorioPDF.LayoutPDF.GerarRelatorio();
 
             #region Variaveis
             //Variaveis Gerais

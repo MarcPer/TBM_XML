@@ -57,11 +57,12 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="Ativos\Acoes.cs" />
-    <Compile Include="Ativos\CreditoPrivado.cs" />
-    <Compile Include="Ativos\TitPublico.cs" />
-    <Compile Include="Cotas\Cotas.cs" />
-    <Compile Include="Header\Header.cs" />
+    <Compile Include="RelatorioPDF\RelatorioTabelas.cs" />
+    <Compile Include="TabelaElementos\Acoes.cs" />
+    <Compile Include="TabelaElementos\CreditoPrivado.cs" />
+    <Compile Include="TabelaElementos\TitPublico.cs" />
+    <Compile Include="TabelaElementos\Cotas.cs" />
+    <Compile Include="TabelaElementos\Header.cs" />
     <Compile Include="Principal\CarregaChecaXML.cs" />
     <Compile Include="Principal\ColetaDados.cs" />
     <Compile Include="Principal\ManipulaDados_Header.cs" />

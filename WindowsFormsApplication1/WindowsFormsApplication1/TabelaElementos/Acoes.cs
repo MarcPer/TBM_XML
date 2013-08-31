@@ -3,10 +3,13 @@
 namespace TabelaElementos
 {
     /// <summary>
-    /// Classe Títulos Públicos
+    /// Classe Acoes
     /// </summary>
     public class Acoes
     {
+        /// <summary>
+        /// CodAtivo: Código do ativo - tag codativo
+        /// </summary>
         public string CodAtivo { get; set; }
         public string ClasseOperacao { get; set; }
         public string DataEmissao { get; set; }

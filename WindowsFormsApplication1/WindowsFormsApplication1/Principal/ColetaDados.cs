@@ -18,9 +18,9 @@ namespace WindowsFormsApplication1
     public static class ColetaDados
     {
 
-        public static List<Header.Header> ListaHeaders(XDocument[] xmldoc)
+        public static List<TabelaElementos.Header> ListaHeaders(XDocument[] xmldoc)
         {
-            List<Header.Header> ListaHeaders = new List<Header.Header>();
+            List<TabelaElementos.Header> ListaHeaders = new List<TabelaElementos.Header>();
             int itemNum = 1;
             foreach (XDocument doc in xmldoc)
             {
@@ -28,10 +28,10 @@ namespace WindowsFormsApplication1
                from header in doc.Descendants("header")
                select header;
 
-                Header.Header head = new Header.Header();
+                TabelaElementos.Header head = new TabelaElementos.Header();
                 foreach (var xel in headerQuery)
                 {
-                    Header.Header hd = new Header.Header();
+                    TabelaElementos.Header hd = new TabelaElementos.Header();
                     hd.Item = itemNum++; 
                     if (xel.Element("dtposicao") != null) { hd.Data = xel.Element("dtposicao").Value; }
                     if (xel.Element("nome") != null) { hd.Nome = xel.Element("nome").Value; }

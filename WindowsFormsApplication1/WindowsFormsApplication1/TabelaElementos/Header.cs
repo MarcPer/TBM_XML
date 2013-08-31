@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Header
+namespace TabelaElementos
 {
     /// <summary>
     /// Classe Header
