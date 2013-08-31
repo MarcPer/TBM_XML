@@ -8,6 +8,11 @@ using System.Xml;
 using System.Xml.Linq;
 using System.IO;
 using System.Windows.Forms;
+//PDF
+using PdfSharp;
+using PdfSharp.Drawing;
+using PdfSharp.Pdf;
+using PdfSharp.Pdf.IO;
 
 
 namespace WindowsFormsApplication1
@@ -24,11 +29,13 @@ namespace WindowsFormsApplication1
 
             XDocument[] xmldoc = CarregaChecaXML.XMLdocs(ListaArquivos);
             List<Header.Header> headers = ColetaDados.ListaHeaders(xmldoc);
-            List<Ativos.TitPublico> titPublicos = ColetaDados.TitulosPublicos(xmldoc);
-            List<Ativos.CreditoPrivado> credPrivado = ColetaDados.CreditoPrivado(xmldoc);
-            List<Ativos.Acoes> acoes = ColetaDados.Acoes(xmldoc);
-            List<Cotas.Cotas> cotas = ColetaDados.ListaCotas(xmldoc);
+            List<TabelaElementos.TitPublico> titPublicos = ColetaDados.TitulosPublicos(xmldoc);
+            List<TabelaElementos.CreditoPrivado> credPrivado = ColetaDados.CreditoPrivado(xmldoc);
+            List<TabelaElementos.Acoes> acoes = ColetaDados.Acoes(xmldoc);
+            List<TabelaElementos.Cotas> cotas = ColetaDados.ListaCotas(xmldoc);
 
+            RelatorioPDF.LayoutPDF relatorio = new RelatorioPDF.LayoutPDF();
+            relatorio.GerarRelatorio();
 
             #region Variaveis
             //Variaveis Gerais

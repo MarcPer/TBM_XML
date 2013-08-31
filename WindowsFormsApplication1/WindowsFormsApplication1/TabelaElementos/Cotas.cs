@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Cotas
+namespace TabelaElementos
 {
     /// <summary>
     /// Classe Cotas

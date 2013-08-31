@@ -49,9 +49,9 @@ namespace WindowsFormsApplication1
         /// </summary>
         /// <param name="xmldoc"></param>
         /// <returns></returns>
-        public static List<Cotas.Cotas> ListaCotas(XDocument[] xmldoc)
+        public static List<TabelaElementos.Cotas> ListaCotas(XDocument[] xmldoc)
         {
-            List<Cotas.Cotas> ListaCotas = new List<Cotas.Cotas>();
+            List<TabelaElementos.Cotas> ListaCotas = new List<TabelaElementos.Cotas>();
 
             /// Combina carteiras dos diferentes XMLs
             List<XElement> list = new List<XElement>();
@@ -69,7 +69,7 @@ namespace WindowsFormsApplication1
             {
                 foreach (var grupoCotas in cotasQuery)
                 {
-                    Cotas.Cotas ct = new Cotas.Cotas();
+                    TabelaElementos.Cotas ct = new TabelaElementos.Cotas();
                     if (grupoCotas.Key != null) { ct.ISIN = (string)grupoCotas.Key; }
 
                     // Consolidar: somar valores de um mesmo ISIN
@@ -110,9 +110,9 @@ namespace WindowsFormsApplication1
         /// </summary>
         /// <param name="xmldoc"></param>
         /// <returns></returns>
-        public static List<Ativos.TitPublico> TitulosPublicos(XDocument[] xmldoc)
+        public static List<TabelaElementos.TitPublico> TitulosPublicos(XDocument[] xmldoc)
         {
-            List<Ativos.TitPublico> TitulosPublicos = new List<Ativos.TitPublico>();
+            List<TabelaElementos.TitPublico> TitulosPublicos = new List<TabelaElementos.TitPublico>();
 
             /// Combina carteiras dos diferentes XMLs
             List<XElement> list = new List<XElement>();
@@ -131,7 +131,7 @@ namespace WindowsFormsApplication1
             {
                 foreach (var xel in titPublicoQuery)
                 {
-                    Ativos.TitPublico tp = new Ativos.TitPublico();
+                    TabelaElementos.TitPublico tp = new TabelaElementos.TitPublico();
                     if (xel.Element("codativo") != null) { tp.CodAtivo = xel.Element("codativo").Value; }
                     if (xel.Element("isin") != null) { tp.ISIN = xel.Element("isin").Value; }
                     if (xel.Element("indexador") != null) { tp.Indexador = xel.Element("indexador").Value; }
@@ -171,9 +171,9 @@ namespace WindowsFormsApplication1
         /// </summary>
         /// <param name="xmldoc"></param>
         /// <returns></returns>
-        public static List<Ativos.CreditoPrivado> CreditoPrivado(XDocument[] xmldoc)
+        public static List<TabelaElementos.CreditoPrivado> CreditoPrivado(XDocument[] xmldoc)
         {
-            List<Ativos.CreditoPrivado> CreditoPrivado = new List<Ativos.CreditoPrivado>();
+            List<TabelaElementos.CreditoPrivado> CreditoPrivado = new List<TabelaElementos.CreditoPrivado>();
 
             /// Combina carteiras dos diferentes XMLs
             List<XElement> list = new List<XElement>();
@@ -192,7 +192,7 @@ namespace WindowsFormsApplication1
             {
                 foreach (var xel in credPrivadoQuery)
                 {
-                    Ativos.CreditoPrivado cp = new Ativos.CreditoPrivado();
+                    TabelaElementos.CreditoPrivado cp = new TabelaElementos.CreditoPrivado();
                     if (xel.Element("codativo") != null) { cp.CodAtivo = xel.Element("codativo").Value; }
                     if (xel.Element("isin") != null) { cp.ISIN = xel.Element("isin").Value; }
                     if (xel.Element("cnpjemissor") != null) { cp.Emissor = xel.Element("cnpjemissor").Value; }
@@ -232,9 +232,9 @@ namespace WindowsFormsApplication1
         /// </summary>
         /// <param name="xmldoc"></param>
         /// <returns></returns>
-        public static List<Ativos.Acoes> Acoes(XDocument[] xmldoc)
+        public static List<TabelaElementos.Acoes> Acoes(XDocument[] xmldoc)
         {
-            List<Ativos.Acoes> Acoes = new List<Ativos.Acoes>();
+            List<TabelaElementos.Acoes> Acoes = new List<TabelaElementos.Acoes>();
 
             /// Combina carteiras dos diferentes XMLs
             List<XElement> list = new List<XElement>();
@@ -253,7 +253,7 @@ namespace WindowsFormsApplication1
             {
                 foreach (var xel in acoesQuery)
                 {
-                    Ativos.Acoes ac = new Ativos.Acoes();
+                    TabelaElementos.Acoes ac = new TabelaElementos.Acoes();
                     if (xel.Element("codativo") != null) { ac.CodAtivo = xel.Element("codativo").Value; }
                     if (xel.Element("classeoperacao") != null) { ac.ClasseOperacao = xel.Element("classeoperacao").Value; }
                     if (xel.Element("dtemissao") != null) { ac.DataEmissao = xel.Element("dtemissao").Value; }
