@@ -36,8 +36,8 @@ namespace RelatorioPDF
             PdfPage pag = docPDF.AddPage();
             XGraphics gfx = XGraphics.FromPdfPage(pag);
             XFont fonteHeaderPagina = new XFont("Verdana", 16, XFontStyle.Bold);
-            XFont fonteHeaderClasse = new XFont("Verdana", 12, XFontStyle.Italic);
-            XFont fonteHeaderTabela = new XFont("Verdana", 10, XFontStyle.Bold);
+            XFont fonteHeaderClasse = new XFont("Verdana", 10, XFontStyle.Underline);
+            XFont fonteHeaderTabela = new XFont("Verdana", 8, XFontStyle.Bold);
             XFont fonteItensTabela = new XFont("Times New Roman", 8);
 
             int posX = 50;
@@ -45,7 +45,6 @@ namespace RelatorioPDF
             RelatorioTabelas.GerarHeader(xmldoc, gfx, fonteHeaderClasse, fonteHeaderTabela, fonteItensTabela, posX, ref posY);
             RelatorioTabelas.GerarCotas(xmldoc, gfx, fonteHeaderClasse, fonteHeaderTabela, fonteItensTabela, posX, ref posY);
             
-
             // Save the document...
             const string filename = "RelatorioTeste.pdf";
             docPDF.Save(filename);
