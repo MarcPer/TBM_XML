@@ -33,6 +33,24 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="MigraDoc.DocumentObjectModel">
+      <HintPath>lib\MigraDoc.DocumentObjectModel.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.DocumentObjectModel.resources">
+      <HintPath>lib\MigraDoc.DocumentObjectModel.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.Rendering">
+      <HintPath>lib\MigraDoc.Rendering.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.Rendering.resources">
+      <HintPath>lib\MigraDoc.Rendering.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.RtfRendering">
+      <HintPath>lib\MigraDoc.RtfRendering.dll</HintPath>
+    </Reference>
+    <Reference Include="MigraDoc.RtfRendering.resources">
+      <HintPath>lib\MigraDoc.RtfRendering.resources.dll</HintPath>
+    </Reference>
     <Reference Include="PdfSharp">
       <HintPath>lib\PdfSharp.dll</HintPath>
     </Reference>

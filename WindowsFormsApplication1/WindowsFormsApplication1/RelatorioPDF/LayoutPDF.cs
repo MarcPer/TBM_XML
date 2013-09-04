@@ -14,6 +14,9 @@ using PdfSharp;
 using PdfSharp.Drawing;
 using PdfSharp.Pdf;
 using PdfSharp.Pdf.IO;
+using MigraDoc.DocumentObjectModel;
+using MigraDoc.Rendering;
+using MigraDoc.RtfRendering;
 // Classes nativas
 using WindowsFormsApplication1;
 using TabelaElementos;
@@ -32,23 +35,28 @@ namespace RelatorioPDF
             XDocument[] xmldoc = WindowsFormsApplication1.CarregaChecaXML.XMLdocs(ListaArquivos);
 
             // Estilos do PDF
-            PdfDocument docPDF = new PdfDocument();
-            PdfPage pag = docPDF.AddPage();
-            XGraphics gfx = XGraphics.FromPdfPage(pag);
-            XFont fonteHeaderPagina = new XFont("Verdana", 16, XFontStyle.Bold);
-            XFont fonteHeaderClasse = new XFont("Verdana", 10, XFontStyle.Underline);
-            XFont fonteHeaderTabela = new XFont("Verdana", 8, XFontStyle.Bold);
-            XFont fonteItensTabela = new XFont("Times New Roman", 8);
+            Document docPDF = new Document();
+            Section secao = docPDF.AddSection();
+            Paragraph paragraph = secao.AddParagraph();
+            paragraph.Format.Font.Color = Color.FromCmyk(100, 30, 20, 50);
+            Font fonteHeaderPagina = new Font("Verdana", 16);
+            fonteHeaderPagina.Bold = true;
+            Font fonteHeaderClasse = new Font("Verdana", 10);
+            fonteHeaderPagina.Bold = true;
+            Font fonteHeaderTabela = new Font("Verdana", 8);
+            fonteHeaderTabela.Bold = true;
+            Font fonteItensTabela = new Font("Times New Roman", 8);
 
-            int posX = 50;
-            int posY = 50; // Passado por referência
-            RelatorioTabelas.GerarHeader(xmldoc, gfx, fonteHeaderClasse, fonteHeaderTabela, fonteItensTabela, posX, ref posY);
-            RelatorioTabelas.GerarCotas(xmldoc, gfx, fonteHeaderClasse, fonteHeaderTabela, fonteItensTabela, posX, ref posY);
+            RelatorioTabelas.GerarHeader(xmldoc, secao, fonteHeaderClasse, fonteHeaderTabela, fonteItensTabela);
+            RelatorioTabelas.GerarCotas(xmldoc, secao, fonteHeaderClasse, fonteHeaderTabela, fonteItensTabela);
             
-            // Save the document...
+            // Salva o documento
+            PdfDocumentRenderer pdfRenderer = new PdfDocumentRenderer(false,PdfFontEmbedding.Always);
+            pdfRenderer.Document = docPDF;
+            pdfRenderer.RenderDocument();
             const string filename = "RelatorioTeste.pdf";
-            docPDF.Save(filename);
-            // ...and start a viewer.
+            pdfRenderer.PdfDocument.Save(filename);
+            // Mostra no visualizador padrão
             Process.Start(filename);
         }
     }

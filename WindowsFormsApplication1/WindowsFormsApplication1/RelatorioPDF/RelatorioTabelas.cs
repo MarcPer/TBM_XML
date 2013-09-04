@@ -32,66 +32,27 @@ namespace RelatorioPDF
 
         #endregion
 
-        public static void GerarHeader(XDocument[] xmldoc, XGraphics gfx, XFont fonteHeaderClasse, XFont fonteHeaderTabela, XFont fonteItensTabela, int posX, ref int posY)
+        public static void GerarHeader(XDocument[] xmldoc, Section secao, Font fonteHeaderClasse, Font fonteHeaderTabela, Font fonteItensTabela)
         {
             List<TabelaElementos.Header> headers = ColetaDados.ListaHeaders(xmldoc);
-            XRect xrect = new XRect(posX, posY, 50, 10);
 
-            gfx.DrawString("Informações Gerais", fonteHeaderClasse, XBrushes.DarkRed, posX, posY);
-            xrect.Y += espacoAposHeaderClasse;
-
-            gfx.DrawString("Data", fonteHeaderTabela, XBrushes.Black, xrect, XStringFormats.TopLeft);
-            xrect.Y += espacoAposHeaderTabela;
-            xrect.Height = espacoVertElementosTabela;
-            foreach (TabelaElementos.Header header in headers)
-            {
-                gfx.DrawString(header.Data, fonteItensTabela, XBrushes.Black, xrect, XStringFormats.TopLeft);
-                xrect.Y += espacoVertElementosTabela;
-            }
-
-            xrect.Y = posY + espacoAposHeaderClasse;
-            xrect.X += xrect.Width;
-            gfx.DrawString("Nome", fonteHeaderTabela, XBrushes.Black, xrect, XStringFormats.TopLeft);
-            xrect.Y += espacoAposHeaderTabela;
-            xrect.Width = 200;
-            foreach (TabelaElementos.Header header in headers)
-            {
-                gfx.DrawString(header.Nome, fonteItensTabela, XBrushes.Black, xrect, XStringFormats.TopLeft);
-                xrect.Y += espacoVertElementosTabela;
-            }
-
-            xrect.Y = posY + espacoAposHeaderClasse;
-            xrect.X += xrect.Width;
-            gfx.DrawString("Patrimônio Líquido (R$)", fonteHeaderTabela, XBrushes.Black, xrect, XStringFormats.TopLeft);
-            xrect.Y += espacoAposHeaderTabela;
-            xrect.Width = 80;
-            foreach (TabelaElementos.Header header in headers)
-            {
-                gfx.DrawString(header.PatLiquido, fonteItensTabela, XBrushes.Black, xrect, XStringFormats.TopLeft);
-                xrect.Y += espacoVertElementosTabela;
-            }
-
-            posY = (int) xrect.Y + 20;
+            Paragraph paragrafo = secao.AddParagraph();
+            paragrafo.Format.Font = fonteHeaderClasse;
+            paragrafo.AddText("Informações Gerais");
+            
+            paragrafo = secao.AddParagraph();
+            paragrafo.Format.Font = fonteHeaderTabela;
+            paragrafo.AddText("Data");
+                        
+            
         }
 
 
-        public static void GerarCotas(XDocument[] xmldoc, XGraphics gfx, XFont fonteHeaderClasse, XFont fonteHeaderTabela, XFont fonteItensTabela, int posX, ref int posY)
+        public static void GerarCotas(XDocument[] xmldoc, Section secao, Font fonteHeaderClasse, Font fonteHeaderTabela, Font fonteItensTabela)
         {
             List<TabelaElementos.Cotas> cotas = WindowsFormsApplication1.ColetaDados.ListaCotas(xmldoc);
 
-            gfx.DrawString("Posição da carteira", fonteHeaderClasse, XBrushes.DarkRed, posX, posY);
-            posY += 20;
-            int posY0 = posY;
-
-            gfx.DrawString("Código ISIN do fundo", fonteHeaderTabela, XBrushes.DarkBlue, posX, posY);
-            posY += 20;
-            foreach (TabelaElementos.Cotas cota in cotas)
-            {
-                gfx.DrawString(cota.ISIN, fonteItensTabela, XBrushes.Black, posX, posY);
-                posY += 20;
-            }
-
-            posY += 20;
+            
         }
     }
 }
