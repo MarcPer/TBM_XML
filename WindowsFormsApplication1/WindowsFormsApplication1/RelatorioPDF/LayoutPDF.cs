@@ -36,9 +36,11 @@ namespace RelatorioPDF
 
             // Estilos do PDF
             Document docPDF = new Document();
-            Section secao = docPDF.AddSection();
-            Paragraph paragraph = secao.AddParagraph();
-            paragraph.Format.Font.Color = Color.FromCmyk(100, 30, 20, 50);
+            
+            RelatorioTabelas.DefinirEstilos(docPDF);
+            RelatorioTabelas.GerarHeader(xmldoc, docPDF);
+            RelatorioTabelas.GerarCotas(xmldoc, docPDF);
+
             Font fonteHeaderPagina = new Font("Verdana", 16);
             fonteHeaderPagina.Bold = true;
             Font fonteHeaderClasse = new Font("Verdana", 10);
@@ -47,8 +49,7 @@ namespace RelatorioPDF
             fonteHeaderTabela.Bold = true;
             Font fonteItensTabela = new Font("Times New Roman", 8);
 
-            RelatorioTabelas.GerarHeader(xmldoc, secao, fonteHeaderClasse, fonteHeaderTabela, fonteItensTabela);
-            RelatorioTabelas.GerarCotas(xmldoc, secao, fonteHeaderClasse, fonteHeaderTabela, fonteItensTabela);
+            
             
             // Salva o documento
             PdfDocumentRenderer pdfRenderer = new PdfDocumentRenderer(false,PdfFontEmbedding.Always);
