@@ -22,7 +22,7 @@ namespace XMLBackOffice
         {
             #region Variáveis
             //variaveis
-            MySqlConnection mySQLConnection = new MySqlConnection(VGlobal.ParamConexMySQL);
+            MySqlConnection mySQLConnection = new MySqlConnection(VGlobal.ParamConexMySQL(VGlobal.Uid_Admin, VGlobal.Pwd_Admin));
             int ContadorEmissorCadastrado = 0;
             #endregion
 
@@ -80,7 +80,7 @@ namespace XMLBackOffice
         {
             #region Variáveis
             //variaveis
-            MySqlConnection mySQLConnection = new MySqlConnection(VGlobal.ParamConexMySQL);
+            MySqlConnection mySQLConnection = new MySqlConnection(VGlobal.ParamConexMySQL(VGlobal.Uid_Admin, VGlobal.Pwd_Admin));
             int ContadorAtivoCadastrado = 0;
             #endregion
 
@@ -185,7 +185,7 @@ namespace XMLBackOffice
         {
             #region Variáveis
             //variaveis
-            MySqlConnection mySQLConnection = new MySqlConnection(VGlobal.ParamConexMySQL);
+            MySqlConnection mySQLConnection = new MySqlConnection(VGlobal.ParamConexMySQL(VGlobal.Uid_Admin, VGlobal.Pwd_Admin));
             int ContadorEspecieCadastrado = 0;
             #endregion
 
@@ -237,7 +237,7 @@ namespace XMLBackOffice
         {
             #region Variáveis
             //variaveis
-            MySqlConnection mySQLConnection = new MySqlConnection(VGlobal.ParamConexMySQL);
+            MySqlConnection mySQLConnection = new MySqlConnection(VGlobal.ParamConexMySQL(VGlobal.Uid_Admin, VGlobal.Pwd_Admin));
             int ContadorIndexadorCadastrado = 0;
             #endregion
 
@@ -288,13 +288,13 @@ namespace XMLBackOffice
 
         #region Consultas
         //Região reservada para codigo de consultas no Banco de Dados
-        public DataTable ConsultaGenerica(string LinhaComando)
+        public DataTable ConsultaGenerica(string LinhaComando, string UsuarioBD, string SenhaBD)
         {
 
             #region Variáveis
             //variaveis
             DataTable dataTable = new DataTable();
-            MySqlConnection mySQLConnection = new MySqlConnection(VGlobal.ParamConexMySQL);
+            MySqlConnection mySQLConnection = new MySqlConnection(VGlobal.ParamConexMySQL(UsuarioBD, SenhaBD));
             MySqlCommand myCommand = new MySqlCommand(LinhaComando, mySQLConnection);
             MySqlDataAdapter da = new MySqlDataAdapter(myCommand);
             #endregion

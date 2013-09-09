@@ -98,6 +98,12 @@
     <Compile Include="AbreArquivo.cs" />
     <Compile Include="SeparaDadosArquivo.cs" />
     <Compile Include="SQL.cs" />
+    <Compile Include="TelaAlteraSenha.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaAlteraSenha.Designer.cs">
+      <DependentUpon>TelaAlteraSenha.cs</DependentUpon>
+    </Compile>
     <Compile Include="TelaAtivo.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -122,6 +128,12 @@
     <Compile Include="TelaIndexador.Designer.cs">
       <DependentUpon>TelaIndexador.cs</DependentUpon>
     </Compile>
+    <Compile Include="TelaLogin.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="TelaLogin.Designer.cs">
+      <DependentUpon>TelaLogin.cs</DependentUpon>
+    </Compile>
     <Compile Include="VGlobal.cs" />
     <Compile Include="TelaPrincipal.cs">
       <SubType>Form</SubType>
@@ -132,6 +144,9 @@
     <Compile Include="GerenciaProcesso.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <EmbeddedResource Include="TelaAlteraSenha.resx">
+      <DependentUpon>TelaAlteraSenha.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="TelaAtivo.resx">
       <DependentUpon>TelaAtivo.cs</DependentUpon>
     </EmbeddedResource>
@@ -140,6 +155,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="TelaIndexador.resx">
       <DependentUpon>TelaIndexador.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="TelaLogin.resx">
+      <DependentUpon>TelaLogin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="TelaPrincipal.resx">
       <DependentUpon>TelaPrincipal.cs</DependentUpon>

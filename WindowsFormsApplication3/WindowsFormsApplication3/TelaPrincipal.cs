@@ -20,7 +20,17 @@ namespace XMLBackOffice
 
         private void button1_Click(object sender, EventArgs e)
         {
-
+            try
+            {
+                //Precisa criar uma nova thread para abrir uma nova tela
+                System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProcLogin));
+                t.Start();
+                rtLOG.Text += "Janela de Login aberta.\r\n";
+            }
+            catch (Exception E)
+            {
+                rtLOG.Text += E.ToString();
+            }
         }
 
         private void btEmissor_Click(object sender, EventArgs e)
@@ -82,6 +92,13 @@ namespace XMLBackOffice
         {
 
             Application.Run(new TelaIndexador());
+
+        }
+
+        public static void ThreadProcLogin()
+        {
+
+            Application.Run(new TelaLogin());
 
         }
 

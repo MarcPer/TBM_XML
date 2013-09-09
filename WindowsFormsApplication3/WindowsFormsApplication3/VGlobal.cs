@@ -14,7 +14,7 @@ namespace XMLBackOffice
         #region Variaveis Constantes
         //Regiao de variaveis contantes
         public static bool RetornoFalha = false;
-        public static RichTextBox LogLocal = new RichTextBox(); 
+        public static RichTextBox LogLocal = new RichTextBox();
         #endregion
 
         #region Variaveis SQL
@@ -39,10 +39,29 @@ namespace XMLBackOffice
 
         #region Variaveis MySQL
         //Regiao de variaveis contantes
-        public static string ParamConexMySQL = "Server=xmlproject.no-ip.org;Port=3306;Database=bdxmlproj;Uid=admin;Pwd=senha123;Connection Timeout=5;";
-        //"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;";
-        //xmlproject.no-ip.org
+        public static string  Server = "localhost";//xmlproject.no-ip.org
+        public static string Port = "3306";
+        public static string Database = "bdxmlproj";
+        public static string ConnectionTimeout = "Connection Timeout=5";
+        //Usuarios
+        public static string Uid_Login = "ChecaLoginCli";
+        public static string Pwd_Login = "senha123";
+        public static string Uid_MudaSenha = "MudaSenhaCli";
+        public static string Pwd_MudaSenha = "senha123";
+        public static string Uid_Usuario = "UsuarioXML";
+        public static string Pwd_Usuario = "senha123";
+        public static string Uid_Admin = "AdminBackEnd";
+        public static string Pwd_Admin = "senha123";
+
+        public static string ParamConexMySQL(string Usuario, string Senha)
+        {
+
+            string conexao = "Server=" + Server + ";Port=" + Port + ";Database=" + Database + ";Uid=" + Usuario + ";Pwd=" + Senha + ";" + ConnectionTimeout + ";";
+            return conexao;
+        }
         
+        //"Server=myServerAddress;Database=myDataBase;Uid=myUsername;Pwd=myPassword;";
+
 
         #endregion
 
@@ -86,6 +105,29 @@ namespace XMLBackOffice
         public static string[] CamposTabelaIndexador = { "XML_Indexador", "Relatorio_Indexador", "Descricao_Indexador" };
         public static string TabelaIndexador = "bdxmlproj.tbindexador";//"BDXMLProj.dbo.tbIndexador";
         public static string[,] Indexador;
+        #endregion
+
+        #region Variaveis GestaoUsuario
+        #region GestaoGeral
+        public static string LOGGestaoUsuario = "LOGGestaoUsuario.rtf";
+        public static string[] CamposTabelaGestaoUsuario = { "Codigo_Cliente", "Usuario_Cliente", "Senha_Cliente", "Reset_Senha" };
+        public static string TabelaGestaoUsuario = "bdxmlproj.tbcredencial";
+        public static string[,] GestaoUsuario;
+        //public static string[,] DadosUsuario;
+        public static bool UsuarioAutorizado;
+        #endregion
+
+        #region Login
+        public struct DadosCliente
+        {
+        public static string codigo_cliente;
+        public static string usuario_cliente;
+        public static string senha_cliente;
+        public static bool reset_senha;
+        public static bool contadesativada;
+        };
+        #endregion
+
         #endregion
     }
 }
