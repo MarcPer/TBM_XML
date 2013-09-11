@@ -36,10 +36,11 @@ namespace RelatorioPDF
 
             // Estilos do PDF
             Document docPDF = new Document();
-            
+            Section secao = docPDF.AddSection();
+            secao.PageSetup.LeftMargin = Unit.FromCentimeter(1);
             RelatorioTabelas.DefinirEstilos(docPDF);
-            RelatorioTabelas.GerarHeader(xmldoc, docPDF);
-            RelatorioTabelas.GerarCotas(xmldoc, docPDF);
+            RelatorioTabelas.GerarHeader(xmldoc, secao);
+            RelatorioTabelas.GerarCotas(xmldoc, secao);
 
             Font fonteHeaderPagina = new Font("Verdana", 16);
             fonteHeaderPagina.Bold = true;
