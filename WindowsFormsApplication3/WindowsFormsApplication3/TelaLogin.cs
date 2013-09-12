@@ -25,6 +25,7 @@ namespace XMLBackOffice
         {
             if (GestaoUsuario.GerenciaProcessoDeLogin(ConsultaUsuario.Text, ConsultaSenha.Text))
             {
+                ConsultaSenha.Text = "";
                 this.Close();
             }
         }
@@ -35,6 +36,7 @@ namespace XMLBackOffice
             {
                 if (GestaoUsuario.GerenciaProcessoDeLogin(ConsultaUsuario.Text, ConsultaSenha.Text))
                 {
+                    ConsultaSenha.Text = "";
                     this.Close();
                 }
             }

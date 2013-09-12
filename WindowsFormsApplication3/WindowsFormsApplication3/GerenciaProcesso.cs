@@ -11,6 +11,8 @@ using System.Windows.Forms;
 using System.Xml;
 using System.IO;
 using System.Security.Cryptography;
+using System.Net;
+using System.Text.RegularExpressions;
 
 namespace XMLBackOffice
 {
@@ -729,29 +731,28 @@ namespace XMLBackOffice
 
             if (VGlobal.RetornoFalha == true)
             {
-                DialogResult dialogResult = MessageBox.Show("Usuario ou senha invalidos!", "ERROR", MessageBoxButtons.OK);
-                VGlobal.LogLocal.Text += "Usuario ou senha inválidos! \r\nUsuario:" + Usuario + "\r\n";
+                DialogResult dialogResult = MessageBox.Show("Falha ao consultar Usuario ou senha. Tente mais tarde.", "ERROR", MessageBoxButtons.OK);
+                VGlobal.LogLocal.Text += "Falha ao consultar Usuario ou senha. Tente mais tarde. \r\nUsuario:" + Usuario + "\r\n";
                 DadosUsuario = null;
                 dataTable = null;
             }
             else
             {
-                if (dataTable.Rows.Count != 0)
+                if (dataTable.Rows.Count == 1)
                 {
-                    DadosUsuario = new string[dataTable.Rows.Count, 5];
+                    DadosUsuario = new string[1, 5];
                     VGlobal.LogLocal.Text += "Total de colunas pesquisadas: " + dataTable.Rows.Count + "\r\n";
                     for (int i = 0; i < dataTable.Rows.Count; i++)
                     {
-                        
+
                         VGlobal.DadosCliente.codigo_cliente = dataTable.Rows[i][0].ToString();
                         VGlobal.DadosCliente.usuario_cliente = dataTable.Rows[i][1].ToString();
                         VGlobal.DadosCliente.senha_cliente = dataTable.Rows[i][2].ToString();
-                        string asdasd = dataTable.Rows[i][3].ToString();
                         VGlobal.DadosCliente.reset_senha = Convert.ToBoolean(dataTable.Rows[i][3]);
-                        VGlobal.DadosCliente.contadesativada = Convert.ToBoolean(dataTable.Rows[i][3]);
+                        VGlobal.DadosCliente.contadesativada = Convert.ToBoolean(dataTable.Rows[i][4]);
                     }
                 }
-                else
+                else if (dataTable.Rows.Count == 0)
                 {
                     DadosUsuario = new string[1, 5];
                     DadosUsuario[0, 0] = null;
@@ -761,6 +762,18 @@ namespace XMLBackOffice
                     DadosUsuario[0, 4] = null;
                     DialogResult dialogResult2 = MessageBox.Show("Usuario ou senha invalidos!", "ERROR", MessageBoxButtons.OK);
                     VGlobal.LogLocal.Text += "Usuario ou senha inválidos! \r\nUsuario:" + Usuario + "\r\n";
+                    VGlobal.RetornoFalha = true;
+                }
+                else
+                {
+                    DadosUsuario = new string[1, 5];
+                    DadosUsuario[0, 0] = null;
+                    DadosUsuario[0, 1] = null;
+                    DadosUsuario[0, 2] = null;
+                    DadosUsuario[0, 3] = null;
+                    DadosUsuario[0, 4] = null;
+                    DialogResult dialogResult = MessageBox.Show("Falha ao consultar Usuario ou senha. Entre em contato com o suporte.", "ERROR", MessageBoxButtons.OK);
+                    VGlobal.LogLocal.Text += "Falha ao consultar Usuario ou senha. Entre em contato com o suporte.\r\nUsuario:" + Usuario + "\r\n";
                     VGlobal.RetornoFalha = true;
                 }
             }
@@ -773,7 +786,7 @@ namespace XMLBackOffice
         {
             #region Variaveis
             //Variaveis
-            bool eSenhaForte=false;
+            bool eSenhaForte = false;
             bool TemLetraMaiuscula = false;
             bool TemLetraMinuscula = false;
             bool TemNumero = false;
@@ -839,7 +852,7 @@ namespace XMLBackOffice
             {
                 eSenhaForte = true;
                 DialogResult dialogResult = MessageBox.Show("Senha alterada com sucesso!", "Sucesso", MessageBoxButtons.OK);
-                
+
             }
             else
             {
@@ -855,6 +868,7 @@ namespace XMLBackOffice
         {
             #region Variaveis
             bool AutorizaLogin = false;
+            bool SenhaOK = false;
             #endregion
 
             #region Checa Campos
@@ -879,16 +893,65 @@ namespace XMLBackOffice
 
             #endregion
 
-            AutorizaLogin = ChecaUsuarioSenha(Usuario, Senha);
-            
+            #region Log de Login /////////////////////////////////////////////////////////////////////////////////////////
+            // Get the hostname
+
+            string myHost = System.Net.Dns.GetHostName();
+
+            // Show the hostname
+
+            //MessageBox.Show(myHost);
+
+            // Get the IP from the host name
+
+            string myIP = System.Net.Dns.GetHostByName(myHost).AddressList[0].ToString();
+            //string myIP2 = System.Net.IPAddress.
+            // Show the IP
+
+            string strHostName = "";
+            strHostName = System.Net.Dns.GetHostName();
+
+            IPHostEntry ipEntry = System.Net.Dns.GetHostEntry(strHostName);
+
+            IPAddress[] addr = ipEntry.AddressList;
+
+            string asdasdasd = addr[addr.Length - 1].ToString();
+
+            //MessageBox.Show(myIP);
+
+            #endregion
+
+            SenhaOK = ChecaUsuarioSenha(Usuario, Senha);
+
             #region Abre Tela Principal
-            if (AutorizaLogin)
+            if (!VGlobal.DadosCliente.contadesativada && !VGlobal.DadosCliente.reset_senha && SenhaOK)
             {
                 try
                 {
                     //Precisa criar uma nova thread para abrir uma nova tela
                     System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProcPrincipal));
                     t.Start();
+                    AutorizaLogin = SenhaOK;
+                    //rtLOG.Text += "Janela de Emissor aberta.\r\n";
+                }
+                catch (Exception E)
+                {
+                    VGlobal.LogLocal.Text += E.ToString();
+                }
+                #region Login demais condicoes
+            }
+            else if (VGlobal.DadosCliente.contadesativada)//Conta Desativada
+            {
+                int asd = 0;
+            }
+            else if (!VGlobal.DadosCliente.contadesativada && VGlobal.DadosCliente.reset_senha)//Reset de Senha
+            {
+                try
+                {
+                    //Precisa criar uma nova thread para abrir uma nova tela
+                    System.Threading.Thread t = new System.Threading.Thread(new System.Threading.ThreadStart(ThreadProcAlteraSenha));
+                    t.Start();
+                    AutorizaLogin = false;
                     //rtLOG.Text += "Janela de Emissor aberta.\r\n";
                 }
                 catch (Exception E)
@@ -896,20 +959,13 @@ namespace XMLBackOffice
                     VGlobal.LogLocal.Text += E.ToString();
                 }
             }
-            else if (VGlobal.DadosCliente.contadesativada)//Conta Desativada
-            {
-                int asd = 0;
-            }
-            else if (VGlobal.DadosCliente.reset_senha)//Reset de Senha
-            {
-                int asd = 0;
-            }
-#endregion
+                #endregion
+            #endregion
 
         PulaLogin:
             Generico.GravarLOG(VGlobal.LOGGestaoUsuario, VGlobal.LogLocal);
 
-        return AutorizaLogin;
+            return AutorizaLogin;
         }
 
         public static void ThreadProcPrincipal()
@@ -919,8 +975,16 @@ namespace XMLBackOffice
 
         }
 
+        public static void ThreadProcAlteraSenha()
+        {
+
+            Application.Run(new TelaAlteraSenha());
+
+        }
+
         public static bool ChecaUsuarioSenha(string Usuario, string Senha)
         {
+            //Variaveis
             bool AutorizaLogin;
 
             #region Criptografia e tempero da senha
@@ -965,6 +1029,62 @@ namespace XMLBackOffice
             #endregion
         }
 
+        public static bool CadastraNovaSenha(string NovaSenha, string RepitaNovaSenha)
+        {
+            //variaveis
+            #region Variaveis
+            int TamanhoMinimoSenha = 6;
+            int TamanhoMaximoSenha = 12;
+            bool AlteradoSucesso = false;
+            string passwordHashSha512 = "";
+            byte[] PwdSalt;
+            #endregion
+
+            #region Senhas Iguais
+            if (NovaSenha == RepitaNovaSenha)
+            {
+                #region Tamanho da Senha
+                if (NovaSenha.Length > TamanhoMinimoSenha && NovaSenha.Length < TamanhoMaximoSenha)
+                {
+                    #region Caracteres
+                    Regex TesteRegex = new Regex(@"(?!^[0-9]*$)(?!^[a-zA-Z]*$)^(.{" + TamanhoMinimoSenha + "," + TamanhoMaximoSenha + "})$");
+                    Match ResultadoRegex;
+                    ResultadoRegex = TesteRegex.Match(NovaSenha);
+                    if (ResultadoRegex.Success)
+                    {
+                        PwdSalt = SimpleHash.Salt(NovaSenha);
+                        passwordHashSha512 = SimpleHash.ComputeHash(NovaSenha, "SHA512", PwdSalt);
+                        SQLXML.AtualizaSenha(passwordHashSha512);
+                        AlteradoSucesso = true;
+                        DialogResult dialogResult = MessageBox.Show("A senha foi alterada com sucesso!", "ERROR", MessageBoxButtons.OK);
+                    }
+                    else
+                    {
+                        DialogResult dialogResult = MessageBox.Show("A senha deve ter caracteres maiusculos, minusculos e numero!", "ERROR", MessageBoxButtons.OK);
+                        AlteradoSucesso = false;
+                        goto PulaVerificacao;
+                    }
+                    #endregion
+                }
+                else
+                {
+                    DialogResult dialogResult = MessageBox.Show("A senha deve ter entre " + TamanhoMinimoSenha + " a " + TamanhoMaximoSenha + " digitos!", "ERROR", MessageBoxButtons.OK);
+                    AlteradoSucesso = false;
+                    goto PulaVerificacao;
+                }
+                #endregion
+            }
+            else
+            {
+                DialogResult dialogResult = MessageBox.Show("As senhas digitadas não conferem!", "ERROR", MessageBoxButtons.OK);
+                AlteradoSucesso = false;
+                goto PulaVerificacao;
+            }
+            #endregion
+
+        PulaVerificacao:
+            return AlteradoSucesso;
+        }
 
     }
 

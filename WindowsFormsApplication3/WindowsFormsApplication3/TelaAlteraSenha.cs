@@ -15,6 +15,21 @@ namespace XMLBackOffice
         public TelaAlteraSenha()
         {
             InitializeComponent();
+            SQLXML.AtualizaResetSenha();
         }
+
+        private void btCadastrar_Click(object sender, EventArgs e)
+        {
+            #region Variaveis
+            //Variáveis
+
+            #endregion
+            if (GestaoUsuario.CadastraNovaSenha(ConsultaNovaSenha.Text, ConsultaRepitaSenha.Text))
+            {
+                this.Close();
+            }
+
+        }
+
     }
 }

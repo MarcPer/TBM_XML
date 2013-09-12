@@ -110,7 +110,7 @@ namespace XMLBackOffice
         #region Variaveis GestaoUsuario
         #region GestaoGeral
         public static string LOGGestaoUsuario = "LOGGestaoUsuario.rtf";
-        public static string[] CamposTabelaGestaoUsuario = { "Codigo_Cliente", "Usuario_Cliente", "Senha_Cliente", "Reset_Senha" };
+        public static string[] CamposTabelaGestaoUsuario = { "Codigo_Cliente", "Usuario_Cliente", "Senha_Cliente", "Reset_Senha", "ContaDesativada" };
         public static string TabelaGestaoUsuario = "bdxmlproj.tbcredencial";
         public static string[,] GestaoUsuario;
         //public static string[,] DadosUsuario;

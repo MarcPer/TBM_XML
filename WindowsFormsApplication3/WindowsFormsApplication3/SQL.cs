@@ -321,7 +321,81 @@ namespace XMLBackOffice
 
         #endregion
 
+        #region Atualizacoes
 
+        //Atualizacao do BIT de Reset de Senha
+        public static void AtualizaResetSenha()
+        {
+            #region Variáveis
+            //variaveis
+            MySqlConnection mySQLConnection = new MySqlConnection(VGlobal.ParamConexMySQL(VGlobal.Uid_MudaSenha, VGlobal.Pwd_MudaSenha));
+            #endregion
+
+            mySQLConnection.Open();//Abre coonexao com o banco
+
+                try
+                {
+                    if (VGlobal.DadosCliente.reset_senha)
+                    {
+
+                        #region UPDATE
+                        //UPDATE `bdxmlproj`.`tbcredencial` SET `Reset_Senha`=0 WHERE `Codigo_Cliente`='Cod1234567';
+                        MySqlCommand myCommand = new MySqlCommand("UPDATE " + VGlobal.TabelaGestaoUsuario + " SET " + VGlobal.CamposTabelaGestaoUsuario[3] + "=0 " + "WHERE " + VGlobal.CamposTabelaGestaoUsuario[0] + "=\"" + VGlobal.DadosCliente.codigo_cliente + "\";", mySQLConnection);
+
+                        myCommand.ExecuteNonQuery();
+                        
+                        #endregion
+                    }
+                    else
+                    {
+                        DialogResult dialogResult = MessageBox.Show("Falha no cadastramento da nova senha. Contate o suporte tecnico!", "ERROR", MessageBoxButtons.OK);
+                    }
+                }
+                catch (Exception Error)
+                {
+                    string asd = Error.ToString();
+                }
+
+            
+            mySQLConnection.Close();
+        }
+
+        //Atualiza a senha do cliente no BD
+        public static void AtualizaSenha(string NovaSenha)
+        {
+            #region Variáveis
+            //variaveis
+            MySqlConnection mySQLConnection = new MySqlConnection(VGlobal.ParamConexMySQL(VGlobal.Uid_MudaSenha, VGlobal.Pwd_MudaSenha));
+            #endregion
+
+            mySQLConnection.Open();//Abre coonexao com o banco
+
+            try
+            {
+                if (VGlobal.DadosCliente.reset_senha)
+                {
+
+                    #region UPDATE
+                    //UPDATE `bdxmlproj`.`tbcredencial` SET `Reset_Senha`=0 WHERE `Codigo_Cliente`='Cod1234567';
+                    MySqlCommand myCommand = new MySqlCommand("UPDATE " + VGlobal.TabelaGestaoUsuario + " SET " + VGlobal.CamposTabelaGestaoUsuario[2] + "= \""+NovaSenha+ "\" " + "WHERE " + VGlobal.CamposTabelaGestaoUsuario[0] + "=\"" + VGlobal.DadosCliente.codigo_cliente + "\";", mySQLConnection);
+
+                    myCommand.ExecuteNonQuery();
+
+                    #endregion
+                }
+                else
+                {
+                    DialogResult dialogResult = MessageBox.Show("Falha no cadastramento da nova senha. Contate o suporte tecnico!", "ERROR", MessageBoxButtons.OK);
+                }
+            }
+            catch (Exception Error)
+            {
+                string asd = Error.ToString();
+            }
+
+            mySQLConnection.Close();
+        }
+
+        #endregion
     }
-
 }
