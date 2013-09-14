@@ -37,10 +37,18 @@ namespace RelatorioPDF
             // Estilos do PDF
             Document docPDF = new Document();
             Section secao = docPDF.AddSection();
+            secao.PageSetup.Orientation = MigraDoc.DocumentObjectModel.Orientation.Landscape;
             secao.PageSetup.LeftMargin = Unit.FromCentimeter(1);
+            secao.PageSetup.PageFormat = PageFormat.A3;
             RelatorioTabelas.DefinirEstilos(docPDF);
             RelatorioTabelas.GerarHeader(xmldoc, secao);
+            secao.AddParagraph(); secao.AddParagraph();
             RelatorioTabelas.GerarCotas(xmldoc, secao);
+            secao.AddParagraph(); secao.AddParagraph();
+            secao.AddParagraph("Ativos da Carteira", "Heading2");
+            RelatorioTabelas.GerarCreditoPrivado(xmldoc, secao);
+            secao.AddParagraph();
+            RelatorioTabelas.GerarTitulosPublicos(xmldoc, secao);
 
             Font fonteHeaderPagina = new Font("Verdana", 16);
             fonteHeaderPagina.Bold = true;
