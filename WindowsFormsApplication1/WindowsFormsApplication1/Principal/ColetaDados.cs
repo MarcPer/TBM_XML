@@ -9,6 +9,7 @@ using System.Xml.Linq;
 using System.IO;
 using System.Windows.Forms;
 using System.Globalization;
+using System.Text.RegularExpressions;
 
 namespace WindowsFormsApplication1
 {
@@ -17,6 +18,25 @@ namespace WindowsFormsApplication1
     /// </summary>
     public static class ColetaDados
     {
+        public static String DataDaUltimaPosicao(List<TabelaElementos.Header> listaHeaders)
+        {
+            List<String> listaDatas = new List<String>();
+            foreach (TabelaElementos.Header header in listaHeaders)
+            {
+                listaDatas.Add(header.Data);
+            }
+            listaDatas.Sort();
+            return formataData(listaDatas[0]);
+        }
+
+        private static String formataData(String data)
+        {
+            Regex regex = new Regex("(\\d{4})(\\d\\d)(\\d\\d)");
+            String dataFormatada = regex.Replace(data, "$3/$2/$1");
+
+            return dataFormatada;
+        }
+
 
         public static List<TabelaElementos.Header> ListaHeaders(XDocument[] xmldoc)
         {
@@ -90,8 +110,8 @@ namespace WindowsFormsApplication1
                         somaVlrCotas += valor;
                         somaVlrBruto += disp * valor;
                         somaImpostos += imposto;
-                        somaVlrLiquido += somaVlrBruto - imposto;
                     }
+                    somaVlrLiquido = somaVlrBruto - somaImpostos;
                     ct.QtCotas = somaQtCotas.ToString("0.#0", CultureInfo.InvariantCulture);
                     ct.PU = somaVlrCotas.ToString("0.#0", CultureInfo.InvariantCulture);
                     ct.ValorBruto = somaVlrBruto.ToString("0.#0", CultureInfo.InvariantCulture);

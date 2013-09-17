@@ -5,6 +5,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Diagnostics;
 using System.Text.RegularExpressions;
+using System.Globalization;
 // bibliotecas para XML
 using System.Xml;
 using System.Xml.Linq;
@@ -73,6 +74,14 @@ namespace RelatorioPDF
             style.Font.Italic = false;
             style.ParagraphFormat.SpaceBefore = 3;
             style.ParagraphFormat.SpaceAfter = 3;
+
+            style = docPDF.Styles.AddStyle("ItemTabelaMaior", "Normal");
+            style.Font.Size = 10;
+            style.Font.Bold = true;
+            style.Font.Italic = false;
+            style.Font.Color = Colors.White;
+            style.ParagraphFormat.SpaceBefore = 3;
+            style.ParagraphFormat.SpaceAfter = 3;
         }
 
         public static void GerarHeader(XDocument[] xmldoc, Section secao)
@@ -81,47 +90,95 @@ namespace RelatorioPDF
 
             Paragraph paragrafo = secao.AddParagraph("Informações Gerais", "Heading2");
             
-            paragrafo = secao.AddParagraph();
-            paragrafo.AddText("Data");
-
             Table table = new Table();
             table.Borders.Width = 0.75;
 
-            Column column = table.AddColumn(Unit.FromCentimeter(2));
+            Column column = table.AddColumn(Unit.FromCentimeter(5));
+            column.Format.Alignment = ParagraphAlignment.Right;
+            column.Borders.Visible = false;
+            column = table.AddColumn(Unit.FromCentimeter(4));
             column.Format.Alignment = ParagraphAlignment.Center;
-
-            table.AddColumn(Unit.FromCentimeter(5));
-            table.AddColumn(Unit.FromCentimeter(5));
+            column.Borders.Visible = false;
+            column = table.AddColumn(Unit.FromCentimeter(2));
+            column.Format.Alignment = ParagraphAlignment.Center;
+            column.Borders.Visible = false;
+            column = table.AddColumn(Unit.FromCentimeter(1));
+            column.Format.Alignment = ParagraphAlignment.Center;
+            column = table.AddColumn(Unit.FromCentimeter(8));
+            column.Format.Alignment = ParagraphAlignment.Center;
+            column = table.AddColumn(Unit.FromCentimeter(4));
+            column.Format.Alignment = ParagraphAlignment.Right;
 
             Row row = table.AddRow();
-            row.Shading.Color = Colors.CadetBlue;
             Cell cell = row.Cells[0];
-            cell.Format.Alignment = ParagraphAlignment.Center;
-            cell.AddParagraph("Item");
+            cell.Shading.Color = Colors.CadetBlue;
+            Paragraph pgf = cell.AddParagraph();
+            pgf.AddFormattedText("Data da Posição", "ItemTabelaMaior");
             cell = row.Cells[1];
-            cell.Format.Alignment = ParagraphAlignment.Center;
-            cell.AddParagraph("Nome");
+            cell.VerticalAlignment = VerticalAlignment.Center;
+            pgf = cell.AddParagraph();
+            pgf.AddFormattedText(ColetaDados.DataDaUltimaPosicao(headers), "ItemTabela");
             cell = row.Cells[2];
+            cell.Borders.Visible = false;
+            cell = row.Cells[3];
+            cell.Shading.Color = Colors.CadetBlue;
+            pgf = cell.AddParagraph();
+            pgf.AddFormattedText("Item");
+            cell = row.Cells[4];
+            cell.Shading.Color = Colors.CadetBlue;
+            pgf = cell.AddParagraph();
+            pgf.AddFormattedText("Nome");
+            cell = row.Cells[5];
+            cell.Shading.Color = Colors.CadetBlue;
             cell.Format.Alignment = ParagraphAlignment.Center;
-            cell.AddParagraph("Patrimônio Líquido");
+            pgf = cell.AddParagraph();
+            pgf.AddFormattedText("Patrimônio Líquido");
 
+            int numRows = 1;
+            float patLiqTotal = 0f;
             foreach (TabelaElementos.Header item in headers)
             {
+                numRows++;
                 row = table.AddRow();
-                cell = row.Cells[0];
+                cell = row.Cells[3];
                 cell.Format.Alignment = ParagraphAlignment.Center;
                 Paragraph par = cell.AddParagraph();
                 par.AddFormattedText(item.Item.ToString(), "ItemTabela");
-                cell = row.Cells[1];
+                cell = row.Cells[4];
                 cell.Format.Alignment = ParagraphAlignment.Center;
                 par = cell.AddParagraph();
                 par.AddFormattedText(item.Nome.ToString(), "ItemTabela");
-                cell = row.Cells[2];
+                cell = row.Cells[5];
                 cell.Format.Alignment = ParagraphAlignment.Right;
                 par = cell.AddParagraph();
-                par.AddFormattedText(formataValorMonetario(item.PatLiquido.ToString()), "ItemTabela");
+                par.AddFormattedText(formataValorMonetario(item.PatLiquido), "ItemTabela");
+                patLiqTotal += float.Parse(item.PatLiquido);
             }
 
+            while (numRows < 5)
+            {
+                numRows++;
+                row = table.AddRow();
+                row.Borders.Visible = false;
+            }
+            row = table.Rows[2];
+            cell = row.Cells[0];
+            cell.Shading.Color = Colors.CadetBlue;
+            pgf = cell.AddParagraph();
+            pgf.AddFormattedText("Nº de arquivos - Entrada", "ItemTabelaMaior");
+            cell = row.Cells[1];
+            cell.VerticalAlignment = VerticalAlignment.Center;
+            pgf = cell.AddParagraph();
+            pgf.AddFormattedText(xmldoc.Length.ToString(), "ItemTabela");
+            row = table.Rows[4];
+            cell = row.Cells[0];
+            cell.Shading.Color = Colors.CadetBlue;
+            pgf = cell.AddParagraph();
+            pgf.AddFormattedText("Patrimônio Total", "ItemTabelaMaior");
+            cell = row.Cells[1];
+            cell.VerticalAlignment = VerticalAlignment.Center;
+            pgf = cell.AddParagraph();
+            pgf.AddFormattedText(formataValorMonetario(patLiqTotal.ToString()), "ItemTabela");
             //table.SetEdge(0, 0, 2, 3, Edge.Box, BorderStyle.Single, 1.5, Colors.Black);
             secao.Add(table);
         }
@@ -188,27 +245,27 @@ namespace RelatorioPDF
                 cell = row.Cells[2];
                 cell.Format.Alignment = ParagraphAlignment.Center;
                 par = cell.AddParagraph();
-                par.AddFormattedText(item.ISIN.ToString(), "ItemTabela");
+                par.AddFormattedText(item.ISIN, "ItemTabela");
                 cell = row.Cells[3];
                 cell.Format.Alignment = ParagraphAlignment.Right;
                 par = cell.AddParagraph();
-                par.AddFormattedText(item.QtCotas.ToString(), "ItemTabela");
+                par.AddFormattedText(item.QtCotas, "ItemTabela");
                 cell = row.Cells[4];
                 cell.Format.Alignment = ParagraphAlignment.Right;
                 par = cell.AddParagraph();
-                par.AddFormattedText(formataValorMonetario(item.PU.ToString()), "ItemTabela");
+                par.AddFormattedText(formataValorMonetario(item.PU), "ItemTabela");
                 cell = row.Cells[5];
                 cell.Format.Alignment = ParagraphAlignment.Right;
                 par = cell.AddParagraph();
-                par.AddFormattedText(formataValorMonetario(item.ValorBruto.ToString()),"ItemTabela");
+                par.AddFormattedText(formataValorMonetario(item.ValorBruto),"ItemTabela");
                 cell = row.Cells[6];
                 cell.Format.Alignment = ParagraphAlignment.Right;
                 par = cell.AddParagraph();
-                par.AddFormattedText(formataValorMonetario(item.Impostos.ToString()), "ItemTabela");
+                par.AddFormattedText(formataValorMonetario(item.Impostos), "ItemTabela");
                 cell = row.Cells[7];
                 cell.Format.Alignment = ParagraphAlignment.Right;
                 par = cell.AddParagraph();
-                par.AddFormattedText(formataValorMonetario(item.ValorLiquido.ToString()), "ItemTabela");
+                par.AddFormattedText(formataValorMonetario(item.ValorLiquido), "ItemTabela");
             }
 
             secao.Add(table);
@@ -235,7 +292,7 @@ namespace RelatorioPDF
             table.AddColumn(Unit.FromCentimeter(1.7));
             table.AddColumn(Unit.FromCentimeter(1.7));
             table.AddColumn(Unit.FromCentimeter(1.7));
-            table.AddColumn();
+            table.AddColumn(Unit.FromCentimeter(1.7));
             table.AddColumn();
             table.AddColumn();
             table.AddColumn();
@@ -336,26 +393,30 @@ namespace RelatorioPDF
                 par = cell.AddParagraph();
                 par.AddFormattedText(formataData(item.DataCompra.ToString()), "ItemTabela");
                 cell = row.Cells[7];
-                cell.Format.Alignment = ParagraphAlignment.Right;
+                cell.Format.Alignment = ParagraphAlignment.Center;
                 par = cell.AddParagraph();
-                par.AddFormattedText(item.Disponivel.ToString(), "ItemTabela");
+                par.AddFormattedText(formataData(item.DataVencimento.ToString()), "ItemTabela");
                 cell = row.Cells[8];
                 cell.Format.Alignment = ParagraphAlignment.Right;
                 par = cell.AddParagraph();
-                par.AddFormattedText(item.Garantia.ToString(), "ItemTabela");
+                par.AddFormattedText(item.Disponivel.ToString(), "ItemTabela");
                 cell = row.Cells[9];
                 cell.Format.Alignment = ParagraphAlignment.Right;
                 par = cell.AddParagraph();
-                par.AddFormattedText(formataValorMonetario(item.PU.ToString()), "ItemTabela");
+                par.AddFormattedText(item.Garantia.ToString(), "ItemTabela");
                 cell = row.Cells[10];
                 cell.Format.Alignment = ParagraphAlignment.Right;
                 par = cell.AddParagraph();
-                par.AddFormattedText(formataValorMonetario(item.ValorBruto.ToString()), "ItemTabela");
+                par.AddFormattedText(formataValorMonetario(item.PU.ToString()), "ItemTabela");
                 cell = row.Cells[11];
                 cell.Format.Alignment = ParagraphAlignment.Right;
                 par = cell.AddParagraph();
-                par.AddFormattedText(formataValorMonetario(item.Impostos.ToString()), "ItemTabela");
+                par.AddFormattedText(formataValorMonetario(item.ValorBruto.ToString()), "ItemTabela");
                 cell = row.Cells[12];
+                cell.Format.Alignment = ParagraphAlignment.Right;
+                par = cell.AddParagraph();
+                par.AddFormattedText(formataValorMonetario(item.Impostos.ToString()), "ItemTabela");
+                cell = row.Cells[13];
                 cell.Format.Alignment = ParagraphAlignment.Right;
                 par = cell.AddParagraph();
                 par.AddFormattedText(formataValorMonetario(item.ValorLiquido.ToString()), "ItemTabela");
@@ -384,7 +445,7 @@ namespace RelatorioPDF
             table.AddColumn(Unit.FromCentimeter(1.7));
             table.AddColumn(Unit.FromCentimeter(1.7));
             table.AddColumn(Unit.FromCentimeter(1.7));
-            table.AddColumn(Unit.FromCentimeter(3));
+            table.AddColumn(Unit.FromCentimeter(1.7));
             table.AddColumn();
             table.AddColumn();
             table.AddColumn();
@@ -479,6 +540,10 @@ namespace RelatorioPDF
                 par = cell.AddParagraph();
                 par.AddFormattedText(formataData(item.DataCompra.ToString()), "ItemTabela");
                 cell = row.Cells[i]; i++;
+                cell.Format.Alignment = ParagraphAlignment.Center;
+                par = cell.AddParagraph();
+                par.AddFormattedText(formataData(item.DataVencimento.ToString()), "ItemTabela");
+                cell = row.Cells[i]; i++;
                 cell.Format.Alignment = ParagraphAlignment.Right;
                 par = cell.AddParagraph();
                 par.AddFormattedText(item.Disponivel.ToString(), "ItemTabela");
@@ -510,7 +575,7 @@ namespace RelatorioPDF
 
         private static String formataValorMonetario(String valor)
         {
-            float valorFloat = float.Parse(valor);
+            Double valorFloat = Double.Parse(valor, CultureInfo.InvariantCulture);
             valor = valorFloat.ToString("0.00");
             Regex regex = new Regex("\\.");
             String valorFormatado = regex.Replace(valor, ",");
