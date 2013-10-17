@@ -274,13 +274,20 @@ namespace WindowsFormsApplication1
                 foreach (var xel in acoesQuery)
                 {
                     TabelaElementos.Acoes ac = new TabelaElementos.Acoes();
-                    if (xel.Element("codativo") != null) { ac.CodAtivo = xel.Element("codativo").Value; }
-                    if (xel.Element("classeoperacao") != null) { ac.ClasseOperacao = xel.Element("classeoperacao").Value; }
-                    if (xel.Element("dtemissao") != null) { ac.DataEmissao = xel.Element("dtemissao").Value; }
-                    if (xel.Element("qtdisponivel") != null) { ac.Disponivel = xel.Element("qtdisponivel").Value; }
-                    if (xel.Element("qtgarantia") != null) { ac.Garantia = xel.Element("qtgarantia").Value; }
-                    if (xel.Element("puposicao") != null) { ac.PU = xel.Element("puposicao").Value; }
-                    if (xel.Element("tributos") != null) { ac.Impostos = xel.Element("tributos").Value; }
+                    ac.CodAtivo = xel.Element("codativo") != null ?
+                        xel.Element("codativo").Value : "Não disponível";
+                    ac.ClasseOperacao = xel.Element("classeoperacao") != null ? 
+                        xel.Element("classeoperacao").Value : "Não disponível";
+                    ac.DataEmissao = xel.Element("dtemissao") != null ? 
+                        xel.Element("dtemissao").Value : "Não disponível";
+                    ac.Disponivel = xel.Element("qtdisponivel") != null ?
+                        xel.Element("qtdisponivel").Value : "Não disponível";
+                    ac.Garantia = xel.Element("qtgarantia") != null ?
+                        xel.Element("qtgarantia").Value : "Não disponível";
+                    ac.PU = xel.Element("puposicao") != null ?
+                        xel.Element("puposicao").Value : "Não disponível";
+                    ac.Impostos = xel.Element("tributos") != null ?
+                        xel.Element("tributos").Value : "Não disponível";
 
                     /// Converte sigla da Classe de Operação seguindo a convenção
                     /// C: Comprado
@@ -309,6 +316,10 @@ namespace WindowsFormsApplication1
                         Double pu = Double.Parse(ac.PU, CultureInfo.InvariantCulture);
                         ac.ValorBruto = (pu * disp).ToString("0.#0", CultureInfo.InvariantCulture);
                     }
+                    else
+                    {
+                        ac.ValorBruto = "--";
+                    }
 
                     if (ac.Disponivel != null && ac.PU != null && ac.Impostos != null)
                     {
@@ -316,6 +327,10 @@ namespace WindowsFormsApplication1
                         Double pu = Double.Parse(ac.PU, CultureInfo.InvariantCulture);
                         Double imp = Double.Parse(ac.Impostos, CultureInfo.InvariantCulture);
                         ac.ValorLiquido = (pu * disp - imp).ToString("0.#0", CultureInfo.InvariantCulture);
+                    }
+                    else
+                    {
+                        ac.ValorLiquido = "--";
                     }
 
                     Acoes.Add(ac);

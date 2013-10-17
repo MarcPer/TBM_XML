@@ -42,6 +42,8 @@ namespace RelatorioPDF
             secao.PageSetup.PageFormat = PageFormat.A3;
             RelatorioTabelas.DefinirEstilos(docPDF);
             RelatorioTabelas.GerarHeader(xmldoc, secao);
+            Paragraph paragraph = secao.AddParagraph();
+            AdicionaLinhaHorizontal(secao);
             secao.AddParagraph(); secao.AddParagraph();
             RelatorioTabelas.GerarCotas(xmldoc, secao);
             secao.AddParagraph(); secao.AddParagraph();
@@ -49,16 +51,10 @@ namespace RelatorioPDF
             RelatorioTabelas.GerarCreditoPrivado(xmldoc, secao);
             secao.AddParagraph();
             RelatorioTabelas.GerarTitulosPublicos(xmldoc, secao);
+            secao.AddParagraph();
+            RelatorioTabelas.GerarAcoes(xmldoc, secao);
 
-            Font fonteHeaderPagina = new Font("Verdana", 16);
-            fonteHeaderPagina.Bold = true;
-            Font fonteHeaderClasse = new Font("Verdana", 10);
-            fonteHeaderPagina.Bold = true;
-            Font fonteHeaderTabela = new Font("Verdana", 8);
-            fonteHeaderTabela.Bold = true;
-            Font fonteItensTabela = new Font("Times New Roman", 8);
 
-            
             
             // Salva o documento
             PdfDocumentRenderer pdfRenderer = new PdfDocumentRenderer(false,PdfFontEmbedding.Always);
@@ -68,6 +64,14 @@ namespace RelatorioPDF
             pdfRenderer.PdfDocument.Save(filename);
             // Mostra no visualizador padrão
             Process.Start(filename);
+        }
+
+        public static void AdicionaLinhaHorizontal(Section section)
+        {
+            Paragraph paragraph = section.AddParagraph();
+            Border linhaHorizontal = new Border();
+            linhaHorizontal.Color = Colors.Black;
+            paragraph.Format.Borders.Bottom = linhaHorizontal;
         }
     }
 }

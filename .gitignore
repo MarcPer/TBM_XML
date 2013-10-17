@@ -45,6 +45,7 @@ XML_files/
 *.user
 *.sln.docstates
 *.pdf
+*.txt
 
 # Build results
 

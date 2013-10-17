@@ -573,14 +573,130 @@ namespace RelatorioPDF
 
         }
 
+        public static void GerarAcoes(XDocument[] xmldoc, Section secao)
+        {
+            List<TabelaElementos.Acoes> acoes = WindowsFormsApplication1.ColetaDados.Acoes(xmldoc);
+
+            Paragraph paragrafo = secao.AddParagraph("Ações", "Heading3");
+
+            if (acoes.Count == 0){
+                
+                return;
+                }
+            
+            Table table = new Table();
+            table.Borders.Width = 0.75;
+
+            Column column = table.AddColumn(Unit.FromCentimeter(2));
+            column.Format.Alignment = ParagraphAlignment.Center;
+
+            table.AddColumn();
+            table.AddColumn();
+            table.AddColumn(Unit.FromCentimeter(2));
+            table.AddColumn(Unit.FromCentimeter(1.7));
+            table.AddColumn(Unit.FromCentimeter(1.7));
+            table.AddColumn();
+            table.AddColumn();
+            table.AddColumn();
+
+            Row row = table.AddRow();
+            Cell cell = row.Cells[0];
+            cell.Borders.Visible = false;
+            cell.MergeRight = 2;
+            cell = row.Cells[3];
+            cell.Shading.Color = Colors.CadetBlue;
+            cell.MergeRight = 1;
+            cell.Format.Alignment = ParagraphAlignment.Center;
+            cell.AddParagraph("Quantidade");
+            cell = row.Cells[5];
+            cell.Borders.Visible = false;
+            cell.MergeRight = 3;
+
+            row = table.AddRow();
+            row.Shading.Color = Colors.CadetBlue;
+            cell = row.Cells[0];
+            cell.Format.Alignment = ParagraphAlignment.Center;
+            cell.AddParagraph("Código do Ativo");
+            cell = row.Cells[1];
+            cell.Format.Alignment = ParagraphAlignment.Center;
+            cell.AddParagraph("Emissor");
+            cell = row.Cells[2];
+            cell.Format.Alignment = ParagraphAlignment.Center;
+            cell.AddParagraph("Emissão");
+            cell = row.Cells[3];
+            cell.Format.Alignment = ParagraphAlignment.Center;
+            cell.AddParagraph("Disponível");
+            cell = row.Cells[4];
+            cell.Format.Alignment = ParagraphAlignment.Center;
+            cell.AddParagraph("Garantia");
+            cell = row.Cells[5];
+            cell.Format.Alignment = ParagraphAlignment.Center;
+            cell.AddParagraph("PU");
+            cell = row.Cells[6];
+            cell.Format.Alignment = ParagraphAlignment.Center;
+            cell.AddParagraph("Valor Bruto");
+            cell = row.Cells[7];
+            cell.Format.Alignment = ParagraphAlignment.Center;
+            cell.AddParagraph("Impostos");
+            cell = row.Cells[8];
+            cell.Format.Alignment = ParagraphAlignment.Center;
+            cell.AddParagraph("Valor Líquido");
+
+            foreach (TabelaElementos.Acoes item in acoes)
+            {
+                int i = 0;
+                row = table.AddRow();
+                cell = row.Cells[i]; i++;
+                cell.Format.Alignment = ParagraphAlignment.Center;
+                Paragraph par = cell.AddParagraph();
+                par.AddFormattedText(item.CodAtivo, "ItemTabela");
+                cell = row.Cells[i]; i++;
+                cell.Format.Alignment = ParagraphAlignment.Center;
+                par = cell.AddParagraph();
+                par.AddFormattedText(item.ClasseOperacao, "ItemTabela");
+                cell = row.Cells[i]; i++;
+                cell.Format.Alignment = ParagraphAlignment.Center;
+                par = cell.AddParagraph();
+                par.AddFormattedText(item.DataEmissao, "ItemTabela");
+                cell = row.Cells[i]; i++;
+                cell.Format.Alignment = ParagraphAlignment.Center;
+                par = cell.AddParagraph();
+                par.AddFormattedText(item.Disponivel, "ItemTabela");
+                cell = row.Cells[i]; i++;
+                cell.Format.Alignment = ParagraphAlignment.Center;
+                par = cell.AddParagraph();
+                par.AddFormattedText(item.Garantia, "ItemTabela");
+                cell = row.Cells[i]; i++;
+                cell.Format.Alignment = ParagraphAlignment.Center;
+                par = cell.AddParagraph();
+                par.AddFormattedText(item.PU, "ItemTabela");
+                cell = row.Cells[i]; i++;
+                cell.Format.Alignment = ParagraphAlignment.Center;
+                par = cell.AddParagraph();
+                par.AddFormattedText(formataValorMonetario(item.ValorBruto), "ItemTabela");
+                cell = row.Cells[i]; i++;
+                cell.Format.Alignment = ParagraphAlignment.Center;
+                par = cell.AddParagraph();
+                par.AddFormattedText(formataValorMonetario(item.Impostos), "ItemTabela");
+                cell = row.Cells[i]; i++;
+                cell.Format.Alignment = ParagraphAlignment.Center;
+                par = cell.AddParagraph();
+                par.AddFormattedText(formataValorMonetario(item.ValorLiquido), "ItemTabela");
+            }
+
+            secao.Add(table);
+
+        }
+
         private static String formataValorMonetario(String valor)
         {
             Double valorFloat = Double.Parse(valor, CultureInfo.InvariantCulture);
-            valor = valorFloat.ToString("0.00");
-            Regex regex = new Regex("\\.");
-            String valorFormatado = regex.Replace(valor, ",");
-            regex = new Regex("[^0-9,]");
-            valorFormatado = "R$ " + regex.Replace(valorFormatado, "");
+            //valor = valorFloat.ToString("0.00");
+            //Regex regex = new Regex("\\.");
+            //String valorFormatado = regex.Replace(valor, ",");
+            String valorFormatado = "R$ " + String.Format(CultureInfo.GetCultureInfo("de-DE"), "{0:N}", valorFloat);
+            //regex = new Regex("[^0-9,]");
+            //valorFormatado = "R$ " + regex.Replace(valorFormatado, "");
             return valorFormatado;
         }
 
